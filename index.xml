@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Mar 2022 21:10:54 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>SM Text Editor</title><link>https://arcaneenergy.github.io/apps/sm_text_editor/</link><pubDate>Thu, 10 Mar 2022 21:10:54 +0100</pubDate><guid>https://arcaneenergy.github.io/apps/sm_text_editor/</guid><description/><content/></item><item><title>SM Pdf Viewer</title><link>https://arcaneenergy.github.io/apps/sm_pdf_viewer/</link><pubDate>Thu, 10 Mar 2022 21:10:48 +0100</pubDate><guid>https://arcaneenergy.github.io/apps/sm_pdf_viewer/</guid><description/><content/></item><item><title>SM Pdf Viewer and SM Text Editor released</title><link>https://arcaneenergy.github.io/posts/002_sm_apps/</link><pubDate>Thu, 10 Mar 2022 21:04:49 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/002_sm_apps/</guid><description>Overview Two new apps have been released on the Google Play Store.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Mar 2022 12:45:22 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
+Part 1: Making HTTP-Requests Godot has a node called HTTPRequest. From the description: A node with the ability to send HTTP(S) requests.
+You can either add this node to the scene tree or we can create this node with code.</description><content>&lt;div class="embed video-player">
+&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/49CAuQLysyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.&lt;/p>
+&lt;h2 id="part-1-making-http-requests">Part 1: Making HTTP-Requests&lt;/h2>
+&lt;p>Godot has a node called &lt;a href="https://docs.godotengine.org/en/latest/classes/class_httprequest.html">&lt;code>HTTPRequest&lt;/code>&lt;/a>. From the description: &lt;code>A node with the ability to send HTTP(S) requests.&lt;/code>&lt;/p>
+&lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
+&lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
+&lt;div class="collapsable-code">
+&lt;input id="217483596" type="checkbox" />
+&lt;label for="217483596">
+&lt;span class="collapsable-code__language">gdscript&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
+&lt;/label>
+&lt;pre class="language-python" >&lt;code>
+func _ready() -&amp;gt; void:
+var http_request := HTTPRequest.new()
+add_child(http_request)
+# Connect &amp;#34;request_completed&amp;#34; signal of HTTPRequest node.
+http_request.connect(&amp;#34;request_completed&amp;#34;, _on_http_request_request_completed)
+func _on_http_request_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -&amp;gt; void:
+pass
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
+&lt;p>Now all we have to do is request an image from a website.&lt;/p>
+&lt;div class="collapsable-code">
+&lt;input id="612438597" type="checkbox" />
+&lt;label for="612438597">
+&lt;span class="collapsable-code__language">gdscript&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
+&lt;/label>
+&lt;pre class="language-python" >&lt;code>
+var error = http_request.request(&amp;#34;https://api.lorem.space/image/house&amp;#34;)
+if error != OK:
+printerr(&amp;#34;An error occurred.&amp;#34;)
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;p>If the request is unsuccessful, the error message is displayed.&lt;/p>
+&lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
+&lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
+&lt;div class="collapsable-code">
+&lt;input id="765194283" type="checkbox" />
+&lt;label for="765194283">
+&lt;span class="collapsable-code__language">gdscript&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
+&lt;/label>
+&lt;pre class="language-python" >&lt;code>
+if result != HTTPRequest.RESULT_SUCCESS:
+push_error(&amp;#34;Image could not be downloaded.&amp;#34;)
+var img := Image.new()
+var error = img.load_jpg_from_buffer(body)
+if error != OK:
+push_error(&amp;#34;Could not load the image.&amp;#34;)
+var tex = ImageTexture.new()
+tex.create_from_image(img)
+var sprite := Sprite3D.new()
+add_child(sprite)
+sprite.texture = tex
+sprite.position = Vector3(0, 0, -5)
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;p>The image is then loaded with the data response of the request (&lt;code>body&lt;/code>). Depending on the image type requested, you may want to change &lt;code>load_jpg_from_buffer&lt;/code> to other image formats. You can change the &lt;code>jpg&lt;/code> in &lt;a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer">&lt;code>load_jpg_from_buffer&lt;/code>&lt;/a> to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt;code>webp&lt;/code>.&lt;/p>
+&lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
+&lt;img src="https://arcaneenergy.github.io/posts/003_http_request_result.png" class="left" />
+&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>SM Text Editor</title><link>https://arcaneenergy.github.io/apps/sm_text_editor/</link><pubDate>Thu, 10 Mar 2022 21:10:54 +0100</pubDate><guid>https://arcaneenergy.github.io/apps/sm_text_editor/</guid><description/><content/></item><item><title>SM Pdf Viewer</title><link>https://arcaneenergy.github.io/apps/sm_pdf_viewer/</link><pubDate>Thu, 10 Mar 2022 21:10:48 +0100</pubDate><guid>https://arcaneenergy.github.io/apps/sm_pdf_viewer/</guid><description/><content/></item><item><title>SM Pdf Viewer and SM Text Editor released</title><link>https://arcaneenergy.github.io/posts/002_sm_apps/</link><pubDate>Thu, 10 Mar 2022 21:04:49 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/002_sm_apps/</guid><description>Overview Two new apps have been released on the Google Play Store.
 SM Pdf Viewer Read more about SM Pdf Viewer
 SM Text Editor Read more about SM Text Editor
 Downloads SM Pdf Viewer SM Text Editor</description><content>&lt;h2 id="overview">Overview&lt;/h2>

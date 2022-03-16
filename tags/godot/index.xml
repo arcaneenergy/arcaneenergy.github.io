@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Arcane Energy</title><link>https://arcaneenergy.github.io/posts/</link><description>Recent content in Posts on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Mar 2022 12:45:22 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Mar 2022 12:45:22 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003_godot_image_downloading_from_web/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
 Part 1: Making HTTP-Requests Godot has a node called HTTPRequest. From the description: A node with the ability to send HTTP(S) requests.
 You can either add this node to the scene tree or we can create this node with code.</description><content>&lt;div class="embed video-player">
 &lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/49CAuQLysyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
@@ -66,28 +66,4 @@ sprite.position = Vector3(0, 0, -5)
 &lt;p>The image is then loaded with the data response of the request (&lt;code>body&lt;/code>). Depending on the image type requested, you may want to change &lt;code>load_jpg_from_buffer&lt;/code> to other image formats. You can change the &lt;code>jpg&lt;/code> in &lt;a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer">&lt;code>load_jpg_from_buffer&lt;/code>&lt;/a> to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt;code>webp&lt;/code>.&lt;/p>
 &lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
 &lt;img src="https://arcaneenergy.github.io/posts/003_http_request_result.png" class="left" />
-&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>SM Pdf Viewer and SM Text Editor released</title><link>https://arcaneenergy.github.io/posts/002_sm_apps/</link><pubDate>Thu, 10 Mar 2022 21:04:49 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/002_sm_apps/</guid><description>Overview Two new apps have been released on the Google Play Store.
-SM Pdf Viewer Read more about SM Pdf Viewer
-SM Text Editor Read more about SM Text Editor
-Downloads SM Pdf Viewer SM Text Editor</description><content>&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>Two new apps have been released on the Google Play Store.&lt;/p>
-&lt;h2 id="sm-pdf-viewer">SM Pdf Viewer&lt;/h2>
-&lt;p>Read more about &lt;a href="https://arcaneenergy.github.io/apps/sm_pdf_viewer">SM Pdf Viewer&lt;/a>&lt;/p>
-&lt;h2 id="sm-text-editor">SM Text Editor&lt;/h2>
-&lt;p>Read more about &lt;a href="https://arcaneenergy.github.io/apps/sm_text_editor">SM Text Editor&lt;/a>&lt;/p>
-&lt;h2 id="downloads">Downloads&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_pdf_viewer">SM Pdf Viewer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_text_editor">SM Text Editor&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>Info</title><link>https://arcaneenergy.github.io/posts/001_info/</link><pubDate>Fri, 28 Jan 2022 13:04:40 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/001_info/</guid><description>Welcome Welcome to Arcane Energy&amp;rsquo;s website. This post gives an overview of this website and some general information. If you have any questions, you can contact me at my email address.
-About The following frameworks and systems were used to create this website:
-Hugo v0.91.2 extended. A modified version of the terminal theme. Embla Carousel to display image carousels. Prism for highlighting code syntax.</description><content>&lt;h2 id="welcome">Welcome&lt;/h2>
-&lt;p>Welcome to Arcane Energy&amp;rsquo;s website. This post gives an overview of this website and some general information. If you have any questions, you can contact me at my email address.&lt;/p>
-&lt;h2 id="about">About&lt;/h2>
-&lt;p>The following frameworks and systems were used to create this website:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://gohugo.io/">Hugo&lt;/a> v0.91.2 extended.&lt;/li>
-&lt;li>A modified version of the &lt;a href="https://themes.gohugo.io/themes/hugo-theme-terminal/">terminal&lt;/a> theme.&lt;/li>
-&lt;li>&lt;a href="https://www.embla-carousel.com/">Embla Carousel&lt;/a> to display image carousels.&lt;/li>
-&lt;li>&lt;a href="https://prismjs.com/">Prism&lt;/a> for highlighting code syntax.&lt;/li>
-&lt;/ul></content></item></channel></rss>
+&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item></channel></rss>
