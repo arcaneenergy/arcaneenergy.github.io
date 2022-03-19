@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Mar 2022 12:45:22 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 19 Mar 2022 19:02:16 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VoxelGI Scene</title><link>https://arcaneenergy.github.io/posts/004/</link><pubDate>Sat, 19 Mar 2022 19:02:16 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/004/</guid><description>Godot v4.0.alpha4.official</description><content>&lt;div class="embed video-player">
+&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/a75-1YT1JaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div>
+&lt;p>
+&lt;img src="https://arcaneenergy.github.io/posts/004_1.jpg" class="left" />
+&lt;img src="https://arcaneenergy.github.io/posts/004_2.jpg" class="left" />
+&lt;img src="https://arcaneenergy.github.io/posts/004_3.jpg" class="left" />
+&lt;img src="https://arcaneenergy.github.io/posts/004_4.jpg" class="left" />
+&lt;img src="https://arcaneenergy.github.io/posts/004_5.jpg" class="left" />
+&lt;/p>
+&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
 Part 1: Making HTTP-Requests Godot has a node called HTTPRequest. From the description: A node with the ability to send HTTP(S) requests.
 You can either add this node to the scene tree or we can create this node with code.</description><content>&lt;div class="embed video-player">
 &lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/49CAuQLysyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
@@ -10,8 +20,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="984526713" type="checkbox" />
-&lt;label for="984526713">
+&lt;input id="831579642" type="checkbox" />
+&lt;label for="831579642">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -28,8 +38,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="531786429" type="checkbox" />
-&lt;label for="531786429">
+&lt;input id="541728963" type="checkbox" />
+&lt;label for="541728963">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -43,8 +53,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="652739148" type="checkbox" />
-&lt;label for="652739148">
+&lt;input id="146987325" type="checkbox" />
+&lt;label for="146987325">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
