@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 19 Mar 2022 19:02:16 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VoxelGI Scene</title><link>https://arcaneenergy.github.io/posts/004/</link><pubDate>Sat, 19 Mar 2022 19:02:16 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/004/</guid><description>Godot v4.0.alpha4.official</description><content>&lt;div class="embed video-player">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arcane Energy</title><link>https://arcaneenergy.github.io/</link><description>Recent content on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Apr 2022 17:44:30 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Animated Explosions Pack #1</title><link>https://arcaneenergy.github.io/assets/animated_explosions_pack_1/</link><pubDate>Mon, 11 Apr 2022 17:44:30 +0200</pubDate><guid>https://arcaneenergy.github.io/assets/animated_explosions_pack_1/</guid><description> Add smooth looking explosions to your game!
+A collection of explosions to add to your game! Create frame by frame explosions with these animations.
+Included spritesheets, individual frames for each spritesheets and a sample Godot project! The Godot project is made with version 3.4.4.
+Information Frames:
+128x128 .png format Spritesheets:
+25 FPS Spritesheet data 8x8 ( 64 Frames) 8x5 ( 40 Frames) 6x4 ( 24 Frames) 10x5 ( 50 Frames) 22x10 (220 Frames) 10x5 ( 50 Frames) 10x5 ( 50 Frames) 10x10 (100 Frames) 10x5 ( 50 Frames) Download Animated Explosions Pack #1 by Arcane Energy</description><content>
+&lt;img
+src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/banner.png"
+class="left expandable"
+/>
+&lt;blockquote>
+&lt;p>Add smooth looking explosions to your game!&lt;/p>
+&lt;/blockquote>
+&lt;p>
+&lt;img
+src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image0.png"
+class="left expandable"
+/>
+&lt;img
+src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image1.png"
+class="left expandable"
+/>
+&lt;img
+src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image2.png"
+class="left expandable"
+/>
+&lt;img
+src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image3.png"
+class="left expandable"
+/>
+&lt;/p>
+&lt;p>A collection of explosions to add to your game! Create frame by frame explosions with these animations.&lt;/p>
+&lt;p>Included spritesheets, individual frames for each spritesheets and a sample Godot project!
+The Godot project is made with version 3.4.4.&lt;/p>
+&lt;h2 id="information">Information&lt;/h2>
+&lt;p>Frames:&lt;/p>
+&lt;ul>
+&lt;li>128x128&lt;/li>
+&lt;li>.png format&lt;/li>
+&lt;/ul>
+&lt;p>Spritesheets:&lt;/p>
+&lt;ul>
+&lt;li>25 FPS&lt;/li>
+&lt;/ul>
+&lt;h2 id="spritesheet-data">Spritesheet data&lt;/h2>
+&lt;ol>
+&lt;li>8x8 ( 64 Frames)&lt;/li>
+&lt;li>8x5 ( 40 Frames)&lt;/li>
+&lt;li>6x4 ( 24 Frames)&lt;/li>
+&lt;li>10x5 ( 50 Frames)&lt;/li>
+&lt;li>22x10 (220 Frames)&lt;/li>
+&lt;li>10x5 ( 50 Frames)&lt;/li>
+&lt;li>10x5 ( 50 Frames)&lt;/li>
+&lt;li>10x10 (100 Frames)&lt;/li>
+&lt;li>10x5 ( 50 Frames)&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="download">Download&lt;/h2>
+&lt;iframe src="https://itch.io/embed/1481896?bg_color=202020&amp;amp;fg_color=ffffff&amp;amp;link_color=fa5c5c&amp;amp;border_color=333d68" width="552" height="167" frameborder="0">&lt;a href="https://arcaneenergy.itch.io/animated-explosions-pack-1">Animated Explosions Pack #1 by Arcane Energy&lt;/a>&lt;/iframe></content></item><item><title>VoxelGI Scene</title><link>https://arcaneenergy.github.io/posts/004/</link><pubDate>Sat, 19 Mar 2022 19:02:16 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/004/</guid><description>Godot v4.0.alpha4.official</description><content>&lt;div class="embed video-player">
 &lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/a75-1YT1JaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
 &lt;/div>
 &lt;p>
@@ -35,8 +93,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="482561973" type="checkbox" />
-&lt;label for="482561973">
+&lt;input id="865179342" type="checkbox" />
+&lt;label for="865179342">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -53,8 +111,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="459768132" type="checkbox" />
-&lt;label for="459768132">
+&lt;input id="178259364" type="checkbox" />
+&lt;label for="178259364">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -68,8 +126,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="396845217" type="checkbox" />
-&lt;label for="396845217">
+&lt;input id="823716945" type="checkbox" />
+&lt;label for="823716945">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
