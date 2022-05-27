@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tool on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/tool/</link><description>Recent content in tool on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 09:44:17 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Source Tilemap Level Editor released</title><link>https://arcaneenergy.github.io/posts/005/</link><pubDate>Fri, 27 May 2022 09:44:17 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/005/</guid><description>Tilemap Level Editor Open source simple level editor for Godot with JSON export functionality. Made with Godot.
+Github Project Download Download the exported program on itch.io.
+itch.io download link
+Video
+Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
+&lt;p>Open source simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/arcaneenergy/tilemap-level-editor">Github Project&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="download">Download&lt;/h2>
+&lt;p>Download the exported program on itch.io.&lt;/p>
+&lt;p>&lt;a href="https://arcaneenergy.itch.io/tilemap-level-editor">&lt;strong>itch.io download link&lt;/strong>&lt;/a>&lt;/p>
+&lt;h2 id="video">Video&lt;/h2>
+&lt;p>&lt;a href="https://youtu.be/cAaTXmgWu9s">&lt;img src="https://img.youtube.com/vi/cAaTXmgWu9s/maxresdefault.jpg" width="50%">&lt;/a>&lt;/p>
+&lt;h2 id="use-case">Use case&lt;/h2>
+&lt;p>This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.&lt;/p>
+&lt;p>Alternatively, you can use this program to easily create levels in the editor.&lt;/p>
+&lt;h2 id="controls">Controls&lt;/h2>
+&lt;p>Placement:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- Left click: Place tile (if selected)
+- Right click: Delete tile
+&lt;/code>&lt;/pre>&lt;p>Other:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- TAB: Toggle GUI
+- SHIFT + Scroll up: Increase brush size
+- SHIFT + Scroll down: Decrease brush size
+&lt;/code>&lt;/pre>&lt;p>Camera:&lt;/p>
+&lt;pre tabindex="0">&lt;code>- Middle mouse drag: Drag camera around
+- W / ↑: Move camera up
+- S / ↓: Move camera down
+- A / ←: Move camera left
+- D / →: Move camera right
+- Mouse scroll up: Zoom in
+- Mouse scroll down: Zoom out
+&lt;/code>&lt;/pre>&lt;h2 id="ui-overview">UI Overview&lt;/h2>
+&lt;p>Create new layers with the &lt;code>+ New Layer&lt;/code> button. This brings up a dialog box for selecting an image file. After selecting a file, the new layer appears in the list.&lt;/p>
+&lt;p>Switch between layers by pressing the arrow to the left of the layer. This will open the tileset on the left. Use the up and down arrow keys to move layers.&lt;/p>
+&lt;img
+src="https://arcaneenergy.github.io/posts/005_1.png"
+class="left expandable"
+/>
+&lt;p>Select a tile and start drawing.&lt;/p>
+&lt;img
+src="https://arcaneenergy.github.io/posts/005_2.png"
+class="left expandable"
+/>
+&lt;p>Change the size and shape of the cursor using the buttons in the lower right corner.&lt;/p>
+&lt;img
+src="https://arcaneenergy.github.io/posts/005_3.png"
+class="left expandable"
+/>
+&lt;h2 id="exported-json-file">Exported JSON file&lt;/h2>
+&lt;p>The exported JSON file looks like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>[
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-5&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-7&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each cell contains an ID, an x and a y position. The ID is used to identify which cell in the tileset it refers to.&lt;/p>
+&lt;h2 id="problems">Problems&lt;/h2>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Currently the program only supports tiles of 16x16 size. The spritesheet needs to be divisible by 16 (16, 32, 48, 64, 80, 96, 112, 128, etc.)&lt;/li>
+&lt;/ul>
+&lt;p>Godot_v3.5-rc2&lt;/p></content></item></channel></rss>
