@@ -10,8 +10,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="297165384" type="checkbox" />
-&lt;label for="297165384">
+&lt;input id="391528476" type="checkbox" />
+&lt;label for="391528476">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -28,8 +28,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="864312597" type="checkbox" />
-&lt;label for="864312597">
+&lt;input id="632154879" type="checkbox" />
+&lt;label for="632154879">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -43,8 +43,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="123946857" type="checkbox" />
-&lt;label for="123946857">
+&lt;input id="623175984" type="checkbox" />
+&lt;label for="623175984">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
