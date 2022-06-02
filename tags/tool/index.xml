@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tool on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/tool/</link><description>Recent content in tool on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 09:44:17 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Source Tilemap Level Editor released</title><link>https://arcaneenergy.github.io/posts/005/</link><pubDate>Fri, 27 May 2022 09:44:17 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/005/</guid><description>Tilemap Level Editor Open source simple level editor for Godot with JSON export functionality. Made with Godot.
 Github Project Download Download the exported program on itch.io.
 itch.io download link
-Video
-Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
+Video Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
 &lt;p>Open source simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/arcaneenergy/tilemap-level-editor">Github Project&lt;/a>&lt;/li>

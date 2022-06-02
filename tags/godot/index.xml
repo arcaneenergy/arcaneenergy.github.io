@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 09:44:17 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Source Tilemap Level Editor released</title><link>https://arcaneenergy.github.io/posts/005/</link><pubDate>Fri, 27 May 2022 09:44:17 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/005/</guid><description>Tilemap Level Editor Open source simple level editor for Godot with JSON export functionality. Made with Godot.
 Github Project Download Download the exported program on itch.io.
 itch.io download link
-Video
-Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
+Video Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
 &lt;p>Open source simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/arcaneenergy/tilemap-level-editor">Github Project&lt;/a>&lt;/li>
@@ -109,8 +108,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="391528476" type="checkbox" />
-&lt;label for="391528476">
+&lt;input id="982547631" type="checkbox" />
+&lt;label for="982547631">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -127,8 +126,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="632154879" type="checkbox" />
-&lt;label for="632154879">
+&lt;input id="829167435" type="checkbox" />
+&lt;label for="829167435">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -142,8 +141,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="623175984" type="checkbox" />
-&lt;label for="623175984">
+&lt;input id="149587263" type="checkbox" />
+&lt;label for="149587263">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
