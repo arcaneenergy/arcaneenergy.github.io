@@ -166,8 +166,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="982547631" type="checkbox" />
-&lt;label for="982547631">
+&lt;input id="579423681" type="checkbox" />
+&lt;label for="579423681">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -184,8 +184,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="829167435" type="checkbox" />
-&lt;label for="829167435">
+&lt;input id="496352817" type="checkbox" />
+&lt;label for="496352817">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -199,8 +199,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="149587263" type="checkbox" />
-&lt;label for="149587263">
+&lt;input id="269573814" type="checkbox" />
+&lt;label for="269573814">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -288,4 +288,10 @@ Hugo v0.91.2 extended. A modified version of the terminal theme. Embla Carousel 
 &lt;ul>
 &lt;li>&lt;a href="https://www.svgrepo.com/">Icons by svgrepo.com&lt;/a>&lt;/li>
 &lt;li>Google Play and the Google Play logo are trademarks of Google LLC.&lt;/li>
-&lt;/ul></content></item><item><title>Icosahedron</title><link>https://arcaneenergy.github.io/apps/icosahedron/</link><pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/icosahedron/</guid><description/><content/></item><item><title>Whiteboard</title><link>https://arcaneenergy.github.io/apps/whiteboard/</link><pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/whiteboard/</guid><description/><content/></item><item><title>Mergifier</title><link>https://arcaneenergy.github.io/apps/mergifier/</link><pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/mergifier/</guid><description/><content/></item><item><title>Control Cube</title><link>https://arcaneenergy.github.io/apps/control_cube/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/control_cube/</guid><description/><content/></item><item><title>2D Physics Sandbox</title><link>https://arcaneenergy.github.io/apps/2d_physics_sandbox/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/2d_physics_sandbox/</guid><description/><content/></item><item><title>Metal Ball Adventures</title><link>https://arcaneenergy.github.io/apps/metal_ball_adventures/</link><pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/metal_ball_adventures/</guid><description/><content/></item><item><title>Rocket Bounce</title><link>https://arcaneenergy.github.io/apps/rocket_bounce/</link><pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/rocket_bounce/</guid><description/><content/></item></channel></rss>
+&lt;/ul></content></item><item><title>Icosahedron</title><link>https://arcaneenergy.github.io/apps/icosahedron/</link><pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/icosahedron/</guid><description/><content/></item><item><title>Whiteboard</title><link>https://arcaneenergy.github.io/apps/whiteboard/</link><pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/whiteboard/</guid><description/><content/></item><item><title>Mergifier</title><link>https://arcaneenergy.github.io/apps/mergifier/</link><pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/mergifier/</guid><description/><content/></item><item><title>Control Cube</title><link>https://arcaneenergy.github.io/apps/control_cube/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/control_cube/</guid><description/><content/></item><item><title>2D Physics Sandbox</title><link>https://arcaneenergy.github.io/apps/2d_physics_sandbox/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/2d_physics_sandbox/</guid><description/><content/></item><item><title>Metal Ball Adventures</title><link>https://arcaneenergy.github.io/apps/metal_ball_adventures/</link><pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/metal_ball_adventures/</guid><description/><content/></item><item><title>Rocket Bounce</title><link>https://arcaneenergy.github.io/apps/rocket_bounce/</link><pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/apps/rocket_bounce/</guid><description/><content/></item><item><title>Whiteboard</title><link>https://arcaneenergy.github.io/whiteboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/whiteboard/</guid><description/><content>&lt;iframe id="whiteboard" src="https://arcaneenergy.github.io/whiteboard/Whiteboard.html">&lt;/iframe>
+&lt;style>
+#whiteboard {
+width: 100%;
+height: 768px;
+}
+&lt;/style></content></item></channel></rss>
