@@ -11,7 +11,9 @@ Video Use case This is currently used in a personal project. It&amp;rsquo;s used
 &lt;p>Download the exported program on itch.io.&lt;/p>
 &lt;p>&lt;a href="https://arcaneenergy.itch.io/tilemap-level-editor">&lt;strong>itch.io download link&lt;/strong>&lt;/a>&lt;/p>
 &lt;h2 id="video">Video&lt;/h2>
-&lt;p>&lt;a href="https://youtu.be/01ktb-9E6J0">&lt;img src="https://img.youtube.com/vi/01ktb-9E6J0/maxresdefault.jpg" width="50%">&lt;/a>&lt;/p>
+&lt;div class="embed video-player">
+&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/01ktb-9E6J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div>
 &lt;h2 id="use-case">Use case&lt;/h2>
 &lt;p>This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.&lt;/p>
 &lt;p>Alternatively, you can use this program to easily create levels in the editor.&lt;/p>

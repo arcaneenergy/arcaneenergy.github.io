@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 09:44:17 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Source Tilemap Level Editor released</title><link>https://arcaneenergy.github.io/posts/005/</link><pubDate>Fri, 27 May 2022 09:44:17 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/005/</guid><description>Tilemap Level Editor Open source simple level editor for Godot with JSON export functionality. Made with Godot.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Jun 2022 17:31:19 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>Godot Tutorials: GitHub repository opened</title><link>https://arcaneenergy.github.io/posts/006/</link><pubDate>Mon, 13 Jun 2022 17:31:19 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/006/</guid><description>Access the repository here.</description><content>&lt;p>Access the repository &lt;a href="https://github.com/arcaneenergy/godot-tutorials">here&lt;/a>.&lt;/p>
+&lt;div class="embed video-player">
+&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/25xYefKIYKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></content></item><item><title>Open Source Tilemap Level Editor released</title><link>https://arcaneenergy.github.io/posts/005/</link><pubDate>Fri, 27 May 2022 09:44:17 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/005/</guid><description>Tilemap Level Editor Open source simple level editor for Godot with JSON export functionality. Made with Godot.
 Github Project Download Download the exported program on itch.io.
 itch.io download link
 Video Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;h1 id="tilemap-level-editor">Tilemap Level Editor&lt;/h1>
@@ -11,7 +14,9 @@ Video Use case This is currently used in a personal project. It&amp;rsquo;s used
 &lt;p>Download the exported program on itch.io.&lt;/p>
 &lt;p>&lt;a href="https://arcaneenergy.itch.io/tilemap-level-editor">&lt;strong>itch.io download link&lt;/strong>&lt;/a>&lt;/p>
 &lt;h2 id="video">Video&lt;/h2>
-&lt;p>&lt;a href="https://youtu.be/01ktb-9E6J0">&lt;img src="https://img.youtube.com/vi/01ktb-9E6J0/maxresdefault.jpg" width="50%">&lt;/a>&lt;/p>
+&lt;div class="embed video-player">
+&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/01ktb-9E6J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div>
 &lt;h2 id="use-case">Use case&lt;/h2>
 &lt;p>This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.&lt;/p>
 &lt;p>Alternatively, you can use this program to easily create levels in the editor.&lt;/p>
@@ -108,8 +113,8 @@ You can either add this node to the scene tree or we can create this node with c
 &lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
 &lt;div class="collapsable-code">
-&lt;input id="579423681" type="checkbox" />
-&lt;label for="579423681">
+&lt;input id="218397546" type="checkbox" />
+&lt;label for="218397546">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -126,8 +131,8 @@ pass
 &lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="496352817" type="checkbox" />
-&lt;label for="496352817">
+&lt;input id="681379425" type="checkbox" />
+&lt;label for="681379425">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
@@ -141,8 +146,8 @@ printerr(&amp;#34;An error occurred.&amp;#34;)
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
 &lt;div class="collapsable-code">
-&lt;input id="269573814" type="checkbox" />
-&lt;label for="269573814">
+&lt;input id="681479523" type="checkbox" />
+&lt;label for="681479523">
 &lt;span class="collapsable-code__language">gdscript&lt;/span>
 &lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
 &lt;/label>
