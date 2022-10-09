@@ -52,23 +52,23 @@ class="left expandable"
 />
 &lt;h2 id="exported-json-file">Exported JSON file&lt;/h2>
 &lt;p>The exported JSON file looks like this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>[
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>],
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-5&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-7&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>],
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each cell contains an ID, an x and a y position. The ID is used to identify which cell in the tileset it refers to.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">[
+{
+&lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
+[&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>],
+[&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">-5&lt;/span>,&lt;span style="color:#ae81ff">-1&lt;/span>]
+]
+},
+{
+&lt;span style="color:#f92672">&amp;#34;texture_path&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;tilemap-level-editor/tileset.png&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;cells&amp;#34;&lt;/span>: [
+[&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-7&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>],
+[&lt;span style="color:#ae81ff">4&lt;/span>,&lt;span style="color:#ae81ff">-6&lt;/span>,&lt;span style="color:#ae81ff">-2&lt;/span>]
+]
+}
+]
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Each cell contains an ID, an x and a y position. The ID is used to identify which cell in the tileset it refers to.&lt;/p>
 &lt;h2 id="problems">Problems&lt;/h2>
 &lt;ul>
 &lt;li>&lt;input disabled="" type="checkbox"> Currently the program only supports tiles of 16x16 size. The spritesheet needs to be divisible by 16 (16, 32, 48, 64, 80, 96, 112, 128, etc.)&lt;/li>
