@@ -20,12 +20,12 @@ Trailer Description Use case This is currently used in a personal project. It&am
 &lt;p>Simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://github.com/arcaneenergy/tilemap-level-editor">
 &lt;img src="https://arcaneenergy.github.io/icons/github_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/tilemap-level-editor">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -270,7 +270,7 @@ Remember last opened page number Document history Change theme (light and dark t
 &lt;p>A simple and quick PDF file viewer.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_pdf_viewer">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -315,7 +315,7 @@ Toggle text wrapping Document history Change theme (light and dark theme) Change
 &lt;p>A simple and quick Text file editor.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_text_editor">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -416,7 +416,7 @@ Use the left and right buttons to move in the given direction. Use the up arrow 
 &lt;p>Move an icosahedron with the power of thrusters around.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.icosahedron">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -504,12 +504,12 @@ Features:
 &lt;p>Your private whiteboard.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.whiteboard">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/whiteboard">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -581,12 +581,12 @@ Trailer Screenshots Description Play as a blob.</description><content>&lt;blockq
 &lt;p>Merge with other blobs to grow or separate yourself to get smaller.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.mergifier">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/mergifier">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -653,7 +653,7 @@ Trailer Screenshots Description Every chunk shares the same controls.</descripti
 &lt;p>Control one or multiple chunks and complete puzzles.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://arcaneenergy.itch.io/divided-chains-combined-brains">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -715,7 +715,7 @@ Each level has a different style.</description><content>&lt;blockquote>
 &lt;p>Navigate through levels and solve puzzles.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.controlcube">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -774,7 +774,7 @@ Open your backpack and select from various elements. Tap anywhere to spawn eleme
 &lt;p>Create and control your own 2D Sandbox.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.physicssandboxgame">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -846,7 +846,7 @@ The goal is to complete the level, by reaching the red flag at the end of each l
 &lt;p>Move with the joysticks. Avoid enemies, solve puzzles and reach the flag to win.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.metalballadventures">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -924,7 +924,7 @@ Drag around the rocket and release when you are ready to fly. Tap either side of
 &lt;p>Fly and bounce around to overcome obstacles and levels.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.ArcaneEnergy.RocketBounce">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>

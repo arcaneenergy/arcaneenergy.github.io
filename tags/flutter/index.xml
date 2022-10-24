@@ -5,7 +5,7 @@ Remember last opened page number Document history Change theme (light and dark t
 &lt;p>A simple and quick PDF file viewer.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_pdf_viewer">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
@@ -50,7 +50,7 @@ Toggle text wrapping Document history Change theme (light and dark theme) Change
 &lt;p>A simple and quick Text file editor.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_text_editor">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>

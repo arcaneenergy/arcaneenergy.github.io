@@ -3,12 +3,12 @@ Trailer Description Use case This is currently used in a personal project. It&am
 &lt;p>Simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://github.com/arcaneenergy/tilemap-level-editor">
 &lt;img src="https://arcaneenergy.github.io/icons/github_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/tilemap-level-editor">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -117,12 +117,12 @@ Features:
 &lt;p>Your private whiteboard.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.whiteboard">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/whiteboard">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -194,12 +194,12 @@ Trailer Screenshots Description Play as a blob.</description><content>&lt;blockq
 &lt;p>Merge with other blobs to grow or separate yourself to get smaller.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.mergifier">
 &lt;img src="https://arcaneenergy.github.io/icons/google_play_badge.svg">
 &lt;/a>
 &lt;/div>
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-6">
 &lt;a href="https://arcaneenergy.itch.io/mergifier">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
@@ -266,7 +266,7 @@ Trailer Screenshots Description Every chunk shares the same controls.</descripti
 &lt;p>Control one or multiple chunks and complete puzzles.&lt;/p>
 &lt;/blockquote>
 &lt;div class="row">
-&lt;div class="col-xs-3">
+&lt;div class="col-xs-12 col-sm-6">
 &lt;a href="https://arcaneenergy.itch.io/divided-chains-combined-brains">
 &lt;img src="https://arcaneenergy.github.io/icons/itch_io_badge.svg">
 &lt;/a>
