@@ -1,0 +1,219 @@
+<!doctype html><html lang=en>
+<head>
+<title>Tilemap Level Editor</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta name=keywords content>
+<meta name=robots content="noodp">
+<link rel=canonical href=https://arcaneenergy.github.io/whiteboard/>
+<link rel=stylesheet type=text/css href=https://arcaneenergy.github.io/sass/style.min.e239ec522422f2842d21d873cd77a510bd422d5ff9d05c347e52fa6a7482414b.css>
+<link rel="shortcut icon" href=https://arcaneenergy.github.io/favicon.svg>
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Whiteboard">
+<meta property="og:description" content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta property="og:url" content="https://arcaneenergy.github.io/whiteboard/">
+<meta property="og:site_name" content="Arcane Energy">
+<meta property="og:image" content="https://arcaneenergy.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+</head>
+<body>
+<header>
+<div class="navbar row">
+<a class="col-xs-12 col-sm-3 navbar-item navbar-item-logo" href=https://arcaneenergy.github.io/><img src=https://arcaneenergy.github.io/icons/icon.svg alt=icon></a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/posts>Posts</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/software>Software</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/assets>Assets</a>
+</div>
+</header>
+<main class=content>
+<div class=post>
+<div class=post-title>
+<h1>Tilemap Level Editor</h1>
+</div>
+<div class=post-meta>
+<span class=post-date>
+27.05.2022
+</span>
+<span class=post-tags>
+<a class=chip href=https://arcaneenergy.github.io/tags/godot/>#godot</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/itch.io/>#itch.io</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/github/>#github</a>&nbsp;
+</span>
+<img src=https://arcaneenergy.github.io/software/tilemap_level_editor/banner.png class="post-cover expandable" alt="Tilemap Level Editor" title="Cover Image">
+</div>
+<div class=post-content><blockquote>
+<p>Simple level editor for Godot with JSON export functionality. Made with Godot.</p>
+</blockquote>
+<div class=row>
+<div class=col-xs-3>
+<a href=https://github.com/arcaneenergy/tilemap-level-editor>
+<img src=/icons/github_badge.svg>
+</a>
+</div>
+<div class=col-xs-3>
+<a href=https://arcaneenergy.itch.io/tilemap-level-editor>
+<img src=/icons/itch_io_badge.svg>
+</a>
+</div>
+</div>
+<div class=itchio-widget>
+<iframe src="https://itch.io/embed/1277666?bg_color=202020&fg_color=ffffff&link_color=fa5c5c&border_color=333d68" width=552 height=167 frameborder=0></iframe>
+</div>
+<h2 id=trailer>Trailer<a href=#trailer class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/01ktb-9E6J0 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h2 id=description>Description<a href=#description class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<h2 id=use-case>Use case<a href=#use-case class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>This is currently used in a personal project. It&rsquo;s used to load in JSON files into Godot to recreate the levels at
+runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in
+Godot.</p>
+<p>Alternatively, you can use this program to easily create levels in the editor.</p>
+<h2 id=controls>Controls<a href=#controls class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Placement:</p>
+<ul>
+<li>Left click: Place tile (if selected)</li>
+<li>Right click: Delete tile</li>
+</ul>
+<p>Other:</p>
+<ul>
+<li>TAB: Toggle GUI</li>
+<li>SHIFT + Scroll up: Increase brush size</li>
+<li>SHIFT + Scroll down: Decrease brush size</li>
+</ul>
+<p>Camera:</p>
+<ul>
+<li>Middle mouse drag: Drag camera around</li>
+<li>W / ↑: Move camera up</li>
+<li>S / ↓: Move camera down</li>
+<li>A / ←: Move camera left</li>
+<li>D / →: Move camera right</li>
+<li>Mouse scroll up: Zoom in</li>
+<li>Mouse scroll down: Zoom out</li>
+</ul>
+<h2 id=ui-overview>UI Overview<a href=#ui-overview class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Create new layers with the <code>+ New Layer</code> button. This brings up a dialog box for selecting an image file. After
+selecting a file, the new layer appears in the list.</p>
+<p>Switch between layers by pressing the arrow to the left of the layer. This will open the tileset on the left. Use the up
+and down arrow keys to move layers.</p>
+<img src=https://arcaneenergy.github.io/software/tilemap_level_editor/image_01.png class="left expandable">
+<p>Select a tile and start drawing.</p>
+<img src=https://arcaneenergy.github.io/software/tilemap_level_editor/image_02.png class="left expandable">
+<p>Change the size and shape of the cursor using the buttons in the lower right corner.</p>
+<img src=https://arcaneenergy.github.io/software/tilemap_level_editor/image_03.png class="left expandable">
+<h2 id=exported-json-file>Exported JSON file<a href=#exported-json-file class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>The exported JSON file might look like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;layers&#34;</span>: [
+    {
+      <span style=color:#f92672>&#34;texture_path&#34;</span>: <span style=color:#e6db74>&#34;C:/tilemap-level-editor/test/tileset.png&#34;</span>,
+      <span style=color:#f92672>&#34;cells&#34;</span>: [
+        [
+          <span style=color:#ae81ff>4</span>,
+          <span style=color:#ae81ff>-5</span>,
+          <span style=color:#ae81ff>-3</span>
+        ]
+      ]
+    }
+  ],
+  <span style=color:#f92672>&#34;objects&#34;</span>: [
+    {
+      <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;player&#34;</span>,
+      <span style=color:#f92672>&#34;position&#34;</span>: [
+        <span style=color:#ae81ff>2</span>,
+        <span style=color:#ae81ff>4</span>
+      ]
+    }
+  ]
+}
+</code></pre></div><p>Each cell contains an ID, an x and a y position. The ID is used to identify which cell in the tileset it refers to.</p>
+<h2 id=problems>Problems<a href=#problems class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ul>
+<li><input disabled type=checkbox> Currently, the program only supports tiles of 16x16 size. The spritesheet needs to be divisible by 16 (16, 32, 48,
+64 etc.)</li>
+<li><input disabled type=checkbox> Exported texture paths are absolute.</li>
+</ul>
+<p>Godot_v3.5-rc2</p>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer row">
+<div class="col-xs-12 col-sm-4">
+<h3>Arcane Energy</h3>
+<ul>
+<li><a href=https://arcaneenergy.github.io/>Homepage</a></li>
+<li><a href=https://arcaneenergy.github.io/posts>Posts</a></li>
+<li><a href=https://arcaneenergy.github.io/software>Software</a></li>
+<li><a href=https://arcaneenergy.github.io/assets>Assets</a></li>
+<li><a href=https://arcaneenergy.github.io/whiteboard>Whiteboard</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>Platforms</h3>
+<ul>
+<li>
+<a href=https://www.youtube.com/c/ArcaneEnergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/youtube.svg alt=icon> YouTube
+</a>
+</li>
+<li>
+<a href=https://twitter.com/arcanenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/twitter.svg alt=icon> Twitter
+</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/arcaneenergy/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/reddit.svg alt=icon> Reddit
+</a>
+</li>
+<li>
+<a href=https://github.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/github.svg alt=icon> GitHub
+</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>&nbsp;</h3>
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/dev?id=5802860236940422854">
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/google_play_store.svg alt=icon> Google Play Store
+</a>
+</li>
+<li>
+<a href=https://arcaneenergy.itch.io/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/itch_io.svg alt=icon> itch.io
+</a>
+</li>
+<li>
+<a href=https://ko-fi.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/kofi.svg alt=icon> Ko-fi
+</a>
+</li>
+</ul>
+</div>
+<div class=footer-privacy>
+<span>© 2022 Arcane Energy</span>
+<span>&nbsp;|&nbsp;</span>
+<a href=https://arcaneenergy.github.io/privacy>Privacy Policy</a>
+<span>&nbsp;|&nbsp;</span>
+<a href=# id=email-btn>Contact</a>
+</div>
+</div>
+</footer>
+<div id=helper>
+<div class=img-enlarger-modal id=img-enlarger-modal>
+<img id=img-enlarger-img>
+</div>
+<script type=text/javascript src=/js/img-enlarger.js defer></script>
+<script type=text/javascript>document.querySelector('#email-btn').addEventListener("click",()=>window.open('mailto:arcane.energy.help@gmail.com'))</script>
+</div>
+</body>
+</html>

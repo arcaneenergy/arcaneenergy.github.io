@@ -1,248 +1,123 @@
-<!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
+<!doctype html><html lang=en>
 <head>
-	<meta charset='utf-8' />
-	<meta name='viewport' content='width=device-width, user-scalable=no' />
-	<title>Whiteboard</title>
-	<style type='text/css'>
-
-		body {
-			touch-action: none;
-			margin: 0;
-			border: 0 none;
-			padding: 0;
-			text-align: center;
-			background-color: black;
-		}
-
-		#canvas {
-			display: block;
-			margin: 0;
-			color: white;
-		}
-
-		#canvas:focus {
-			outline: none;
-		}
-
-		.godot {
-			font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
-			color: #e0e0e0;
-			background-color: #3b3943;
-			background-image: linear-gradient(to bottom, #403e48, #35333c);
-			border: 1px solid #45434e;
-			box-shadow: 0 0 1px 1px #2f2d35;
-		}
-
-
-		/* Status display
-		 * ============== */
-
-		#status {
-			position: absolute;
-			left: 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			/* don't consume click events - make children visible explicitly */
-			visibility: hidden;
-		}
-
-		#status-progress {
-			width: 366px;
-			height: 7px;
-			background-color: #38363A;
-			border: 1px solid #444246;
-			padding: 1px;
-			box-shadow: 0 0 2px 1px #1B1C22;
-			border-radius: 2px;
-			visibility: visible;
-		}
-
-		@media only screen and (orientation:portrait) {
-			#status-progress {
-				width: 61.8%;
-			}
-		}
-
-		#status-progress-inner {
-			height: 100%;
-			width: 0;
-			box-sizing: border-box;
-			transition: width 0.5s linear;
-			background-color: #202020;
-			border: 1px solid #222223;
-			box-shadow: 0 0 1px 1px #27282E;
-			border-radius: 3px;
-		}
-
-		#status-indeterminate {
-			height: 42px;
-			visibility: visible;
-			position: relative;
-		}
-
-		#status-indeterminate > div {
-			width: 4.5px;
-			height: 0;
-			border-style: solid;
-			border-width: 9px 3px 0 3px;
-			border-color: #2b2b2b transparent transparent transparent;
-			transform-origin: center 21px;
-			position: absolute;
-		}
-
-		#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
-		#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
-		#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
-		#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
-		#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
-		#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
-		#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
-		#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
-
-		#status-notice {
-			margin: 0 100px;
-			line-height: 1.3;
-			visibility: visible;
-			padding: 4px 6px;
-			visibility: visible;
-		}
-	</style>
-<link id='-gd-engine-icon' rel='icon' type='image/png' href='Whiteboard.icon.png' />
-<link rel='apple-touch-icon' href='Whiteboard.apple-touch-icon.png'/>
-
+<title>Whiteboard</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta name=keywords content>
+<meta name=robots content="noodp">
+<link rel=canonical href=https://arcaneenergy.github.io/whiteboard/>
+<link rel=stylesheet type=text/css href=https://arcaneenergy.github.io/sass/style.min.e239ec522422f2842d21d873cd77a510bd422d5ff9d05c347e52fa6a7482414b.css>
+<link rel="shortcut icon" href=https://arcaneenergy.github.io/favicon.svg>
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Whiteboard">
+<meta property="og:description" content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta property="og:url" content="https://arcaneenergy.github.io/whiteboard/">
+<meta property="og:site_name" content="Arcane Energy">
+<meta property="og:image" content="https://arcaneenergy.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
 </head>
 <body>
-	<canvas id='canvas'>
-		HTML5 canvas appears to be unsupported in the current browser.<br />
-		Please try updating or use a different browser.
-	</canvas>
-	<div id='status'>
-		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
-		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div id='status-notice' class='godot' style='display: none;'></div>
-	</div>
-
-	<script type='text/javascript' src='Whiteboard.js'></script>
-	<script type='text/javascript'>//<![CDATA[
-
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Whiteboard","experimentalVK":false,"fileSizes":{"Whiteboard.pck":8480688,"Whiteboard.wasm":13764200},"focusCanvas":true,"gdnativeLibs":[]};
-		var engine = new Engine(GODOT_CONFIG);
-
-		(function() {
-			const INDETERMINATE_STATUS_STEP_MS = 100;
-			var statusProgress = document.getElementById('status-progress');
-			var statusProgressInner = document.getElementById('status-progress-inner');
-			var statusIndeterminate = document.getElementById('status-indeterminate');
-			var statusNotice = document.getElementById('status-notice');
-
-			var initializing = true;
-			var statusMode = 'hidden';
-
-			var animationCallbacks = [];
-			function animate(time) {
-				animationCallbacks.forEach(callback => callback(time));
-				requestAnimationFrame(animate);
-			}
-			requestAnimationFrame(animate);
-
-			function setStatusMode(mode) {
-
-				if (statusMode === mode || !initializing)
-					return;
-				[statusProgress, statusIndeterminate, statusNotice].forEach(elem => {
-					elem.style.display = 'none';
-				});
-				animationCallbacks = animationCallbacks.filter(function(value) {
-					return (value != animateStatusIndeterminate);
-				});
-				switch (mode) {
-					case 'progress':
-						statusProgress.style.display = 'block';
-						break;
-					case 'indeterminate':
-						statusIndeterminate.style.display = 'block';
-						animationCallbacks.push(animateStatusIndeterminate);
-						break;
-					case 'notice':
-						statusNotice.style.display = 'block';
-						break;
-					case 'hidden':
-						break;
-					default:
-						throw new Error('Invalid status mode');
-				}
-				statusMode = mode;
-			}
-
-			function animateStatusIndeterminate(ms) {
-				var i = Math.floor(ms / INDETERMINATE_STATUS_STEP_MS % 8);
-				if (statusIndeterminate.children[i].style.borderTopColor == '') {
-					Array.prototype.slice.call(statusIndeterminate.children).forEach(child => {
-						child.style.borderTopColor = '';
-					});
-					statusIndeterminate.children[i].style.borderTopColor = '#dfdfdf';
-				}
-			}
-
-			function setStatusNotice(text) {
-				while (statusNotice.lastChild) {
-					statusNotice.removeChild(statusNotice.lastChild);
-				}
-				var lines = text.split('\n');
-				lines.forEach((line) => {
-					statusNotice.appendChild(document.createTextNode(line));
-					statusNotice.appendChild(document.createElement('br'));
-				});
-			};
-
-			function displayFailureNotice(err) {
-				var msg = err.message || err;
-				console.error(msg);
-				setStatusNotice(msg);
-				setStatusMode('notice');
-				initializing = false;
-			};
-
-			if (!Engine.isWebGLAvailable()) {
-				displayFailureNotice('WebGL not available');
-			} else {
-				setStatusMode('indeterminate');
-				engine.startGame({
-					'onProgress': function (current, total) {
-						if (total > 0) {
-							statusProgressInner.style.width = current/total * 100 + '%';
-							setStatusMode('progress');
-							if (current === total) {
-								// wait for progress bar animation
-								setTimeout(() => {
-									setStatusMode('indeterminate');
-								}, 500);
-							}
-						} else {
-							setStatusMode('indeterminate');
-						}
-					},
-				}).then(() => {
-					setStatusMode('hidden');
-					initializing = false;
-				}, displayFailureNotice);
-			}
-		})();
-	//]]></script>
+<header>
+<div class="navbar row">
+<a class="col-xs-12 col-sm-3 navbar-item navbar-item-logo" href=https://arcaneenergy.github.io/><img src=https://arcaneenergy.github.io/icons/icon.svg alt=icon></a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/posts>Posts</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/software>Software</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/assets>Assets</a>
+</div>
+</header>
+<main class=content>
+<div class=post>
+<div class=post-title>
+<h1>Whiteboard</h1>
+</div>
+<div class=post-meta>
+</div>
+<div class=post-content><p>Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard
+from <a href=https://arcaneenergy.itch.io/whiteboard>itch.io</a> (Windows, Linux, Mac)
+or <a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.whiteboard">Google Play Store</a> (Android).</p>
+<div class=itchio-embed>
+<iframe src="https://itch.io/embed-upload/6455154?color=5aa0e8" allowfullscreen width=800 height=500 frameborder=0></iframe>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer row">
+<div class="col-xs-12 col-sm-4">
+<h3>Arcane Energy</h3>
+<ul>
+<li><a href=https://arcaneenergy.github.io/>Homepage</a></li>
+<li><a href=https://arcaneenergy.github.io/posts>Posts</a></li>
+<li><a href=https://arcaneenergy.github.io/software>Software</a></li>
+<li><a href=https://arcaneenergy.github.io/assets>Assets</a></li>
+<li><a href=https://arcaneenergy.github.io/whiteboard>Whiteboard</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>Platforms</h3>
+<ul>
+<li>
+<a href=https://www.youtube.com/c/ArcaneEnergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/youtube.svg alt=icon> YouTube
+</a>
+</li>
+<li>
+<a href=https://twitter.com/arcanenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/twitter.svg alt=icon> Twitter
+</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/arcaneenergy/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/reddit.svg alt=icon> Reddit
+</a>
+</li>
+<li>
+<a href=https://github.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/github.svg alt=icon> GitHub
+</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>&nbsp;</h3>
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/dev?id=5802860236940422854">
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/google_play_store.svg alt=icon> Google Play Store
+</a>
+</li>
+<li>
+<a href=https://arcaneenergy.itch.io/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/itch_io.svg alt=icon> itch.io
+</a>
+</li>
+<li>
+<a href=https://ko-fi.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/kofi.svg alt=icon> Ko-fi
+</a>
+</li>
+</ul>
+</div>
+<div class=footer-privacy>
+<span>© 2022 Arcane Energy</span>
+<span>&nbsp;|&nbsp;</span>
+<a href=https://arcaneenergy.github.io/privacy>Privacy Policy</a>
+<span>&nbsp;|&nbsp;</span>
+<a href=# id=email-btn>Contact</a>
+</div>
+</div>
+</footer>
+<div id=helper>
+<div class=img-enlarger-modal id=img-enlarger-modal>
+<img id=img-enlarger-img>
+</div>
+<script type=text/javascript src=/js/img-enlarger.js defer></script>
+<script type=text/javascript>document.querySelector('#email-btn').addEventListener("click",()=>window.open('mailto:arcane.energy.help@gmail.com'))</script>
+</div>
 </body>
 </html>
-

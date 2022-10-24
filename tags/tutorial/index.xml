@@ -1,75 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tutorial on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/tutorial/</link><description>Recent content in tutorial on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Jun 2022 17:31:19 +0200</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Godot Tutorials: GitHub repository opened</title><link>https://arcaneenergy.github.io/posts/006/</link><pubDate>Mon, 13 Jun 2022 17:31:19 +0200</pubDate><guid>https://arcaneenergy.github.io/posts/006/</guid><description>Access the repository here.</description><content>&lt;p>Access the repository &lt;a href="https://github.com/arcaneenergy/godot-tutorials">here&lt;/a>.&lt;/p>
-&lt;div class="embed video-player">
-&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/25xYefKIYKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
-&lt;/div></content></item><item><title>Image downloading from web with Godot</title><link>https://arcaneenergy.github.io/posts/003/</link><pubDate>Wed, 16 Mar 2022 12:45:22 +0100</pubDate><guid>https://arcaneenergy.github.io/posts/003/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
-Part 1: Making HTTP-Requests Godot has a node called HTTPRequest. From the description: A node with the ability to send HTTP(S) requests.
-You can either add this node to the scene tree or we can create this node with code.</description><content>&lt;div class="embed video-player">
-&lt;iframe width="100%" height="405" src="https://www.youtube.com/embed/49CAuQLysyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tutorial on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/tutorial/</link><description>Recent content in tutorial on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Download images from web with Godot</title><link>https://arcaneenergy.github.io/posts/001/</link><pubDate>Wed, 16 Mar 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/001/</guid><description>Overview This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.
+Part 1: Making HTTP-Requests Godot provides a node to make HTTP-Requests: The HTTPRequest node. From the description: A node with the ability to send HTTP(S) requests.</description><content>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/49CAuQLysyI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.&lt;/p>
+&lt;p>This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one
+focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.&lt;/p>
 &lt;h2 id="part-1-making-http-requests">Part 1: Making HTTP-Requests&lt;/h2>
-&lt;p>Godot has a node called &lt;a href="https://docs.godotengine.org/en/latest/classes/class_httprequest.html">&lt;code>HTTPRequest&lt;/code>&lt;/a>. From the description: &lt;code>A node with the ability to send HTTP(S) requests.&lt;/code>&lt;/p>
-&lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with code.&lt;/p>
+&lt;p>Godot provides a node to make HTTP-Requests:
+The &lt;a href="https://docs.godotengine.org/en/latest/classes/class_httprequest.html">HTTPRequest&lt;/a> node. From the
+description: A node with the ability to send HTTP(S) requests.&lt;/p>
+&lt;p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with
+code.&lt;/p>
 &lt;h3 id="creating-the-httprequest-node">Creating the HTTPRequest node&lt;/h3>
-&lt;div class="collapsable-code">
-&lt;input id="493871265" type="checkbox" />
-&lt;label for="493871265">
-&lt;span class="collapsable-code__language">gdscript&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
-&lt;/label>
-&lt;pre class="language-python" >&lt;code>
-func _ready() -&amp;gt; void:
-var http_request := HTTPRequest.new()
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-gdscript" data-lang="gdscript">&lt;span style="color:#66d9ef">func&lt;/span> _ready() &lt;span style="color:#f92672">-&amp;gt;&lt;/span> void:
+&lt;span style="color:#66d9ef">var&lt;/span> http_request :&lt;span style="color:#f92672">=&lt;/span> HTTPRequest&lt;span style="color:#f92672">.&lt;/span>new()
 add_child(http_request)
-# Connect &amp;#34;request_completed&amp;#34; signal of HTTPRequest node.
-http_request.connect(&amp;#34;request_completed&amp;#34;, _on_http_request_request_completed)
-func _on_http_request_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -&amp;gt; void:
-pass
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
+&lt;span style="color:#75715e"># Connect &amp;#34;request_completed&amp;#34; signal of HTTPRequest node.&lt;/span>
+http_request&lt;span style="color:#f92672">.&lt;/span>connect(&lt;span style="color:#e6db74">&amp;#34;request_completed&amp;#34;&lt;/span>, _on_http_request_request_completed)
+&lt;span style="color:#66d9ef">func&lt;/span> _on_http_request_request_completed(result: &lt;span style="color:#a6e22e">int&lt;/span>, response_code: &lt;span style="color:#a6e22e">int&lt;/span>, headers: PackedStringArray, body:
+PackedByteArray) &lt;span style="color:#f92672">-&amp;gt;&lt;/span> void:
+&lt;span style="color:#66d9ef">pass&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="requesting-an-image">Requesting an image&lt;/h3>
 &lt;p>Now all we have to do is request an image from a website.&lt;/p>
-&lt;div class="collapsable-code">
-&lt;input id="362159487" type="checkbox" />
-&lt;label for="362159487">
-&lt;span class="collapsable-code__language">gdscript&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
-&lt;/label>
-&lt;pre class="language-python" >&lt;code>
-var error = http_request.request(&amp;#34;https://api.lorem.space/image/house&amp;#34;)
-if error != OK:
-printerr(&amp;#34;An error occurred.&amp;#34;)
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;p>If the request is unsuccessful, the error message is displayed.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-gdscript" data-lang="gdscript">&lt;span style="color:#66d9ef">var&lt;/span> error &lt;span style="color:#f92672">=&lt;/span> http_request&lt;span style="color:#f92672">.&lt;/span>request(&lt;span style="color:#e6db74">&amp;#34;https://api.lorem.space/image/house&amp;#34;&lt;/span>)
+&lt;span style="color:#66d9ef">if&lt;/span> error &lt;span style="color:#f92672">!=&lt;/span> OK:
+printerr(&lt;span style="color:#e6db74">&amp;#34;An error occurred.&amp;#34;&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If the request is unsuccessful, the error message is displayed.&lt;/p>
 &lt;h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot&lt;/h2>
 &lt;p>Add the following code to the &lt;code>_on_http_request_request_completed&lt;/code> function:&lt;/p>
-&lt;div class="collapsable-code">
-&lt;input id="456318729" type="checkbox" />
-&lt;label for="456318729">
-&lt;span class="collapsable-code__language">gdscript&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="▲" data-label-collapse="▼">&lt;/span>
-&lt;/label>
-&lt;pre class="language-python" >&lt;code>
-if result != HTTPRequest.RESULT_SUCCESS:
-push_error(&amp;#34;Image could not be downloaded.&amp;#34;)
-var img := Image.new()
-var error = img.load_jpg_from_buffer(body)
-if error != OK:
-push_error(&amp;#34;Could not load the image.&amp;#34;)
-var tex = ImageTexture.new()
-tex.create_from_image(img)
-var sprite := Sprite3D.new()
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-gdscript" data-lang="gdscript">&lt;span style="color:#66d9ef">if&lt;/span> result &lt;span style="color:#f92672">!=&lt;/span> HTTPRequest&lt;span style="color:#f92672">.&lt;/span>RESULT_SUCCESS:
+push_error(&lt;span style="color:#e6db74">&amp;#34;Image could not be downloaded.&amp;#34;&lt;/span>)
+&lt;span style="color:#66d9ef">var&lt;/span> img :&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">Image&lt;/span>&lt;span style="color:#f92672">.&lt;/span>new()
+&lt;span style="color:#66d9ef">var&lt;/span> error &lt;span style="color:#f92672">=&lt;/span> img&lt;span style="color:#f92672">.&lt;/span>load_jpg_from_buffer(body)
+&lt;span style="color:#66d9ef">if&lt;/span> error &lt;span style="color:#f92672">!=&lt;/span> OK:
+push_error(&lt;span style="color:#e6db74">&amp;#34;Could not load the image.&amp;#34;&lt;/span>)
+&lt;span style="color:#66d9ef">var&lt;/span> tex &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">ImageTexture&lt;/span>&lt;span style="color:#f92672">.&lt;/span>new()
+tex&lt;span style="color:#f92672">.&lt;/span>create_from_image(img)
+&lt;span style="color:#66d9ef">var&lt;/span> sprite :&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">Sprite3D&lt;/span>&lt;span style="color:#f92672">.&lt;/span>new()
 add_child(sprite)
-sprite.texture = tex
-sprite.position = Vector3(0, 0, -5)
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;p>The image is then loaded with the data response of the request (&lt;code>body&lt;/code>). Depending on the image type requested, you may want to change &lt;code>load_jpg_from_buffer&lt;/code> to other image formats. You can change the &lt;code>jpg&lt;/code> in &lt;a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer">&lt;code>load_jpg_from_buffer&lt;/code>&lt;/a> to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt;code>webp&lt;/code>.&lt;/p>
+sprite&lt;span style="color:#f92672">.&lt;/span>texture &lt;span style="color:#f92672">=&lt;/span> tex
+sprite&lt;span style="color:#f92672">.&lt;/span>position &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">Vector3&lt;/span>(&lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">5&lt;/span>)
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The image is then loaded with the data response of the request (&lt;code>body&lt;/code>). Depending on the image type requested, you may
+want to change &lt;code>load_jpg_from_buffer&lt;/code> to other image formats. You can change the &lt;code>jpg&lt;/code>
+in &lt;a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer">&lt;code>load_jpg_from_buffer&lt;/code>&lt;/a>
+to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt;code>webp&lt;/code>.&lt;/p>
 &lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
 &lt;img
-src="https://arcaneenergy.github.io/posts/003_result.png"
+src="https://arcaneenergy.github.io/posts/001/banner.png"
 class="left expandable"
 />
 &lt;p>Godot v4.0.alpha4.official&lt;/p></content></item></channel></rss>

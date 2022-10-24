@@ -1,107 +1,193 @@
 <!doctype html><html lang=en>
 <head>
-<title>Info</title>
+<title>Download images from web with Godot</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Welcome Welcome to Arcane Energy&amp;rsquo;s website. This post gives an overview of this website and some general information. If you have any questions, you can contact me at my email address.
-About The following frameworks and systems were used to create this website:
- Hugo v0.91.2 extended. A modified version of the terminal theme. Embla Carousel to display image carousels. Prism for highlighting code syntax.  ">
-<meta name=keywords content="other">
+<meta name=description content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta name=keywords content>
 <meta name=robots content="noodp">
-<link rel=canonical href=https://arcaneenergy.github.io/posts/001/>
-<link rel=stylesheet type=text/css href=https://arcaneenergy.github.io/sass/style.min.03e79889d5270190be705704d450abb606753220b39634116e7e642acfb89b00.css>
+<link rel=canonical href=https://arcaneenergy.github.io/whiteboard/>
+<link rel=stylesheet type=text/css href=https://arcaneenergy.github.io/sass/style.min.e239ec522422f2842d21d873cd77a510bd422d5ff9d05c347e52fa6a7482414b.css>
 <link rel="shortcut icon" href=https://arcaneenergy.github.io/favicon.svg>
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Info">
-<meta property="og:description" content="Welcome Welcome to Arcane Energy&amp;rsquo;s website. This post gives an overview of this website and some general information. If you have any questions, you can contact me at my email address.
-About The following frameworks and systems were used to create this website:
- Hugo v0.91.2 extended. A modified version of the terminal theme. Embla Carousel to display image carousels. Prism for highlighting code syntax.  ">
-<meta property="og:url" content="https://arcaneenergy.github.io/posts/001/">
+<meta property="og:title" content="Whiteboard">
+<meta property="og:description" content="Note that your whiteboards may not be saved. To ensure your whiteboards are saved, download Whiteboard from itch.io (Windows, Linux, Mac) or Google Play Store (Android).
+  ">
+<meta property="og:url" content="https://arcaneenergy.github.io/whiteboard/">
 <meta property="og:site_name" content="Arcane Energy">
 <meta property="og:image" content="https://arcaneenergy.github.io/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2022-01-28 13:04:40 +0100 +0100">
 </head>
 <body>
-<div class="container center headings--one-size">
-<header class=header>
+<header>
+<div class="navbar row">
+<a class="col-xs-12 col-sm-3 navbar-item navbar-item-logo" href=https://arcaneenergy.github.io/><img src=https://arcaneenergy.github.io/icons/icon.svg alt=icon></a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/posts>Posts</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/software>Software</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/assets>Assets</a>
+</div>
 </header>
-<div class=content>
+<main class=content>
 <div class=post>
-<h1 class=post-title>
-<a href=https://arcaneenergy.github.io/posts/001/>Info</a></h1>
+<div class=post-title>
+<h1>Download images from web with Godot</h1>
+</div>
 <div class=post-meta>
 <span class=post-date>
-2022-01-28
+16.03.2022
 </span>
-</div>
 <span class=post-tags>
-#<a href=https://arcaneenergy.github.io/tags/other/>other</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/godot/>#godot</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/tutorial/>#tutorial</a>&nbsp;
 </span>
-<div class=table-of-contents>
-<h2>
-Table of Contents
-</h2>
+<img src=https://arcaneenergy.github.io/posts/001/banner.png class="post-cover expandable" alt="Download images from web with Godot" title="Cover Image">
+</div>
+<div class=post-toc>
+<h2>Table of Contents</h2>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#welcome>Welcome</a></li>
-<li><a href=#about>About</a></li>
+<li><a href=#overview>Overview</a></li>
+<li><a href=#part-1-making-http-requests>Part 1: Making HTTP-Requests</a>
+<ul>
+<li><a href=#creating-the-httprequest-node>Creating the HTTPRequest node</a></li>
+<li><a href=#requesting-an-image>Requesting an image</a></li>
+</ul>
+</li>
+<li><a href=#part-2-displaying-the-image-in-godot>Part 2: Displaying the image in Godot</a></li>
 </ul>
 </nav>
 </div>
-<div class=post-content><div>
-<h2 id=welcome>Welcome<a href=#welcome class=hanchor arialabel=Anchor>&#8983;</a> </h2>
-<p>Welcome to Arcane Energy&rsquo;s website. This post gives an overview of this website and some general information. If you have any questions, you can contact me at my email address.</p>
-<h2 id=about>About<a href=#about class=hanchor arialabel=Anchor>&#8983;</a> </h2>
-<p>The following frameworks and systems were used to create this website:</p>
-<ul>
-<li><a href=https://gohugo.io/>Hugo</a> v0.91.2 extended.</li>
-<li>A modified version of the <a href=https://themes.gohugo.io/themes/hugo-theme-terminal/>terminal</a> theme.</li>
-<li><a href=https://www.embla-carousel.com/>Embla Carousel</a> to display image carousels.</li>
-<li><a href=https://prismjs.com/>Prism</a> for highlighting code syntax.</li>
-</ul>
-</div></div>
+<div class=post-content>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/49CAuQLysyI style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h2 id=overview>Overview<a href=#overview class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one
+focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.</p>
+<h2 id=part-1-making-http-requests>Part 1: Making HTTP-Requests<a href=#part-1-making-http-requests class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Godot provides a node to make HTTP-Requests:
+The <a href=https://docs.godotengine.org/en/latest/classes/class_httprequest.html>HTTPRequest</a> node. From the
+description: A node with the ability to send HTTP(S) requests.</p>
+<p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with
+code.</p>
+<h3 id=creating-the-httprequest-node>Creating the HTTPRequest node<a href=#creating-the-httprequest-node class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-gdscript data-lang=gdscript><span style=color:#66d9ef>func</span> _ready() <span style=color:#f92672>-&gt;</span> void:
+<span style=color:#66d9ef>var</span> http_request :<span style=color:#f92672>=</span> HTTPRequest<span style=color:#f92672>.</span>new()
+add_child(http_request)
+
+<span style=color:#75715e># Connect &#34;request_completed&#34; signal of HTTPRequest node.</span>
+http_request<span style=color:#f92672>.</span>connect(<span style=color:#e6db74>&#34;request_completed&#34;</span>, _on_http_request_request_completed)
+
+<span style=color:#66d9ef>func</span> _on_http_request_request_completed(result: <span style=color:#a6e22e>int</span>, response_code: <span style=color:#a6e22e>int</span>, headers: PackedStringArray, body:
+PackedByteArray) <span style=color:#f92672>-&gt;</span> void:
+    <span style=color:#66d9ef>pass</span>
+</code></pre></div><h3 id=requesting-an-image>Requesting an image<a href=#requesting-an-image class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>Now all we have to do is request an image from a website.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-gdscript data-lang=gdscript><span style=color:#66d9ef>var</span> error <span style=color:#f92672>=</span> http_request<span style=color:#f92672>.</span>request(<span style=color:#e6db74>&#34;https://api.lorem.space/image/house&#34;</span>)
+<span style=color:#66d9ef>if</span> error <span style=color:#f92672>!=</span> OK:
+    printerr(<span style=color:#e6db74>&#34;An error occurred.&#34;</span>)
+</code></pre></div><p>If the request is unsuccessful, the error message is displayed.</p>
+<h2 id=part-2-displaying-the-image-in-godot>Part 2: Displaying the image in Godot<a href=#part-2-displaying-the-image-in-godot class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Add the following code to the <code>_on_http_request_request_completed</code> function:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-gdscript data-lang=gdscript><span style=color:#66d9ef>if</span> result <span style=color:#f92672>!=</span> HTTPRequest<span style=color:#f92672>.</span>RESULT_SUCCESS:
+    push_error(<span style=color:#e6db74>&#34;Image could not be downloaded.&#34;</span>)
+
+<span style=color:#66d9ef>var</span> img :<span style=color:#f92672>=</span> <span style=color:#a6e22e>Image</span><span style=color:#f92672>.</span>new()
+<span style=color:#66d9ef>var</span> error <span style=color:#f92672>=</span> img<span style=color:#f92672>.</span>load_jpg_from_buffer(body)
+<span style=color:#66d9ef>if</span> error <span style=color:#f92672>!=</span> OK:
+    push_error(<span style=color:#e6db74>&#34;Could not load the image.&#34;</span>)
+
+<span style=color:#66d9ef>var</span> tex <span style=color:#f92672>=</span> <span style=color:#a6e22e>ImageTexture</span><span style=color:#f92672>.</span>new()
+tex<span style=color:#f92672>.</span>create_from_image(img)
+
+<span style=color:#66d9ef>var</span> sprite :<span style=color:#f92672>=</span> <span style=color:#a6e22e>Sprite3D</span><span style=color:#f92672>.</span>new()
+add_child(sprite)
+
+sprite<span style=color:#f92672>.</span>texture <span style=color:#f92672>=</span> tex
+sprite<span style=color:#f92672>.</span>position <span style=color:#f92672>=</span> <span style=color:#a6e22e>Vector3</span>(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>)
+</code></pre></div><p>The image is then loaded with the data response of the request (<code>body</code>). Depending on the image type requested, you may
+want to change <code>load_jpg_from_buffer</code> to other image formats. You can change the <code>jpg</code>
+in <a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer"><code>load_jpg_from_buffer</code></a>
+to <code>bmp</code>, <code>png</code>, <code>tga</code> or <code>webp</code>.</p>
+<p>If the request is successful, the sprite with the requested image should appear in your scene:</p>
+<img src=https://arcaneenergy.github.io/posts/001/banner.png class="left expandable">
+<p>Godot v4.0.alpha4.official</p>
 </div>
 </div>
-<footer class=footer>
-<hr>
-<div class=footer__inner>
-<div class=col-xs-4>
+</main>
+<footer>
+<div class="footer row">
+<div class="col-xs-12 col-sm-4">
 <h3>Arcane Energy</h3>
-<a href=https://arcaneenergy.github.io/>Homepage</a>
-<a href=https://arcaneenergy.github.io/apps>Apps</a>
-<a href=https://arcaneenergy.github.io/posts>Posts</a>
-<a href=https://arcaneenergy.github.io/assets>Assets</a>
-<a href=https://arcaneenergy.github.io/whiteboard>Whiteboard</a>
+<ul>
+<li><a href=https://arcaneenergy.github.io/>Homepage</a></li>
+<li><a href=https://arcaneenergy.github.io/posts>Posts</a></li>
+<li><a href=https://arcaneenergy.github.io/software>Software</a></li>
+<li><a href=https://arcaneenergy.github.io/assets>Assets</a></li>
+<li><a href=https://arcaneenergy.github.io/whiteboard>Whiteboard</a></li>
+</ul>
 </div>
-<div class=col-xs-4>
-<h3>Follow</h3>
-<a href=https://www.youtube.com/c/ArcaneEnergy>YouTube</a>
-<a href=https://twitter.com/arcanenergy>Twitter</a>
-<a href=https://www.reddit.com/r/arcaneenergy/>Reddit</a>
-<a href="https://play.google.com/store/apps/dev?id=5802860236940422854">Google Play Store</a>
-<a href=https://arcaneenergy.itch.io/>itch.io</a>
+<div class="col-xs-12 col-sm-4">
+<h3>Platforms</h3>
+<ul>
+<li>
+<a href=https://www.youtube.com/c/ArcaneEnergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/youtube.svg alt=icon> YouTube
+</a>
+</li>
+<li>
+<a href=https://twitter.com/arcanenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/twitter.svg alt=icon> Twitter
+</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/arcaneenergy/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/reddit.svg alt=icon> Reddit
+</a>
+</li>
+<li>
+<a href=https://github.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/github.svg alt=icon> GitHub
+</a>
+</li>
+</ul>
 </div>
-<div class=col-xs-4>
-<h3>About</h3>
+<div class="col-xs-12 col-sm-4">
+<h3>&nbsp;</h3>
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/dev?id=5802860236940422854">
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/google_play_store.svg alt=icon> Google Play Store
+</a>
+</li>
+<li>
+<a href=https://arcaneenergy.itch.io/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/itch_io.svg alt=icon> itch.io
+</a>
+</li>
+<li>
+<a href=https://ko-fi.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/kofi.svg alt=icon> Ko-fi
+</a>
+</li>
+</ul>
+</div>
+<div class=footer-privacy>
+<span>© 2022 Arcane Energy</span>
+<span>&nbsp;|&nbsp;</span>
+<a href=https://arcaneenergy.github.io/privacy>Privacy Policy</a>
+<span>&nbsp;|&nbsp;</span>
 <a href=# id=email-btn>Contact</a>
 </div>
 </div>
-<script type=text/javascript src=https://storage.ko-fi.com/cdn/widget/Widget_2.js></script><script type=text/javascript>kofiwidget2.init('Support Me on Ko-fi','#29abe0','E1E5CVWWE'),kofiwidget2.draw()</script>
-<hr>
-<div class=footer__outer>
-<span>© 2022 Arcane Energy</span>
-<a href=https://arcaneenergy.github.io/privacy class=footer-privacy>Privacy</a>
-</div>
 </footer>
+<div id=helper>
 <div class=img-enlarger-modal id=img-enlarger-modal>
 <img id=img-enlarger-img>
 </div>
-<script type=text/javascript src=/js/prism.js defer></script>
-<script type=text/javascript src=/js/embla/embla-carousel.umd.js defer></script>
-<script type=text/javascript src=/js/embla/embla-carousel-autoplay.umd.js defer></script>
 <script type=text/javascript src=/js/img-enlarger.js defer></script>
 <script type=text/javascript>document.querySelector('#email-btn').addEventListener("click",()=>window.open('mailto:arcane.energy.help@gmail.com'))</script>
 </div>

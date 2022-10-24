@@ -1,5 +1,5 @@
-var modal = document.getElementById("img-enlarger-modal");
-var modalImg = document.getElementById("img-enlarger-img");
+const modal = document.getElementById("img-enlarger-modal");
+const modalImg = document.getElementById("img-enlarger-img");
 
 modal.onclick = function () {
     this.classList.remove("img-enlarger-model-shown");
