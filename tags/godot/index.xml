@@ -118,7 +118,71 @@ class="left expandable"
 64 etc.)&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> Exported texture paths are absolute.&lt;/li>
 &lt;/ul>
-&lt;p>Godot_v3.5-rc2&lt;/p></content></item><item><title>Animated Explosions Pack #1</title><link>https://arcaneenergy.github.io/assets/animated_explosion_pack_1/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/animated_explosion_pack_1/</guid><description> Add smooth looking explosions to your game!
+&lt;p>Godot_v3.5-rc2&lt;/p></content></item><item><title>Walking Simulator</title><link>https://arcaneenergy.github.io/posts/walking_simulator/</link><pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/walking_simulator/</guid><description> YouTube Playlist</description><content>&lt;div class="row">
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_01.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_02.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_03.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_04.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_05.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_06.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;/div>
+&lt;br/>
+&lt;div class="row">
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/FXGbLSfMP8c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/6EP0E4-m7DU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/x3yRIS53hBw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/zXZNGsL-n2w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="youtube-playlist">YouTube Playlist&lt;/h2>
+&lt;div class="video-container">
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKnVIoBRwyaPWKeVhr9lFhboPVqALaxJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></content></item><item><title>Animated Explosions Pack #1</title><link>https://arcaneenergy.github.io/assets/animated_explosion_pack_1/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/animated_explosion_pack_1/</guid><description> Add smooth looking explosions to your game!
 A collection of explosions to add to your game! Create frame by frame explosions with these animations.
 Included spritesheets, individual frames for each spritesheets and a sample Godot project! The Godot project is made with version 3.4.4.
 Information Frames:
@@ -260,10 +324,68 @@ in &lt;a href="https://docs.godotengine.org/en/latest/classes/class_image.html?h
 to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt;code>webp&lt;/code>.&lt;/p>
 &lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
 &lt;img
-src="https://arcaneenergy.github.io/posts/001/banner.png"
+src="https://arcaneenergy.github.io/posts/download_images_from_web_with_godot/banner.png"
 class="left expandable"
 />
-&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>Whiteboard</title><link>https://arcaneenergy.github.io/software/whiteboard/</link><pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/software/whiteboard/</guid><description>Open Whiteboard Your private whiteboard.
+&lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>Top Down Shooter Tutorial Series</title><link>https://arcaneenergy.github.io/posts/top_down_shooter_tutorial_series/</link><pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/top_down_shooter_tutorial_series/</guid><description>Description This tutorial series focuses on different parts of game development.
+You will learn:
+How to use a singleton. Creating custom inputs and user-defined signals. How to create a Player who can move, turn and attack. How to create enemies that can move, turn and attack a target. Common attack and health system. Create a simple user interface GUI Skinning (Themes) Connecting the interface with game code. Create a simple main menu.</description><content>&lt;h2 id="description">Description&lt;/h2>
+&lt;p>This tutorial series focuses on different parts of game development.&lt;/p>
+&lt;p>You will learn:&lt;/p>
+&lt;ul>
+&lt;li>How to use a singleton.&lt;/li>
+&lt;li>Creating custom inputs and user-defined signals.&lt;/li>
+&lt;li>How to create a Player who can move, turn and attack.&lt;/li>
+&lt;li>How to create enemies that can move, turn and attack a target.&lt;/li>
+&lt;li>Common attack and health system.&lt;/li>
+&lt;li>Create a simple user interface&lt;/li>
+&lt;li>GUI Skinning (Themes)&lt;/li>
+&lt;li>Connecting the interface with game code.&lt;/li>
+&lt;li>Create a simple main menu.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="tutorial-1-creating-the-player">Tutorial #1: Creating the Player&lt;/h2>
+&lt;p>Tutorial 1/5&lt;/p>
+&lt;p>This tutorial will focus on creating a basic game structure and player character. The player character can be controlled
+with keys and rotated with the mouse.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/wdKOtA5-Imk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="tutorial-2-adding-enemies-and-shooting">Tutorial #2: Adding Enemies and Shooting&lt;/h2>
+&lt;p>Tutorial 2/5&lt;/p>
+&lt;p>In this tutorial, we are going to create a simple enemy that can move. We will also implement a simple but dynamic
+shooting system that can be shared by different scripts.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/bjP71cQJrVE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="tutorial-3-collision-layersmasks-and-health-system">Tutorial #3: Collision Layers/Masks and Health System&lt;/h2>
+&lt;p>Tutorial 3/5&lt;/p>
+&lt;p>Collision layers and collision masks can be confusing at first. In this tutorial, both of them will be used to make the
+bullets collide with specific layers. We will also implement a dynamic health system.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Z6i58mfcK3A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="tutorial-4-health-kits-bullet-hits">Tutorial #4: Health Kits, Bullet Hits&lt;/h2>
+&lt;p>Tutorial 4/5&lt;/p>
+&lt;p>We&amp;rsquo;re going to be adding health kits to the game now. We will also get the bullets to do something now.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Yk00STxcon4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="tutorial-5-gui-and-theming">Tutorial #5: GUI and Theming&lt;/h2>
+&lt;p>Tutorial 5/5&lt;/p>
+&lt;p>A simple, but functional GUI will be created in this tutorial.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/v-N_auLEQ2w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="youtube-playlist">YouTube Playlist&lt;/h2>
+&lt;div class="video-container">
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKnVIoBRwyaPJ-U6jPAePrwvOHhWZ6vxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></content></item><item><title>Whiteboard</title><link>https://arcaneenergy.github.io/software/whiteboard/</link><pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/software/whiteboard/</guid><description>Open Whiteboard Your private whiteboard.
 Trailer Screenshots Description Whiteboard made with Godot.
 Features:
 🔹 Write text. Select different fonts and font styles.

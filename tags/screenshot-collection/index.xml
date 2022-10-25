@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>screenshot collection on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/screenshot-collection/</link><description>Recent content in screenshot collection on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/screenshot-collection/index.xml" rel="self" type="application/rss+xml"/><item><title>VoxelGI Scene</title><link>https://arcaneenergy.github.io/posts/voxelgi_scene/</link><pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/voxelgi_scene/</guid><description>Godot v4.0.alpha4.official</description><content>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>screenshot collection on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/screenshot-collection/</link><description>Recent content in screenshot collection on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 17 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/screenshot-collection/index.xml" rel="self" type="application/rss+xml"/><item><title>Walking Simulator</title><link>https://arcaneenergy.github.io/posts/walking_simulator/</link><pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/walking_simulator/</guid><description> YouTube Playlist</description><content>&lt;div class="row">
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_01.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_02.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_03.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_04.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_05.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/posts/walking_simulator/image_06.jpg"
+class="left expandable"
+/>
+&lt;/div>
+&lt;/div>
+&lt;br/>
+&lt;div class="row">
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/FXGbLSfMP8c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/6EP0E4-m7DU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/x3yRIS53hBw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/zXZNGsL-n2w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="youtube-playlist">YouTube Playlist&lt;/h2>
+&lt;div class="video-container">
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKnVIoBRwyaPWKeVhr9lFhboPVqALaxJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></content></item><item><title>VoxelGI Scene</title><link>https://arcaneenergy.github.io/posts/voxelgi_scene/</link><pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/voxelgi_scene/</guid><description>Godot v4.0.alpha4.official</description><content>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/a75-1YT1JaA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
