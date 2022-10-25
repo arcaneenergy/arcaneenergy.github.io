@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>shader on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/shader/</link><description>Recent content in shader on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/shader/index.xml" rel="self" type="application/rss+xml"/><item><title>Squash and Stretch Shader</title><link>https://arcaneenergy.github.io/assets/squash_stretch/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/squash_stretch/</guid><description>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>shader on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/shader/</link><description>Recent content in shader on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/shader/index.xml" rel="self" type="application/rss+xml"/><item><title>Squash and Stretch Shader</title><link>https://arcaneenergy.github.io/assets/squash_stretch_shader/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/squash_stretch_shader/</guid><description>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.
 Note: You may need a high-poly model.
 shader_type spatial; uniform vec2 direction = vec2(1.0); uniform float squash: hint_range(0.0, 2.0) = 1.0; uniform float offset: hint_range(-0.5, 0.5) = 0.0; void vertex() { float v = abs(VERTEX.y + offset) * squash + direction.x; VERTEX *= vec3(v, direction.y, v); } Find the shader on Godot Shaders.</description><content>&lt;p>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.&lt;/p>
 &lt;p>&lt;strong>Note: You may need a high-poly model.&lt;/strong>&lt;/p>
@@ -15,4 +15,18 @@ VERTEX &lt;span style="color:#f92672">*=&lt;/span> &lt;span style="color:#66d9ef
 &lt;iframe src="https://www.youtube.com/embed/O0og6WrAWk0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
-&lt;p>Find the shader on &lt;a href="https://godotshaders.com/shader/squash-and-stretch/">Godot Shaders&lt;/a>.&lt;/p></content></item></channel></rss>
+&lt;p>Find the shader on &lt;a href="https://godotshaders.com/shader/squash-and-stretch/">Godot Shaders&lt;/a>.&lt;/p></content></item><item><title>Vignette Shader</title><link>https://arcaneenergy.github.io/assets/vignette_shader/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/vignette_shader/</guid><description>The color and size of the vignette effect is adjustable.
+shader_type canvas_item; uniform vec4 color: hint_color; uniform float multiplier = 0.2; uniform float softness = 3.0; void fragment() { float value = distance(UV, vec2(0.5)); COLOR = vec4(color.rgb, smoothstep(multiplier, softness, value)); }</description><content>&lt;p>The color and size of the vignette effect is adjustable.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-glsl" data-lang="glsl">shader_type canvas_item;
+&lt;span style="color:#66d9ef">uniform&lt;/span> &lt;span style="color:#66d9ef">vec4&lt;/span> color&lt;span style="color:#f92672">:&lt;/span> hint_color;
+&lt;span style="color:#66d9ef">uniform&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> multiplier &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0.2&lt;/span>;
+&lt;span style="color:#66d9ef">uniform&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span> softness &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">3.0&lt;/span>;
+&lt;span style="color:#66d9ef">void&lt;/span> fragment() {
+&lt;span style="color:#66d9ef">float&lt;/span> value &lt;span style="color:#f92672">=&lt;/span> distance(UV, &lt;span style="color:#66d9ef">vec2&lt;/span>(&lt;span style="color:#ae81ff">0.5&lt;/span>));
+COLOR &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">vec4&lt;/span>(color.rgb, smoothstep(multiplier, softness, value));
+}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/IGtQwsNDVLM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr></content></item></channel></rss>
