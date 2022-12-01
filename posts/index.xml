@@ -2,37 +2,37 @@
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_01.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_02.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_03.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_04.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_05.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_06.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -71,25 +71,25 @@ class="left expandable"
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_01.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_02.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_03.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_04.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -143,7 +143,7 @@ to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt
 &lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/posts/download_images_from_web_with_godot/banner.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>Top Down Shooter Tutorial Series</title><link>https://arcaneenergy.github.io/posts/top_down_shooter_tutorial_series/</link><pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/posts/top_down_shooter_tutorial_series/</guid><description>Description This tutorial series focuses on different parts of game development.
 You will learn:

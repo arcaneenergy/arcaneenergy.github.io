@@ -19,49 +19,49 @@ The goal is to complete the level, by reaching the red flag at the end of each l
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_06.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_07.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_08.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -97,31 +97,31 @@ Drag around the rocket and release when you are ready to fly. Tap either side of
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>

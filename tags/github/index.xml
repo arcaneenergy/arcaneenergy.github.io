@@ -57,17 +57,17 @@ selecting a file, the new layer appears in the list.&lt;/p>
 and down arrow keys to move layers.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Select a tile and start drawing.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Change the size and shape of the cursor using the buttons in the lower right corner.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;h2 id="exported-json-file">Exported JSON file&lt;/h2>
 &lt;p>The exported JSON file might look like this:&lt;/p>

@@ -20,19 +20,19 @@ Remember last opened page number Document history Change theme (light and dark t
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -65,19 +65,19 @@ Toggle text wrapping Document history Change theme (light and dark theme) Change
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>

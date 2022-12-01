@@ -74,17 +74,17 @@ selecting a file, the new layer appears in the list.&lt;/p>
 and down arrow keys to move layers.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Select a tile and start drawing.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Change the size and shape of the cursor using the buttons in the lower right corner.&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/software/tilemap_level_editor/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;h2 id="exported-json-file">Exported JSON file&lt;/h2>
 &lt;p>The exported JSON file might look like this:&lt;/p>
@@ -122,37 +122,37 @@ class="left expandable"
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_01.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_02.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_03.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_04.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_05.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/walking_simulator/image_06.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -198,25 +198,25 @@ width="552" height="167" frameborder="0">&lt;/iframe>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/assets/animated_explosion_pack_1/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -253,25 +253,25 @@ The Godot project is made with version 3.4.4.&lt;/p>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_01.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_02.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_03.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/posts/voxelgi_scene/image_04.jpg"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -325,7 +325,7 @@ to &lt;code>bmp&lt;/code>, &lt;code>png&lt;/code>, &lt;code>tga&lt;/code> or &lt
 &lt;p>If the request is successful, the sprite with the requested image should appear in your scene:&lt;/p>
 &lt;img
 src="https://arcaneenergy.github.io/posts/download_images_from_web_with_godot/banner.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;p>Godot v4.0.alpha4.official&lt;/p></content></item><item><title>SM Pdf Viewer</title><link>https://arcaneenergy.github.io/software/sm_pdf_viewer/</link><pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/software/sm_pdf_viewer/</guid><description> A simple and quick PDF file viewer.
 Trailer Screenshots Description Simply open your PDF files and start reading.
@@ -349,19 +349,19 @@ Remember last opened page number Document history Change theme (light and dark t
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_pdf_viewer/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -394,19 +394,19 @@ Toggle text wrapping Document history Change theme (light and dark theme) Change
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/sm_text_editor/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -495,37 +495,37 @@ Use the left and right buttons to move in the given direction. Use the up arrow 
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/icosahedron/image_06.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -650,31 +650,31 @@ width="552" height="167" frameborder="0">&lt;/iframe>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/whiteboard/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/whiteboard/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/whiteboard/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/whiteboard/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/whiteboard/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -746,31 +746,31 @@ jam: &lt;strong>Growth&lt;/strong>.&lt;/p>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/mergifier/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/mergifier/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/mergifier/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/mergifier/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/mergifier/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -812,25 +812,25 @@ Together&lt;/strong>.&lt;/p>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/divided_chains_combined_brains/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/divided_chains_combined_brains/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/divided_chains_combined_brains/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/divided_chains_combined_brains/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -866,37 +866,37 @@ Each level has a different style.</description><content>&lt;blockquote>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/control_cube/image_06.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -925,37 +925,37 @@ Open your backpack and select from various elements. Tap anywhere to spawn eleme
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/2d_physics_sandbox/image_06.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -997,49 +997,49 @@ The goal is to complete the level, by reaching the red flag at the end of each l
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_06.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_07.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-6">
 &lt;img
 src="https://arcaneenergy.github.io/software/metal_ball_adventures/image_08.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
@@ -1075,31 +1075,31 @@ Drag around the rocket and release when you are ready to fly. Tap either side of
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_01.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_02.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_03.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_04.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;div class="col-xs-4">
 &lt;img
 src="https://arcaneenergy.github.io/software/rocket_bounce/image_05.png"
-class="left expandable"
+class="image expandable"
 />
 &lt;/div>
 &lt;/div>
