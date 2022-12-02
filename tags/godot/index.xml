@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>Squash and Stretch Shader</title><link>https://arcaneenergy.github.io/assets/squash_stretch_shader/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/squash_stretch_shader/</guid><description>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>godot on Arcane Energy</title><link>https://arcaneenergy.github.io/tags/godot/</link><description>Recent content in godot on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml"/><item><title>MultiMesh Scatter</title><link>https://arcaneenergy.github.io/assets/multimesh_scatter/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/multimesh_scatter/</guid><description>A simple tool to randomly place meshes.
+How to use Download this repository or download the addon from the AsseLib in Godot. Import the addons folder into your project. Activate MultiMesh Scatter under Project &amp;gt; Project Settings &amp;gt; Plugins. Add a MultiMeshScatter node to the scene. Your browser does not support the video tag. Your browser does not support the video tag. Your browser does not support the video tag.</description><content>&lt;p>&lt;strong>A simple tool to randomly place meshes.&lt;/strong>&lt;/p>
+&lt;br clear="left" />
+&lt;img
+src="https://arcaneenergy.github.io/assets/multimesh_scatter/random_rotation.jpg"
+class="image expandable"
+/>
+&lt;hr>
+&lt;p>&lt;a href="https://ko-fi.com/E1E5CVWWE">&lt;img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi">&lt;/a>&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;ol>
+&lt;li>Download this &lt;a href="https://github.com/arcaneenergy/godot-multimesh-scatter">repository&lt;/a> or download the addon from the
+AsseLib in Godot.&lt;/li>
+&lt;li>Import the addons folder into your project.&lt;/li>
+&lt;li>Activate MultiMesh Scatter under Project &amp;gt; Project Settings &amp;gt; Plugins.&lt;/li>
+&lt;li>Add a MultiMeshScatter node to the scene.&lt;/li>
+&lt;/ol>
+&lt;div class="row">
+&lt;div class="col-xs-4">
+&lt;video class="video" controls>
+&lt;source src="https://arcaneenergy.github.io/assets/multimesh_scatter/video_01.mp4">
+Your browser does not support the video tag.
+&lt;/video>
+&lt;/div>
+&lt;div class="col-xs-4">
+&lt;video class="video" controls>
+&lt;source src="https://arcaneenergy.github.io/assets/multimesh_scatter/video_02.mp4">
+Your browser does not support the video tag.
+&lt;/video>
+&lt;/div>
+&lt;div class="col-xs-4">
+&lt;video class="video" controls>
+&lt;source src="https://arcaneenergy.github.io/assets/multimesh_scatter/video_03.mp4">
+Your browser does not support the video tag.
+&lt;/video>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>Scatter objects in the scene using a MultiMeshInstance node.&lt;/li>
+&lt;li>Adjust the instance count, size, and collision layer.&lt;/li>
+&lt;li>Randomize size and rotation of each instance.&lt;/li>
+&lt;li>Automatically rotates each instance to the normal of the terrain.&lt;/li>
+&lt;/ul>
+&lt;h2 id="parameters">Parameters&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>count&lt;/code>: The number of instances to generate.&lt;/li>
+&lt;li>&lt;code>placement_type&lt;/code>: Defines the placement type.&lt;/li>
+&lt;li>&lt;code>placement_size&lt;/code>: The placement size of the bounding box. Enable &lt;code>show_debug_area&lt;/code> to view the size of the bounding
+box. Note: If the &lt;code>placement_type&lt;/code> is set to Sphere, only the x value will be used to specify the radius of the
+sphere.&lt;/li>
+&lt;li>&lt;code>collision_mask&lt;/code>: The physics collision mask that the instances should collide with.&lt;/li>
+&lt;li>&lt;code>offset_position&lt;/code>: Add an offset to the placed instances.&lt;/li>
+&lt;li>&lt;code>offset_rotation&lt;/code>: Add a rotation offset to the placed instances.&lt;/li>
+&lt;li>&lt;code>base_scale&lt;/code>: Change the base scale of the instanced meshes.&lt;/li>
+&lt;li>&lt;code>min_random_size&lt;/code>: The minimum random size for each instance.&lt;/li>
+&lt;li>&lt;code>max_random_size&lt;/code>: The maximum random size for each instance.&lt;/li>
+&lt;li>&lt;code>random_rotation&lt;/code>: Rotate each instance by a random amount between. &lt;code>-random_rotation&lt;/code> and &lt;code>+random_rotation&lt;/code>.&lt;/li>
+&lt;li>&lt;code>seed&lt;/code>: A seed to feed for the random number generator.&lt;/li>
+&lt;li>&lt;code>show_debug_area&lt;/code>: Toggle the visibility of the bounding box area.&lt;/li>
+&lt;/ul>
+&lt;h2 id="notes">Notes&lt;/h2>
+&lt;ul>
+&lt;li>The sphere placement type takes &lt;code>placement_size.x&lt;/code> for the radius. The y and z values are not used.&lt;/li>
+&lt;li>The sphere placement type behaves more like a capsule shape. This means that only the horizontal radius is taken
+into account when scattering meshes.&lt;/li>
+&lt;li>Scattering occurs automatically in the editor whenever you change a parameter or move the MultiMeshScatter node.
+In game mode, the scatter occurs once at the beginning of the game.&lt;/li>
+&lt;/ul>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/arcaneenergy/godot-multimesh-scatter">MultiMesh Scatter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://arcaneenergy.github.io/">Homepage&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/c/ArcaneEnergy">YouTube&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ko-fi.com/arcaneenergy">Ko-fi&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="license">License&lt;/h2>
+&lt;p>&lt;a href="https://arcaneenergy.github.io/LICENSE.md">MIT License&lt;/a>&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/2fa4guxq6iU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></content></item><item><title>Squash and Stretch Shader</title><link>https://arcaneenergy.github.io/assets/squash_stretch_shader/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/assets/squash_stretch_shader/</guid><description>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.
 Note: You may need a high-poly model.
 shader_type spatial; uniform vec2 direction = vec2(1.0); uniform float squash: hint_range(0.0, 2.0) = 1.0; uniform float offset: hint_range(-0.5, 0.5) = 0.0; void vertex() { float v = abs(VERTEX.y + offset) * squash + direction.x; VERTEX *= vec3(v, direction.y, v); } Find the shader on Godot Shaders.</description><content>&lt;p>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.&lt;/p>
 &lt;p>&lt;strong>Note: You may need a high-poly model.&lt;/strong>&lt;/p>

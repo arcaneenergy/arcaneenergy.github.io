@@ -1,0 +1,216 @@
+<!doctype html><html lang=en>
+<head>
+<title>MultiMesh Scatter</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Overview This privacy policy applies to all services, websites and games from Arcane Energy. This page is used to inform visitors, regarding the policies with the collection, use, and disclosure of personal information. By using the services, you agree to the collection and use of information in relation to this policy. Personal information that is collected, is used for providing and improving the services. Your data will not be shared with anyone, except as described in this privacy policy.">
+<meta name=keywords content>
+<meta name=robots content="noodp">
+<link rel=canonical href=https://arcaneenergy.github.io/privacy/>
+<link rel=stylesheet type=text/css href=https://arcaneenergy.github.io/sass/style.min.f7bfd7b2293e33c77f36f6f04183a1d68e12595ee13953451cb26c89e718afd3.css>
+<link rel="shortcut icon" href=https://arcaneenergy.github.io/favicon.svg>
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy Policy">
+<meta property="og:description" content="Overview This privacy policy applies to all services, websites and games from Arcane Energy. This page is used to inform visitors, regarding the policies with the collection, use, and disclosure of personal information. By using the services, you agree to the collection and use of information in relation to this policy. Personal information that is collected, is used for providing and improving the services. Your data will not be shared with anyone, except as described in this privacy policy.">
+<meta property="og:url" content="https://arcaneenergy.github.io/privacy/">
+<meta property="og:site_name" content="Arcane Energy">
+<meta property="og:image" content="https://arcaneenergy.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:published_time" content="2022-01-24 00:00:00 +0000 UTC">
+</head>
+<body>
+<header>
+<div class="navbar row">
+<a class="col-xs-12 col-sm-3 navbar-item navbar-item-logo" href=https://arcaneenergy.github.io/><img src=https://arcaneenergy.github.io/icons/icon.svg alt=icon></a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/posts>Posts</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/software>Software</a>
+<a class="col-xs-12 col-sm-3 navbar-item" href=https://arcaneenergy.github.io/assets>Assets</a>
+</div>
+</header>
+<main class=content>
+<div class=post>
+<img src=https://arcaneenergy.github.io/assets/multimesh_scatter/banner.jpg class="post-cover expandable" alt="MultiMesh Scatter" title="Cover Image">
+<div class=post-title>
+<img src=https://arcaneenergy.github.io/assets/multimesh_scatter/icon.svg class="post-title-icon expandable">
+<h1 class=post-title-text>MultiMesh Scatter</h1>
+</div>
+<div class=post-meta>
+<span class=post-date>
+01.12.2022
+</span>
+<span class=post-tags>
+<a class=chip href=https://arcaneenergy.github.io/tags/godot/>#godot</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/github/>#github</a>&nbsp;
+<a class=chip href=https://arcaneenergy.github.io/tags/plugin/>#plugin</a>&nbsp;
+</span>
+</div>
+<div class=post-toc>
+<h2>Table of Contents</h2>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#how-to-use>How to use</a></li>
+<li><a href=#features>Features</a></li>
+<li><a href=#parameters>Parameters</a></li>
+<li><a href=#notes>Notes</a></li>
+<li><a href=#links>Links</a></li>
+<li><a href=#license>License</a></li>
+</ul>
+</nav>
+</div>
+<div class=post-content><p><strong>A simple tool to randomly place meshes.</strong></p>
+<br clear=left>
+<img src=https://arcaneenergy.github.io/assets/multimesh_scatter/random_rotation.jpg class="image expandable">
+<hr>
+<p><a href=https://ko-fi.com/E1E5CVWWE><img src=https://ko-fi.com/img/githubbutton_sm.svg alt=ko-fi></a></p>
+<h2 id=how-to-use>How to use<a href=#how-to-use class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ol>
+<li>Download this <a href=https://github.com/arcaneenergy/godot-multimesh-scatter>repository</a> or download the addon from the
+AsseLib in Godot.</li>
+<li>Import the addons folder into your project.</li>
+<li>Activate MultiMesh Scatter under Project > Project Settings > Plugins.</li>
+<li>Add a MultiMeshScatter node to the scene.</li>
+</ol>
+<div class=row>
+<div class=col-xs-4>
+<video class=video controls>
+<source src=https://arcaneenergy.github.io/assets/multimesh_scatter/video_01.mp4>
+Your browser does not support the video tag.
+</video>
+</div>
+<div class=col-xs-4>
+<video class=video controls>
+<source src=https://arcaneenergy.github.io/assets/multimesh_scatter/video_02.mp4>
+Your browser does not support the video tag.
+</video>
+</div>
+<div class=col-xs-4>
+<video class=video controls>
+<source src=https://arcaneenergy.github.io/assets/multimesh_scatter/video_03.mp4>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<h2 id=features>Features<a href=#features class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ul>
+<li>Scatter objects in the scene using a MultiMeshInstance node.</li>
+<li>Adjust the instance count, size, and collision layer.</li>
+<li>Randomize size and rotation of each instance.</li>
+<li>Automatically rotates each instance to the normal of the terrain.</li>
+</ul>
+<h2 id=parameters>Parameters<a href=#parameters class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ul>
+<li><code>count</code>: The number of instances to generate.</li>
+<li><code>placement_type</code>: Defines the placement type.</li>
+<li><code>placement_size</code>: The placement size of the bounding box. Enable <code>show_debug_area</code> to view the size of the bounding
+box. Note: If the <code>placement_type</code> is set to Sphere, only the x value will be used to specify the radius of the
+sphere.</li>
+<li><code>collision_mask</code>: The physics collision mask that the instances should collide with.</li>
+<li><code>offset_position</code>: Add an offset to the placed instances.</li>
+<li><code>offset_rotation</code>: Add a rotation offset to the placed instances.</li>
+<li><code>base_scale</code>: Change the base scale of the instanced meshes.</li>
+<li><code>min_random_size</code>: The minimum random size for each instance.</li>
+<li><code>max_random_size</code>: The maximum random size for each instance.</li>
+<li><code>random_rotation</code>: Rotate each instance by a random amount between. <code>-random_rotation</code> and <code>+random_rotation</code>.</li>
+<li><code>seed</code>: A seed to feed for the random number generator.</li>
+<li><code>show_debug_area</code>: Toggle the visibility of the bounding box area.</li>
+</ul>
+<h2 id=notes>Notes<a href=#notes class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ul>
+<li>The sphere placement type takes <code>placement_size.x</code> for the radius. The y and z values are not used.</li>
+<li>The sphere placement type behaves more like a capsule shape. This means that only the horizontal radius is taken
+into account when scattering meshes.</li>
+<li>Scattering occurs automatically in the editor whenever you change a parameter or move the MultiMeshScatter node.
+In game mode, the scatter occurs once at the beginning of the game.</li>
+</ul>
+<h2 id=links>Links<a href=#links class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<ul>
+<li><a href=https://github.com/arcaneenergy/godot-multimesh-scatter>MultiMesh Scatter</a></li>
+<li><a href=https://arcaneenergy.github.io/>Homepage</a></li>
+<li><a href=https://www.youtube.com/c/ArcaneEnergy>YouTube</a></li>
+<li><a href=https://ko-fi.com/arcaneenergy>Ko-fi</a></li>
+</ul>
+<h2 id=license>License<a href=#license class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p><a href=/LICENSE.md>MIT License</a></p>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/2fa4guxq6iU style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer row">
+<div class="col-xs-12 col-sm-4">
+<h3>Arcane Energy</h3>
+<ul>
+<li><a href=https://arcaneenergy.github.io/>Homepage</a></li>
+<li><a href=https://arcaneenergy.github.io/posts>Posts</a></li>
+<li><a href=https://arcaneenergy.github.io/software>Software</a></li>
+<li><a href=https://arcaneenergy.github.io/assets>Assets</a></li>
+<li><a href=https://arcaneenergy.github.io/whiteboard>Whiteboard</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>Platforms</h3>
+<ul>
+<li>
+<a href=https://www.youtube.com/c/ArcaneEnergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/youtube.svg alt=icon> YouTube
+</a>
+</li>
+<li>
+<a href=https://twitter.com/arcanenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/twitter.svg alt=icon> Twitter
+</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/arcaneenergy/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/reddit.svg alt=icon> Reddit
+</a>
+</li>
+<li>
+<a href=https://github.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/github.svg alt=icon> GitHub
+</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4">
+<h3>&nbsp;</h3>
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/dev?id=5802860236940422854">
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/google_play_store.svg alt=icon> Google Play Store
+</a>
+</li>
+<li>
+<a href=https://arcaneenergy.itch.io/>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/itch_io.svg alt=icon> itch.io
+</a>
+</li>
+<li>
+<a href=https://ko-fi.com/arcaneenergy>
+<img class=footer-icon src=https://arcaneenergy.github.io/icons/kofi.svg alt=icon> Ko-fi
+</a>
+</li>
+</ul>
+</div>
+<div class=footer-privacy>
+<span>© 2022 Arcane Energy</span>
+<span>&nbsp;|&nbsp;</span>
+<a href=https://arcaneenergy.github.io/privacy>Privacy Policy</a>
+<span>&nbsp;|&nbsp;</span>
+<a href=# id=email-btn>Contact</a>
+</div>
+</div>
+</footer>
+<div id=helper>
+<div class=img-enlarger-modal id=img-enlarger-modal>
+<img id=img-enlarger-img>
+</div>
+<script type=text/javascript src=/js/img-enlarger.js defer></script>
+<script type=text/javascript>document.querySelector('#email-btn').addEventListener("click",()=>window.open('mailto:arcane.energy.help@gmail.com'))</script>
+</div>
+</body>
+</html>
