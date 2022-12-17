@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Softwares on Arcane Energy</title><link>https://arcaneenergy.github.io/software/</link><description>Recent content in Softwares on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://arcaneenergy.github.io/software/index.xml" rel="self" type="application/rss+xml"/><item><title>Tilemap Level Editor</title><link>https://arcaneenergy.github.io/software/tilemap_level_editor/</link><pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/software/tilemap_level_editor/</guid><description>Simple level editor for Godot with JSON export functionality. Made with Godot.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Softwares on Arcane Energy</title><link>https://arcaneenergy.github.io/software/</link><description>Recent content in Softwares on Arcane Energy</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Dec 2022 20:10:17 +0100</lastBuildDate><atom:link href="https://arcaneenergy.github.io/software/index.xml" rel="self" type="application/rss+xml"/><item><title>Limspace v1</title><link>https://arcaneenergy.github.io/software/limspace_v1/</link><pubDate>Sat, 17 Dec 2022 20:10:17 +0100</pubDate><guid>https://arcaneenergy.github.io/software/limspace_v1/</guid><description>Explore Godot&amp;rsquo;s graphics capabilities in this short, yet mysterious adventure.
+Trailer Screenshots Description The backrooms are a mysterious and complex labyrinth of interconnected dimensions, hidden just beyond the threshold of our everyday reality. For some, they are a place of unimaginable horror and darkness, where the laws of physics and time are twisted and distorted. For others, they are a realm of endless possibility and exploration, offering glimpses into alternate universes and strange new worlds.</description><content>&lt;blockquote>
+&lt;p>Explore Godot&amp;rsquo;s graphics capabilities in this short, yet mysterious adventure.&lt;/p>
+&lt;/blockquote>
+&lt;div class="itchio-widget">
+&lt;iframe src="https://itch.io/embed/1841206?bg_color=202020&amp;amp;fg_color=ffffff&amp;amp;link_color=fa5c5c&amp;amp;border_color=333d68"
+width="552" height="167" frameborder="0">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="trailer">Trailer&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/ZDqve0fh6GE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="screenshots">Screenshots&lt;/h2>
+&lt;div class="row">
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_01.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_02.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_03.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_04.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_05.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_06.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_07.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;div class="col-xs-6">
+&lt;img
+src="https://arcaneenergy.github.io/software/limspace_v1/image_08.png"
+class="image expandable"
+/>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="description">Description&lt;/h2>
+&lt;p>The backrooms are a mysterious and complex labyrinth of interconnected dimensions, hidden just beyond the threshold
+of our everyday reality. For some, they are a place of unimaginable horror and darkness, where the laws of physics
+and time are twisted and distorted. For others, they are a realm of endless possibility and exploration, offering
+glimpses into alternate universes and strange new worlds.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: You can use the camera to capture screenshots in game. Pick up the camera and press &lt;kbd>TAB&lt;/kbd> to
+activate or deactivate it. Left-clicking captures a screenshot. Your screenshots are saved under:
+&lt;code>%AppData%\Godot\app_userdata\Limspace&lt;/code>&lt;/p>
+&lt;p>You cannot bring objects to the backrooms.&lt;/p>
+&lt;details>
+&lt;summary>How to get to the backrooms&lt;/summary>
+&lt;ul>
+&lt;li>Wait (approx. 2 minutes).&lt;/li>
+&lt;li>Jump off the balcony.&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>How to leave the backrooms&lt;/summary>
+&lt;p>Find the key in the library. Find the library by following the arrows on the walls. After acquiring the key, go back
+to the central and open the door to open a dimensional portal back to your home.&lt;/p>
+&lt;/details>
+&lt;h2 id="youtube-playlist">YouTube Playlist&lt;/h2>
+&lt;div class="video-container">
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKnVIoBRwyaMCb1ty3PxBghkAyQF0g6nR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;/div></content></item><item><title>Tilemap Level Editor</title><link>https://arcaneenergy.github.io/software/tilemap_level_editor/</link><pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><guid>https://arcaneenergy.github.io/software/tilemap_level_editor/</guid><description>Simple level editor for Godot with JSON export functionality. Made with Godot.
 Trailer Description Use case This is currently used in a personal project. It&amp;rsquo;s used to load in JSON files into Godot to recreate the levels at runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in Godot.</description><content>&lt;blockquote>
 &lt;p>Simple level editor for Godot with JSON export functionality. Made with Godot.&lt;/p>
 &lt;/blockquote>
@@ -15,7 +102,7 @@ Trailer Description Use case This is currently used in a personal project. It&am
 &lt;/div>
 &lt;/div>
 &lt;div class="itchio-widget">
-&lt;iframe src="https://itch.io/embed/1277666?bg_color=202020&amp;amp;fg_color=ffffff&amp;amp;link_color=fa5c5c&amp;amp;border_color=333d68"
+&lt;iframe src="https://itch.io/embed/1547896?bg_color=202020&amp;amp;fg_color=ffffff&amp;amp;link_color=fa5c5c&amp;amp;border_color=333d68"
 width="552" height="167" frameborder="0">&lt;/iframe>
 &lt;/div>
 &lt;h2 id="trailer">Trailer&lt;/h2>
