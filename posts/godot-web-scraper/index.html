@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <meta name="generator" content="Astro v2.0.2">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://arcaneenergy.github.io/posts/godot-web-scraper/">
+
+        <!-- Primary Meta Tags -->
+        <title>Download images from web with Godot</title>
+        <meta name="title" content="Download images from web with Godot">
+        <meta name="description" content="Scrape images and content from the web with Godot.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://arcaneenergy.github.io/posts/godot-web-scraper/">
+        <meta property="og:title" content="Download images from web with Godot">
+        <meta property="og:description" content="Scrape images and content from the web with Godot.">
+        <meta property="og:image" content="https://arcaneenergy.github.io/posts/godot-web-scraper/banner.webp">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://arcaneenergy.github.io/posts/godot-web-scraper/">
+        <meta property="twitter:title" content="Download images from web with Godot">
+        <meta property="twitter:description" content="Scrape images and content from the web with Godot.">
+        <meta property="twitter:image" content="https://arcaneenergy.github.io/posts/godot-web-scraper/banner.webp">
+    <link rel="stylesheet" href="/_astro/about.9393ea89.css" />
+<link rel="stylesheet" href="/_astro/index.0e4a6e85.css" />
+<link rel="stylesheet" href="/_astro/index.3b91f10a.css" />
+<link rel="stylesheet" href="/_astro/index.2b04b843.css" />
+<link rel="stylesheet" href="/_astro/_slug_.c5359545.css" /><link rel="stylesheet" href="/_astro/Youtube.astro_astro_type_style_index_0_lang.c447ab22.css" /></head>
+
+    <body>
+        <header class="astro-3EF6KSR2">
+	<nav class="astro-3EF6KSR2">
+		<a href="/" class="logo astro-3EF6KSR2">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 astro-3EF6KSR2">
+				<path d="M7.99 0h24.007v6.4c-5.54-.008-11.081 0-16.622.019a812.245 812.245 0 0 1 1.595 6.38h10.335v6.399h-8.723a965.173 965.173 0 0 0 1.595 6.389c3.94.01 7.88.013 11.82.01v6.4c-5.443.006-10.886 0-16.328-.02a22346.47 22346.47 0 0 0-4.783-19.098c-1.208 4.807-1.985 7.899-3.19 12.708 1.32.003 2.64.013 3.96.03a483.296 483.296 0 0 1 1.575 6.379c-4.41.006-8.82 0-13.231-.02C5.044 11.791 2.95 20.187 7.99 0z" class="astro-3EF6KSR2"></path>
+			</svg>
+		</a>
+		<a href="/posts" class="astro-3EF6KSR2">Posts</a>
+	</nav>
+</header><nav class="astro-ILHXCYM7">
+    <ul class="astro-ILHXCYM7">
+        <li class="astro-ILHXCYM7">
+                    <a href="/" class="astro-ILHXCYM7">Home</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right astro-ILHXCYM7" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-ILHXCYM7"></path>
+                            <path d="M9 6l6 6l-6 6" class="astro-ILHXCYM7"></path>
+                        </svg>
+                </li><li class="astro-ILHXCYM7">
+                    <a href="/posts" class="astro-ILHXCYM7">Posts</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right astro-ILHXCYM7" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-ILHXCYM7"></path>
+                            <path d="M9 6l6 6l-6 6" class="astro-ILHXCYM7"></path>
+                        </svg>
+                </li><li class="astro-ILHXCYM7">
+                    <a href="/posts/godot-web-scraper" class="astro-ILHXCYM7">Download images from web with Godot</a>
+
+                    
+                </li>
+    </ul>
+</nav><main class="astro-GYSQO7GH">
+		<img src="/posts/godot-web-scraper/banner.webp" alt="Image" class="astro-GYSQO7GH">
+
+		<h1 class="astro-GYSQO7GH">Download images from web with Godot</h1>
+
+		<div class="astro-KHMJ5RSK">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-KHMJ5RSK">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-KHMJ5RSK"></path>
+        <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" class="astro-KHMJ5RSK"></path>
+        <path d="M16 3l0 4" class="astro-KHMJ5RSK"></path>
+        <path d="M8 3l0 4" class="astro-KHMJ5RSK"></path>
+        <path d="M4 11l16 0" class="astro-KHMJ5RSK"></path>
+        <path d="M8 15h2v2h-2z" class="astro-KHMJ5RSK"></path>
+    </svg>
+
+    <span class="astro-KHMJ5RSK">
+        <time datetime="2022-03-16T00:00:00.000Z" class="astro-KHMJ5RSK">
+            03/16/2022, 24:00
+        </time>
+    </span>
+</div>
+
+		<article class="astro-GYSQO7GH">
+			<div class="iframe-container astro-SY3JR4F6">
+    <iframe src="https://www.youtube.com/embed/49CAuQLysyI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
+</div>
+<h2 id="overview">Overview</h2>
+<p>This is a simple example of how Godot can be used as a web scraper. This tutorial is divided into two parts. Part one
+focuses on how to make HTTP requests. Part two shows how the image is displayed in Godot.</p>
+<h2 id="part-1-making-http-requests">Part 1: Making HTTP-Requests</h2>
+<p>Godot provides a node to make HTTP-Requests:
+The <a href="https://docs.godotengine.org/en/latest/classes/class_httprequest.html">HTTPRequest</a> node. From the
+description: A node with the ability to send HTTP(S) requests.</p>
+<p>You can either add this node to the scene tree or we can create this node with code. In this example, we create it with
+code.</p>
+<h3 id="creating-the-httprequest-node">Creating the HTTPRequest node</h3>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">func</span><span style="color:#C9D1D9"> </span><span style="color:#D2A8FF">_ready</span><span style="color:#C9D1D9">() </span><span style="color:#FF7B72">-&gt;</span><span style="color:#C9D1D9"> void:</span></span>
+<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> http_request </span><span style="color:#FF7B72">:=</span><span style="color:#C9D1D9"> HTTPRequest.</span><span style="color:#79C0FF">new</span><span style="color:#C9D1D9">()</span></span>
+<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">add_child</span><span style="color:#C9D1D9">(http_request)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C9D1D9">    # Connect </span><span style="color:#A5D6FF">&quot;request_completed&quot;</span><span style="color:#C9D1D9"> signal of HTTPRequest node.</span></span>
+<span class="line"><span style="color:#C9D1D9">    http_request.</span><span style="color:#79C0FF">connect</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;request_completed&quot;</span><span style="color:#C9D1D9">, _on_http_request_request_completed)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF7B72">func</span><span style="color:#C9D1D9"> </span><span style="color:#D2A8FF">_on_http_request_request_completed</span><span style="color:#C9D1D9">(result: </span><span style="color:#FF7B72">int</span><span style="color:#C9D1D9">, response_code: </span><span style="color:#FF7B72">int</span><span style="color:#C9D1D9">, headers: PackedStringArray, body:</span></span>
+<span class="line"><span style="color:#C9D1D9">PackedByteArray) </span><span style="color:#FF7B72">-&gt;</span><span style="color:#C9D1D9"> void:</span></span>
+<span class="line"><span style="color:#C9D1D9">    pass</span></span></code></pre>
+<h3 id="requesting-an-image">Requesting an image</h3>
+<p>Now all we have to do is request an image from a website.</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> error </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> http_request.</span><span style="color:#79C0FF">request</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;https://api.lorem.space/image/house&quot;</span><span style="color:#C9D1D9">)</span></span>
+<span class="line"><span style="color:#FF7B72">if</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">error</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">!=</span><span style="color:#C9D1D9"> OK:</span></span>
+<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">printerr</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;An error occurred.&quot;</span><span style="color:#C9D1D9">)</span></span></code></pre>
+<p>If the request is unsuccessful, the error message is displayed.</p>
+<h2 id="part-2-displaying-the-image-in-godot">Part 2: Displaying the image in Godot</h2>
+<p>Add the following code to the <code>_on_http_request_request_completed</code> function:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">if</span><span style="color:#C9D1D9"> result </span><span style="color:#FF7B72">!=</span><span style="color:#C9D1D9"> HTTPRequest.RESULT_SUCCESS:</span></span>
+<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">push_error</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;Image could not be downloaded.&quot;</span><span style="color:#C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> img </span><span style="color:#FF7B72">:=</span><span style="color:#C9D1D9"> Image.</span><span style="color:#79C0FF">new</span><span style="color:#C9D1D9">()</span></span>
+<span class="line"><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> error </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> img.</span><span style="color:#79C0FF">load_jpg_from_buffer</span><span style="color:#C9D1D9">(body)</span></span>
+<span class="line"><span style="color:#FF7B72">if</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">error</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">!=</span><span style="color:#C9D1D9"> OK:</span></span>
+<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">push_error</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;Could not load the image.&quot;</span><span style="color:#C9D1D9">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> tex </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> ImageTexture.</span><span style="color:#79C0FF">new</span><span style="color:#C9D1D9">()</span></span>
+<span class="line"><span style="color:#C9D1D9">tex.</span><span style="color:#79C0FF">create_from_image</span><span style="color:#C9D1D9">(img)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF7B72">var</span><span style="color:#C9D1D9"> sprite </span><span style="color:#FF7B72">:=</span><span style="color:#C9D1D9"> Sprite3D.</span><span style="color:#79C0FF">new</span><span style="color:#C9D1D9">()</span></span>
+<span class="line"><span style="color:#79C0FF">add_child</span><span style="color:#C9D1D9">(sprite)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C9D1D9">sprite.texture </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> tex</span></span>
+<span class="line"><span style="color:#C9D1D9">sprite.position </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">Vector3</span><span style="color:#C9D1D9">(</span><span style="color:#79C0FF">0</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">0</span><span style="color:#C9D1D9">, </span><span style="color:#FF7B72">-</span><span style="color:#79C0FF">5</span><span style="color:#C9D1D9">)</span></span></code></pre>
+<p>The image is then loaded with the data response of the request (<code>body</code>). Depending on the image type requested, you may
+want to change <code>load_jpg_from_buffer</code> to other image formats. You can change the <code>jpg</code>
+in <a href="https://docs.godotengine.org/en/latest/classes/class_image.html?highlight=image#class-image-method-load-jpg-from-buffer"><code>load_jpg_from_buffer</code></a>
+to <code>bmp</code>, <code>png</code>, <code>tga</code> or <code>webp</code>.</p>
+<p>If the request is successful, the sprite with the requested image should appear in your scene:</p>
+<p><img src="/posts/godot-web-scraper/banner.webp" alt="Image 1"/></p>
+<p>Godot v4.0.alpha4.official</p>
+		</article>
+	</main><ul class="tags astro-GYSQO7GH">
+		<li class="astro-GYSQO7GH">
+					<a href="/tags/godot" class="pr-1 group flex items-center astro-BLWJYJPT">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-BLWJYJPT">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-BLWJYJPT"></path>
+        <path d="M5 9l14 0" class="astro-BLWJYJPT"></path>
+        <path d="M5 15l14 0" class="astro-BLWJYJPT"></path>
+        <path d="M11 4l-4 16" class="astro-BLWJYJPT"></path>
+        <path d="M17 4l-4 16" class="astro-BLWJYJPT"></path>
+    </svg>
+    <span class="astro-BLWJYJPT">godot</span>
+</a>
+				</li><li class="astro-GYSQO7GH">
+					<a href="/tags/tutorial" class="pr-1 group flex items-center astro-BLWJYJPT">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-BLWJYJPT">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-BLWJYJPT"></path>
+        <path d="M5 9l14 0" class="astro-BLWJYJPT"></path>
+        <path d="M5 15l14 0" class="astro-BLWJYJPT"></path>
+        <path d="M11 4l-4 16" class="astro-BLWJYJPT"></path>
+        <path d="M17 4l-4 16" class="astro-BLWJYJPT"></path>
+    </svg>
+    <span class="astro-BLWJYJPT">tutorial</span>
+</a>
+				</li>
+	</ul><footer class="astro-SZ7XMLTE">
+	<div class="socials astro-SZ7XMLTE">
+		<a href="https://www.youtube.com/@ArcaneEnergy" class="astro-SZ7XMLTE">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-SZ7XMLTE">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-SZ7XMLTE"></path>
+				<path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" class="astro-SZ7XMLTE"></path>
+				<path d="M10 9l5 3l-5 3z" class="astro-SZ7XMLTE"></path>
+			</svg>
+		</a>
+		<a href="https://twitter.com/arcanenergy" class="astro-SZ7XMLTE">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-SZ7XMLTE">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-SZ7XMLTE"></path>
+				<path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" class="astro-SZ7XMLTE"></path>
+			</svg>
+		</a>
+		<a href="https://play.google.com/store/apps/dev?id=5802860236940422854" class="astro-SZ7XMLTE">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-SZ7XMLTE">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-SZ7XMLTE"></path>
+				<path d="M4 3.71v16.58a0.7 .7 0 0 0 1.05 .606l14.622 -8.42a0.55 .55 0 0 0 0 -.953l-14.622 -8.419a0.7 .7 0 0 0 -1.05 .607z" class="astro-SZ7XMLTE"></path>
+				<path d="M15 9l-10.5 11.5" class="astro-SZ7XMLTE"></path>
+				<path d="M4.5 3.5l10.5 11.5" class="astro-SZ7XMLTE"></path>
+			</svg>
+		</a>
+		<a href="https://github.com/arcaneenergy" class="astro-SZ7XMLTE">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-SZ7XMLTE">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-SZ7XMLTE"></path>
+				<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" class="astro-SZ7XMLTE"></path>
+			</svg>
+		</a>
+	</div>
+
+	<div class="links astro-SZ7XMLTE">
+		<a href="/posts" class="astro-SZ7XMLTE">Posts</a>
+		<a href="/about" class="astro-SZ7XMLTE">About</a>
+		<a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
+		<a href="mailto:arcane.energy.help@gmail.com" class="astro-SZ7XMLTE">Contact</a>
+	</div>
+
+	<p class="astro-SZ7XMLTE">
+		Copyright &copy; 2023 Arcane Energy. All rights reserved.
+	</p>
+</footer>
+    </body></html>
