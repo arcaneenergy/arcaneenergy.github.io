@@ -636,9 +636,7 @@ const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
 
         ${datetime && renderTemplate`${renderComponent($$result, "Datetime", $$Datetime, { "datetime": datetime, "class": "astro-FN52SEMU" })}`}
 
-        <article class="astro-FN52SEMU">
-            ${renderSlot($$result, $$slots["default"])}
-        </article>
+        ${renderSlot($$result, $$slots["default"])}
     </main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-FN52SEMU" })}` })}`;
 }, "/home/runner/work/website/website/src/layouts/Generic.astro");
 
