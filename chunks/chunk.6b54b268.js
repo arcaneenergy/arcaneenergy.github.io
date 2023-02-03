@@ -187,7 +187,7 @@ const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
 const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$PostCard;
-  const { slug } = Astro2.props;
+  const { slug, showDatetime } = Astro2.props;
   const post = await getEntryBySlug("posts", slug);
   return renderTemplate`${maybeRenderHead($$result)}<div class="group astro-IYIQI2SO">
     <a${addAttribute(`/posts/${post.slug}/`, "href")} class="astro-IYIQI2SO">
@@ -195,7 +195,9 @@ const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
 
         <h3 class="astro-IYIQI2SO">${post.data.title}</h3>
     </a>
-    ${renderComponent($$result, "Datetime", $$Datetime, { "datetime": post.data.datetime, "class": "astro-IYIQI2SO" })}
+
+    ${showDatetime && renderTemplate`${renderComponent($$result, "Datetime", $$Datetime, { "datetime": post.data.datetime, "class": "astro-IYIQI2SO" })}`}
+
     <p class="description astro-IYIQI2SO">${post.data.description}</p>
 </div>`;
 }, "/home/runner/work/website/website/src/components/PostCard.astro");
@@ -252,7 +254,7 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
 			</span>
 
 			<div class="grid md:grid-cols-2 gap-8 py-8 astro-J7PV25F6">
-				${FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": p, "class": "astro-J7PV25F6" })}`)}
+				${FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": p, "showDatetime": false, "class": "astro-J7PV25F6" })}`)}
 			</div>
 		</section>
 
@@ -272,7 +274,7 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
 			</span>
 
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-8 astro-J7PV25F6">
-				${recentPosts.map((p) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": p.slug, "class": "astro-J7PV25F6" })}`)}
+				${recentPosts.map((p) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": p.slug, "showDatetime": false, "class": "astro-J7PV25F6" })}`)}
 			</div>
 
 			<div class="text-center astro-J7PV25F6">
@@ -658,7 +660,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const posts = getSortedPosts(postsCollection);
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-FJQFNJXI" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-FJQFNJXI">
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 astro-FJQFNJXI">
-			${posts.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "class": "astro-FJQFNJXI" })}`)}
+			${posts.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-FJQFNJXI" })}`)}
 		</div>
 	</section>` })}`;
 }, "/home/runner/work/website/website/src/pages/posts/index.astro");
