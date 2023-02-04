@@ -42,17 +42,6 @@ function _createMdxContent(props) {
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
       embedId: "com.arcaneenergy.mergifier"
-    }), "\n", createVNode("div", {
-      class: "row",
-      children: createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode("a", {
-          href: "https://arcaneenergy.itch.io/mergifier",
-          children: createVNode("img", {
-            src: "/icons/itch_io_badge.svg"
-          })
-        })
-      })
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1065242"
     }), "\n", createVNode(_components.p, {

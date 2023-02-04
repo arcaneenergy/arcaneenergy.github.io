@@ -57,7 +57,7 @@ function _createMdxContent(props) {
   return createVNode(Fragment, {
     children: [createVNode("div", {
       class: "row",
-      children: [createVNode("div", {
+      children: createVNode("div", {
         class: "col-xs-6",
         children: createVNode("a", {
           href: "https://github.com/arcaneenergy/tilemap-level-editor",
@@ -65,15 +65,7 @@ function _createMdxContent(props) {
             src: "/icons/github_badge.svg"
           })
         })
-      }), createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode("a", {
-          href: "https://arcaneenergy.itch.io/tilemap-level-editor",
-          children: createVNode("img", {
-            src: "/icons/itch_io_badge.svg"
-          })
-        })
-      })]
+      })
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1547896"
     }), "\n", createVNode(_components.h2, {

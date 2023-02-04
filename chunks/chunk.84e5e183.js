@@ -60,17 +60,6 @@ function _createMdxContent(props) {
       }), createVNode("h2", {
         children: "Open Whiteboard"
       })]
-    }), "\n", createVNode("div", {
-      class: "row",
-      children: createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode("a", {
-          href: "https://arcaneenergy.itch.io/whiteboard",
-          children: createVNode("img", {
-            src: "/icons/itch_io_badge.svg"
-          })
-        })
-      })
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1277666"
     }), "\n", createVNode($$GooglePlayButton, {

@@ -43,18 +43,7 @@ function _createMdxContent(props) {
     span: "span"
   }, props.components);
   return createVNode(Fragment, {
-    children: [createVNode("div", {
-      class: "row",
-      children: createVNode("div", {
-        class: "col-xs-12 col-sm-6",
-        children: createVNode("a", {
-          href: "https://arcaneenergy.itch.io/divided-chains-combined-brains",
-          children: createVNode("img", {
-            src: "/icons/itch_io_badge.svg"
-          })
-        })
-      })
-    }), "\n", createVNode($$ItchioWidget, {
+    children: [createVNode($$ItchioWidget, {
       embedId: "1080661"
     }), "\n", createVNode(_components.p, {
       children: ["Submitted to the ", createVNode(_components.a, {

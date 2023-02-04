@@ -20,14 +20,6 @@ import GooglePlayButton from "@components/GooglePlayButton.astro";
   <h2>Open Whiteboard</h2>
 </button>
 
-<div class="row">
-  <div class="col-xs-6">
-    <a href="https://arcaneenergy.itch.io/whiteboard">
-      <img src="/icons/itch_io_badge.svg" />
-    </a>
-  </div>
-</div>
-
 <ItchioWidget embedId="1277666" />
 
 <GooglePlayButton embedId="com.arcaneenergy.whiteboard" />
