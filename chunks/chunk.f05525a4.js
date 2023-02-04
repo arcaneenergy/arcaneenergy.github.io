@@ -1,9 +1,9 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment } from './chunk.67c838a9.js';
 /* empty css                */import rss from '@astrojs/rss';
-/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
-const $$Astro$c = createAstro("https://arcaneenergy.github.io");
+/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
+const $$Astro$d = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Header;
   return renderTemplate`${maybeRenderHead($$result)}<header class="astro-3EF6KSR2">
 	<nav class="astro-3EF6KSR2">
@@ -17,9 +17,9 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 </header>`;
 }, "/home/runner/work/website/website/src/components/Header.astro");
 
-const $$Astro$b = createAstro("https://arcaneenergy.github.io");
+const $$Astro$c = createAstro("https://arcaneenergy.github.io");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Footer;
   const today = new Date();
   return renderTemplate`${maybeRenderHead($$result)}<footer class="astro-SZ7XMLTE">
@@ -70,9 +70,9 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 const SITE_TITLE = "Arcane Energy";
 const SITE_DESCRIPTION = "Welcome to my website!";
 
-const $$Astro$a = createAstro("https://arcaneenergy.github.io");
+const $$Astro$b = createAstro("https://arcaneenergy.github.io");
 const $$Base = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$Base;
   const canonicalURL = new URL(Astro2.url.pathname, Astro2.site);
   const { title, description, image = "/placeholder-social.jpg" } = Astro2.props;
@@ -154,9 +154,9 @@ const getEntryBySlug = createGetEntryBySlug({
 	collectionToRenderEntryMap,
 });
 
-const $$Astro$9 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$a = createAstro("https://arcaneenergy.github.io");
 const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Datetime;
   const datetime = Astro2.props.datetime;
   return renderTemplate`${maybeRenderHead($$result)}<div class="astro-KHMJ5RSK">
@@ -184,9 +184,9 @@ const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
 </div>`;
 }, "/home/runner/work/website/website/src/components/Datetime.astro");
 
-const $$Astro$8 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$9 = createAstro("https://arcaneenergy.github.io");
 const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$PostCard;
   const { slug, showDatetime } = Astro2.props;
   const post = await getEntryBySlug("posts", slug);
@@ -208,9 +208,9 @@ const getSortedPosts = (posts) => posts.sort(
 );
 const capitalize = (str) => str.replace(/\b[a-z]/g, (char) => char.toUpperCase());
 
-const $$Astro$7 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$8 = createAstro("https://arcaneenergy.github.io");
 const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Index$2;
   const postsCollection = await getCollection("posts");
   const allPosts = getSortedPosts(postsCollection);
@@ -287,14 +287,14 @@ const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-J7PV25F6" })}` })}`;
 }, "/home/runner/work/website/website/src/pages/index.astro");
 
-const $$file$5 = "/home/runner/work/website/website/src/pages/index.astro";
-const $$url$5 = "";
+const $$file$6 = "/home/runner/work/website/website/src/pages/index.astro";
+const $$url$6 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index$2,
-	file: $$file$5,
-	url: $$url$5
+	file: $$file$6,
+	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const MDXLayout$1 = async function ({
@@ -589,9 +589,9 @@ const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$7 = createAstro("https://arcaneenergy.github.io");
 const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$Breadcrumbs;
   const currentUrlPath = Astro2.url.pathname.replace(/\/+$/, "");
   const pathSplit = currentUrlPath.split("/").slice(1);
@@ -625,9 +625,9 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
 </nav>`;
 }, "/home/runner/work/website/website/src/components/Breadcrumbs.astro");
 
-const $$Astro$5 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
 const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Generic;
   const { title, description, datetime, heroImage } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": heroImage, "class": "astro-FN52SEMU" }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, { "class": "astro-FN52SEMU" })}${renderComponent($$result, "Breadcrumbs", $$Breadcrumbs, { "class": "astro-FN52SEMU" })}${maybeRenderHead($$result)}<main class="astro-FN52SEMU">
@@ -641,19 +641,19 @@ const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
     </main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-FN52SEMU" })}` })}`;
 }, "/home/runner/work/website/website/src/layouts/Generic.astro");
 
-const $$file$4 = "/home/runner/work/website/website/src/layouts/Generic.astro";
-const $$url$4 = undefined;
+const $$file$5 = "/home/runner/work/website/website/src/layouts/Generic.astro";
+const $$url$5 = undefined;
 
 const Generic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Generic,
-	file: $$file$4,
-	url: $$url$4
+	file: $$file$5,
+	url: $$url$5
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$4 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$5 = createAstro("https://arcaneenergy.github.io");
 const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Index$1;
   const postsCollection = await getCollection("posts");
   const posts = getSortedPosts(postsCollection);
@@ -664,19 +664,19 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
 	</section>` })}`;
 }, "/home/runner/work/website/website/src/pages/posts/index.astro");
 
-const $$file$3 = "/home/runner/work/website/website/src/pages/posts/index.astro";
-const $$url$3 = "/posts";
+const $$file$4 = "/home/runner/work/website/website/src/pages/posts/index.astro";
+const $$url$4 = "/posts";
 
 const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index$1,
-	file: $$file$3,
-	url: $$url$3
+	file: $$file$4,
+	url: $$url$4
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$3 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$4 = createAstro("https://arcaneenergy.github.io");
 const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Tag;
   const { tag, sm = true, gray = true } = Astro2.props;
   return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")}${addAttribute(`${sm ? "text-sm" : ""} ${gray ? "text-gray" : ""} astro-BLWJYJPT`, "class")}>
@@ -684,7 +684,7 @@ const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
 </a>`;
 }, "/home/runner/work/website/website/src/components/Tag.astro");
 
-const $$Astro$2 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$3 = createAstro("https://arcaneenergy.github.io");
 async function getStaticPaths$1() {
   const posts = await getCollection("posts");
   return posts.map((post) => ({
@@ -693,7 +693,7 @@ async function getStaticPaths$1() {
   }));
 }
 const $$slug = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$slug;
   const post = Astro2.props;
   const { Content } = await post.render();
@@ -714,20 +714,20 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
 	</ul>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-GYSQO7GH" })}` })}`;
 }, "/home/runner/work/website/website/src/pages/posts/[slug].astro");
 
-const $$file$2 = "/home/runner/work/website/website/src/pages/posts/[slug].astro";
-const $$url$2 = "/posts/[slug]";
+const $$file$3 = "/home/runner/work/website/website/src/pages/posts/[slug].astro";
+const $$url$3 = "/posts/[slug]";
 
 const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$slug,
-	file: $$file$2,
+	file: $$file$3,
 	getStaticPaths: getStaticPaths$1,
-	url: $$url$2
+	url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$1 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$2 = createAstro("https://arcaneenergy.github.io");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Index;
   const postsCollection = await getCollection("posts");
   const tags = [...new Set(postsCollection.map((post) => post.data.tags).flat())];
@@ -740,17 +740,17 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
     </section>` })}`;
 }, "/home/runner/work/website/website/src/pages/tags/index.astro");
 
-const $$file$1 = "/home/runner/work/website/website/src/pages/tags/index.astro";
-const $$url$1 = "/tags";
+const $$file$2 = "/home/runner/work/website/website/src/pages/tags/index.astro";
+const $$url$2 = "/tags";
 
 const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index,
-	file: $$file$1,
-	url: $$url$1
+	file: $$file$2,
+	url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro = createAstro("https://arcaneenergy.github.io");
+const $$Astro$1 = createAstro("https://arcaneenergy.github.io");
 async function getStaticPaths() {
   const postsCollection = await getCollection("posts");
   const tags = [
@@ -766,7 +766,7 @@ async function getStaticPaths() {
   }));
 }
 const $$tag = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$tag;
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
@@ -782,15 +782,37 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
     </section>` })}`;
 }, "/home/runner/work/website/website/src/pages/tags/[tag].astro");
 
-const $$file = "/home/runner/work/website/website/src/pages/tags/[tag].astro";
-const $$url = "/tags/[tag]";
+const $$file$1 = "/home/runner/work/website/website/src/pages/tags/[tag].astro";
+const $$url$1 = "/tags/[tag]";
 
 const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$tag,
-	file: $$file,
+	file: $$file$1,
 	getStaticPaths,
+	url: $$url$1
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$Astro = createAstro("https://arcaneenergy.github.io");
+const $$404 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$404;
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "404", "description": "404", "class": "astro-ZETDM5MD" }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, { "class": "astro-ZETDM5MD" })}${maybeRenderHead($$result)}<main class="astro-ZETDM5MD">
+        <h1 class="astro-ZETDM5MD">404</h1>
+        <p class="astro-ZETDM5MD">Page not found.</p>
+        <p class="text-3xl mt-8 mb-8 opacity-30 astro-ZETDM5MD">(●◡●)</p>
+        <a href="/" class="link astro-ZETDM5MD">Go home</a>
+    </main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-ZETDM5MD" })}` })}`;
+}, "/home/runner/work/website/website/src/pages/404.astro");
+
+const $$file = "/home/runner/work/website/website/src/pages/404.astro";
+const $$url = "/404";
+
+const _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$404,
+	file: $$file,
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g };
+export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h };
