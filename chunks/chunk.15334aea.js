@@ -678,15 +678,8 @@ const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Tag;
   const { tag } = Astro2.props;
-  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")} class="pr-1 group flex items-center astro-BLWJYJPT">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-BLWJYJPT">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-BLWJYJPT"></path>
-        <path d="M5 9l14 0" class="astro-BLWJYJPT"></path>
-        <path d="M5 15l14 0" class="astro-BLWJYJPT"></path>
-        <path d="M11 4l-4 16" class="astro-BLWJYJPT"></path>
-        <path d="M17 4l-4 16" class="astro-BLWJYJPT"></path>
-    </svg>
-    <span class="astro-BLWJYJPT">${tag}</span>
+  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")} class="astro-BLWJYJPT">
+    ${tag}
 </a>`;
 }, "/home/runner/work/website/website/src/components/Tag.astro");
 
