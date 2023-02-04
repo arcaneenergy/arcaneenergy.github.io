@@ -6,14 +6,9 @@ const collection = "posts";
 const slug = "2d-physics-sandbox";
 const body = `
 import Youtube from "@components/Youtube.astro";
+import GooglePlayButton from "@components/GooglePlayButton.astro";
 
-<div class="row">
-  <div class="col-xs-12 col-sm-6">
-    <a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.physicssandboxgame">
-      <img src="/icons/google_play_badge.svg" />
-    </a>
-  </div>
-</div>
+<GooglePlayButton embedId="com.arcaneenergy.physicssandboxgame" />
 
 ## Trailer
 

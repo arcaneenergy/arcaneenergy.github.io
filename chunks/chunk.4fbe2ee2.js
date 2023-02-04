@@ -1,8 +1,9 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.67c838a9.js';
 import { $ as $$Youtube } from './chunk.20407163.js';
 import { $ as $$ItchioWidget } from './chunk.3201c11b.js';
-/* empty css                */import 'html-escaper';
-/* empty css                *//* empty css                */
+/* empty css                */import { $ as $$GooglePlayButton } from './chunk.e6644013.js';
+import 'html-escaper';
+/* empty css                *//* empty css                *//* empty css                */
 const $$Astro = createAstro("https://arcaneenergy.github.io");
 const $$ItchioEmbed = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
@@ -61,15 +62,7 @@ function _createMdxContent(props) {
       })]
     }), "\n", createVNode("div", {
       class: "row",
-      children: [createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode("a", {
-          href: "https://play.google.com/store/apps/details?id=com.arcaneenergy.whiteboard",
-          children: createVNode("img", {
-            src: "/icons/google_play_badge.svg"
-          })
-        })
-      }), createVNode("div", {
+      children: createVNode("div", {
         class: "col-xs-6",
         children: createVNode("a", {
           href: "https://arcaneenergy.itch.io/whiteboard",
@@ -77,9 +70,11 @@ function _createMdxContent(props) {
             src: "/icons/itch_io_badge.svg"
           })
         })
-      })]
+      })
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1277666"
+    }), "\n", createVNode($$GooglePlayButton, {
+      embedId: "com.arcaneenergy.whiteboard"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"

@@ -8,6 +8,7 @@ const body = `
 import Youtube from "@components/Youtube.astro";
 import ItchioWidget from "@components/ItchioWidget.astro";
 import ItchioEmbed from "@components/ItchioEmbed.astro";
+import GooglePlayButton from "@components/GooglePlayButton.astro";
 
 <ItchioEmbed embedId="6455154" />
 
@@ -21,11 +22,6 @@ import ItchioEmbed from "@components/ItchioEmbed.astro";
 
 <div class="row">
   <div class="col-xs-6">
-    <a href="https://play.google.com/store/apps/details?id=com.arcaneenergy.whiteboard">
-      <img src="/icons/google_play_badge.svg" />
-    </a>
-  </div>
-  <div class="col-xs-6">
     <a href="https://arcaneenergy.itch.io/whiteboard">
       <img src="/icons/itch_io_badge.svg" />
     </a>
@@ -33,6 +29,8 @@ import ItchioEmbed from "@components/ItchioEmbed.astro";
 </div>
 
 <ItchioWidget embedId="1277666" />
+
+<GooglePlayButton embedId="com.arcaneenergy.whiteboard" />
 
 ## Trailer
 

@@ -1,7 +1,8 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.67c838a9.js';
 import { $ as $$Youtube } from './chunk.20407163.js';
+import { $ as $$GooglePlayButton } from './chunk.e6644013.js';
 import 'html-escaper';
-/* empty css                */
+/* empty css                *//* empty css                */
 const frontmatter = {
   "slug": "sm-pdf-viewer",
   "title": "SM Pdf Viewer",
@@ -35,17 +36,8 @@ function _createMdxContent(props) {
     li: "li"
   }, props.components);
   return createVNode(Fragment, {
-    children: [createVNode("div", {
-      class: "row",
-      children: createVNode("div", {
-        class: "col-xs-12 col-sm-6",
-        children: createVNode("a", {
-          href: "https://play.google.com/store/apps/details?id=com.arcaneenergy.sm_pdf_viewer",
-          children: createVNode("img", {
-            src: "/icons/google_play_badge.svg"
-          })
-        })
-      })
+    children: [createVNode($$GooglePlayButton, {
+      embedId: "com.arcaneenergy.sm_pdf_viewer"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
