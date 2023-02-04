@@ -1,7 +1,8 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.67c838a9.js';
 import { $ as $$Youtube } from './chunk.20407163.js';
+import { $ as $$GithubButton } from './chunk.04470989.js';
 import 'html-escaper';
-/* empty css                */
+/* empty css                *//* empty css                */
 const frontmatter = {
   "slug": "multimesh-scatter",
   "title": "MultiMesh Scatter",
@@ -50,7 +51,9 @@ function _createMdxContent(props) {
     code: "code"
   }, props.components);
   return createVNode(Fragment, {
-    children: [createVNode(_components.p, {
+    children: [createVNode($$GithubButton, {
+      embedId: "godot-multimesh-scatter"
+    }), "\n", createVNode(_components.p, {
       children: createVNode(_components.img, {
         src: "/posts/multimesh-scatter/random-rotation.webp",
         alt: "Image 1"

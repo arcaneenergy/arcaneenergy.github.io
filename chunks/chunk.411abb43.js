@@ -51,15 +51,6 @@ function _createMdxContent(props) {
   return createVNode(Fragment, {
     children: [createVNode($$ItchioEmbed, {
       embedId: "6455154"
-    }), "\n", createVNode("button", {
-      class: "index-whiteboard-btn",
-      onclick: "window.location.href='/whiteboard';",
-      children: [createVNode("img", {
-        src: "/software/whiteboard/icon.png",
-        alt: ""
-      }), createVNode("h2", {
-        children: "Open Whiteboard"
-      })]
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1277666"
     }), "\n", createVNode($$GooglePlayButton, {

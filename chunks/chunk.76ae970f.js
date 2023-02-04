@@ -1,8 +1,9 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.67c838a9.js';
 import { $ as $$Youtube } from './chunk.20407163.js';
 import { $ as $$ItchioWidget } from './chunk.3201c11b.js';
+import { $ as $$GithubButton } from './chunk.04470989.js';
 import 'html-escaper';
-/* empty css                *//* empty css                */
+/* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
   "slug": "tilemap-level-editor",
   "title": "Tilemap Level Editor",
@@ -55,17 +56,8 @@ function _createMdxContent(props) {
     input: "input"
   }, props.components);
   return createVNode(Fragment, {
-    children: [createVNode("div", {
-      class: "row",
-      children: createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode("a", {
-          href: "https://github.com/arcaneenergy/tilemap-level-editor",
-          children: createVNode("img", {
-            src: "/icons/github_badge.svg"
-          })
-        })
-      })
+    children: [createVNode($$GithubButton, {
+      embedId: "tilemap-level-editor"
     }), "\n", createVNode($$ItchioWidget, {
       embedId: "1547896"
     }), "\n", createVNode(_components.h2, {
