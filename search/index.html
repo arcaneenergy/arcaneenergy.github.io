@@ -28,10 +28,18 @@
         <meta property="twitter:title" content="Search">
         <meta property="twitter:description" content="Search">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/placeholder-social.jpg">
-    <link rel="stylesheet" href="/assets/asset.23011d29.css" />
-<link rel="stylesheet" href="/assets/asset.c56130f5.css" />
+    <link rel="stylesheet" href="/assets/asset.9c1f524c.css" />
+<link rel="stylesheet" href="/assets/asset.28781e58.css" />
 <link rel="stylesheet" href="/assets/asset.354c5e21.css" />
-<link rel="stylesheet" href="/assets/asset.3b91f10a.css" /><script type="module" src="/entry.346ba6be.js"></script></head>
+<link rel="stylesheet" href="/assets/asset.3b91f10a.css" /><script type="module">class l extends HTMLElement{constructor(){super();const n=this.dataset.message;var i=JSON.parse(n);const r=this.querySelector("ul");this.querySelector("input").addEventListener("input",c=>{const a=[],t=c.target.value.trim().toLowerCase();t.length>=1&&i.forEach(e=>{if(e.data.title.toLowerCase().includes(t)||e.data.description.toLowerCase().includes(t)){let s=document.createElement("li");s.classList.add("mt-8"),s.innerHTML=`
+                                <div class="group">
+                                    <hr />
+                                    <a href="/posts/${e.slug}">
+                                        <h3>${e.data.title}</h3>
+                                    </a>
+                                    <p class="text-gray">${e.data.description}</p>
+                                </div>`,a.push(s)}}),r.replaceChildren(...a)})}}customElements.define("search-component",l);
+</script></head>
 
     <body>
         <header class="astro-3EF6KSR2">
