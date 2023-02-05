@@ -555,9 +555,7 @@ const $$Search = createComponent(async ($$result, $$props, $$slots) => {
         <h1 class="astro-IPSXRSRH">Search</h1>
 
         ${renderComponent($$result, "search-component", "search-component", { "data-message": message, "class": "astro-IPSXRSRH" }, { "default": () => renderTemplate`
-            <label class="relative block astro-IPSXRSRH">
-                <input class="py-3 px-3 block bg-black w-full rounded border border-skin-fill border-opacity-40 focus:outline-none focus:border-skin-accent astro-IPSXRSRH" placeholder="Search posts..." type="text" autocomplete="off" autofocus>
-            </label>
+            <input placeholder="Search posts..." type="text" autocomplete="off" autofocus class="astro-IPSXRSRH">
 
             <ul class="astro-IPSXRSRH"></ul>
         ` })}
