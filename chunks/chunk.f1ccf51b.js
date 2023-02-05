@@ -671,15 +671,15 @@ const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Generic;
   const { title, description, datetime, heroImage } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": heroImage, "class": "astro-FN52SEMU" }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, { "class": "astro-FN52SEMU" })}${renderComponent($$result, "Breadcrumbs", $$Breadcrumbs, { "class": "astro-FN52SEMU" })}${maybeRenderHead($$result)}<main class="astro-FN52SEMU">
-        ${heroImage && renderTemplate`<img${addAttribute(heroImage, "src")} alt="Image" class="astro-FN52SEMU">`}
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": heroImage }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, {})}${renderComponent($$result, "Breadcrumbs", $$Breadcrumbs, {})}${maybeRenderHead($$result)}<main>
+        ${heroImage && renderTemplate`<img${addAttribute(heroImage, "src")} alt="Image">`}
 
-        <h1 class="astro-FN52SEMU">${title}</h1>
+        <h1>${title}</h1>
 
-        ${datetime && renderTemplate`${renderComponent($$result, "Datetime", $$Datetime, { "datetime": datetime, "class": "astro-FN52SEMU" })}`}
+        ${datetime && renderTemplate`${renderComponent($$result, "Datetime", $$Datetime, { "datetime": datetime })}`}
 
         ${renderSlot($$result, $$slots["default"])}
-    </main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-FN52SEMU" })}` })}`;
+    </main>${renderComponent($$result, "Footer", $$Footer, {})}` })}`;
 }, "/home/runner/work/website/website/src/layouts/Generic.astro");
 
 const $$file$5 = "/home/runner/work/website/website/src/layouts/Generic.astro";
