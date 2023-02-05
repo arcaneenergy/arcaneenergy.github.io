@@ -13,7 +13,13 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 			</svg>
 		</a>
 		<a href="/posts" class="astro-3EF6KSR2">Posts</a>
-		<a href="/search" class="astro-3EF6KSR2">Search</a>
+		<a href="/search" class="astro-3EF6KSR2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-3EF6KSR2">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-3EF6KSR2"></path>
+				<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" class="astro-3EF6KSR2"></path>
+				<path d="M21 21l-6 -6" class="astro-3EF6KSR2"></path>
+			</svg>
+		</a>
 	</nav>
 </header>`;
 }, "/home/runner/work/website/website/src/components/Header.astro");
