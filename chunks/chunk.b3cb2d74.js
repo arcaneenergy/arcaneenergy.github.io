@@ -1,0 +1,3 @@
+import{c as s,a as c,r as i,b as n,d}from"../entry.346ba6be.js";/* empty css              */const m=s("https://arcaneenergy.github.io"),p=c(async(e,t,o)=>{const r=e.createAstro(m,t,o);r.self=p;const{videoId:a}=r.props;return i`${n(e)}<div class="iframe-container astro-SY3JR4F6">
+    <iframe${d(`https://www.youtube.com/embed/${a}`,"src")} title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
+</div>`},"/home/runner/work/website/website/src/components/Youtube.astro");export{p as $};
