@@ -1,0 +1,1 @@
+div:where(.astro-FJQFNJXI){display:grid;gap:2rem}@media (min-width: 768px){div:where(.astro-FJQFNJXI){grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width: 1024px){div:where(.astro-FJQFNJXI){grid-template-columns:repeat(3,minmax(0,1fr))}}

@@ -1,6 +1,6 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment } from './chunk.67c838a9.js';
 /* empty css                */import rss from '@astrojs/rss';
-/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
+/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
 const $$Astro$f = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
@@ -683,7 +683,7 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
   const postsCollection = await getCollection("posts");
   const posts = getSortedPosts(postsCollection);
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-FJQFNJXI" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-FJQFNJXI">
-		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 astro-FJQFNJXI">
+		<div class="astro-FJQFNJXI">
 			${posts.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-FJQFNJXI" })}`)}
 		</div>
 	</section>` })}`;
@@ -776,10 +776,10 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const postsCollection = await getCollection("posts");
   const tags = [...new Set(postsCollection.map((post) => post.data.tags).flat())];
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "Description", "class": "astro-OS4I7OWY" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-OS4I7OWY">
-        <ul class="astro-OS4I7OWY">
-            ${tags.map((tag) => renderTemplate`<li class="astro-OS4I7OWY">
-                        ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false, "class": "astro-OS4I7OWY" })}
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "Description" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section>
+        <ul>
+            ${tags.map((tag) => renderTemplate`<li>
+                        ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false })}
                     </li>`)}
         </ul>
     </section>` })}`;
@@ -816,12 +816,12 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-TGE3Q7AE" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-TGE3Q7AE">
-        <div class="flex mb-8 astro-TGE3Q7AE">
+        <span class="astro-TGE3Q7AE">
             <p class="astro-TGE3Q7AE">Posts tagged with&nbsp;</p>
             ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false, "gray": false, "class": "astro-TGE3Q7AE" })}
-        </div>
+        </span>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 astro-TGE3Q7AE">
+        <div class="astro-TGE3Q7AE">
             ${posts.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-TGE3Q7AE" })}`)}
         </div>
     </section>` })}`;
