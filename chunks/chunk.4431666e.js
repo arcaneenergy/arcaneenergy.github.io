@@ -178,7 +178,7 @@ const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
 
     <span class="astro-KHMJ5RSK">
         <time${addAttribute(datetime.toISOString(), "datetime")} class="astro-KHMJ5RSK">
-            ${datetime.toLocaleString("default", {
+            ${datetime.toLocaleString("de-DE", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
