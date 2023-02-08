@@ -33,12 +33,16 @@
 <link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
 <link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
 <link rel="stylesheet" href="/assets/asset.e25ba297.css" />
-<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class p extends HTMLElement{constructor(){super();const s=this.dataset.message;this.dataset.message="";var o=JSON.parse(s);const d=this.querySelector("ul");this.querySelector("input").addEventListener("input",u=>{const i=[],e=u.target.value.trim().toLowerCase();e.length>=1&&o.forEach(t=>{if(t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e)){let n=document.createElement("li");n.classList.add("mt-8"),n.innerHTML=`
-                                <div class="group">
-                                    <hr />
-                                    <a href="/posts/${t.slug}">
-                                    </a>
-                                </div>`;let l=document.createElement("h3");l.innerHTML=c(t.data.title,e),n.querySelector("a").appendChild(l);let a=document.createElement("p");a.classList.add("text-gray"),a.innerHTML=c(t.data.description,e),n.appendChild(a),i.push(n)}}),d.replaceChildren(...i)})}}function c(r,s){return r.replace(new RegExp(s,"gi"),'<span class="text-orange">$&</span>')}customElements.define("search-component",p);
+<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const c=[],l=d.target.value.trim().toLowerCase();if(l.length>=1){const a=l.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()),o=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&o.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),o.sort((t,e)=>{let h=t.title.count+t.description.count;return e.title.count+e.description.count-h}),o.forEach(t=>{let e=document.createElement("li");e.classList.add("mt-8"),e.innerHTML=`
+                            <div class="group">
+                                <hr />
+                                <a href="/posts/${t.post}">
+                                    <h3>${t.title.text}</h3>
+                                </a>
+                                <p class="text-gray">
+                                    ${t.description.text}
+                                </p>
+                            </div>`,c.push(e)})}n.replaceChildren(...c)})}}function u(i,r){let s=new RegExp(r.join("|"),"gi"),n=i.match(s);return{text:i.replace(s,'<span class="text-orange">$&</span>'),count:n?n.length:0}}customElements.define("search-component",m);
 </script></head>
 
     <body>
