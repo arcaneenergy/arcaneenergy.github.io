@@ -576,7 +576,6 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
             <path d="M7 16h10"></path>
         </svg>`;
   }
-  console.log(breadcrumbList);
   const { title } = Astro2.props;
   if (title) {
     breadcrumbList[breadcrumbList.length - 1]["title"] = title;
