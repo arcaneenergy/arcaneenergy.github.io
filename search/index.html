@@ -28,19 +28,17 @@
         <meta property="twitter:title" content="Search">
         <meta property="twitter:description" content="Search">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/placeholder-social.jpg">
-    <link rel="stylesheet" href="/assets/asset.e68d5fa3.css" />
+    <link rel="stylesheet" href="/assets/asset.923238e8.css" />
 <link rel="stylesheet" href="/assets/asset.cf3ada47.css" />
 <link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
 <link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
-<link rel="stylesheet" href="/assets/asset.d859dd16.css" />
-<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class l extends HTMLElement{constructor(){super();const n=this.dataset.message;var i=JSON.parse(n);const r=this.querySelector("ul");this.querySelector("input").addEventListener("input",c=>{const a=[],t=c.target.value.trim().toLowerCase();t.length>=1&&i.forEach(e=>{if(e.data.title.toLowerCase().includes(t)||e.data.description.toLowerCase().includes(t)){let s=document.createElement("li");s.classList.add("mt-8"),s.innerHTML=`
+<link rel="stylesheet" href="/assets/asset.e25ba297.css" />
+<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class p extends HTMLElement{constructor(){super();const s=this.dataset.message;this.dataset.message="";var o=JSON.parse(s);const d=this.querySelector("ul");this.querySelector("input").addEventListener("input",u=>{const i=[],e=u.target.value.trim().toLowerCase();e.length>=1&&o.forEach(t=>{if(t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e)){let n=document.createElement("li");n.classList.add("mt-8"),n.innerHTML=`
                                 <div class="group">
                                     <hr />
-                                    <a href="/posts/${e.slug}">
-                                        <h3>${e.data.title}</h3>
+                                    <a href="/posts/${t.slug}">
                                     </a>
-                                    <p class="text-gray">${e.data.description}</p>
-                                </div>`,a.push(s)}}),r.replaceChildren(...a)})}}customElements.define("search-component",l);
+                                </div>`;let l=document.createElement("h3");l.innerHTML=c(t.data.title,e),n.querySelector("a").appendChild(l);let a=document.createElement("p");a.classList.add("text-gray"),a.innerHTML=c(t.data.description,e),n.appendChild(a),i.push(n)}}),d.replaceChildren(...i)})}}function c(r,s){return r.replace(new RegExp(s,"gi"),'<span class="text-orange">$&</span>')}customElements.define("search-component",p);
 </script></head>
 
     <body>
