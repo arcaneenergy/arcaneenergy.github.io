@@ -618,7 +618,8 @@ const $$Search = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$Search;
   const postsCollection = await getCollection("posts");
-  const searchList = postsCollection.map((post) => ({
+  const posts = getSortedPosts(postsCollection);
+  const searchList = posts.map((post) => ({
     slug: post.slug,
     data: post.data
   }));
