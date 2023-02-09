@@ -70,14 +70,14 @@ function _createMdxContent(props) {
       children: createVNode(_components.p, {
         children: [createVNode("summary", {
           children: "How to get to the backrooms"
-        }), "- Wait (approx. 2 minutes). - Jump\noff the balcony."]
+        }), "\nWait (approx. 2 minutes) or jump off the balcony."]
       })
-    }), "\n", createVNode("br", {}), "\n", createVNode("details", {
-      children: createVNode(_components.p, {
-        children: [createVNode("summary", {
-          children: "How to leave the backrooms"
-        }), "\nFind the key in the library. Find the library by following the arrows on the walls.\nAfter acquiring the key, go back to the central and open the door to open a dimensional\nportal back to your home."]
-      })
+    }), "\n", createVNode("details", {
+      children: [createVNode("summary", {
+        children: "How to leave the backrooms"
+      }), createVNode(_components.p, {
+        children: "Find the key in the library. Find the library by following the arrows on the walls.\nAfter acquiring the key, go back to the central and open the door to open a dimensional\nportal back to your home."
+      })]
     }), "\n", createVNode(_components.h2, {
       id: "youtube-playlist",
       children: "YouTube Playlist"

@@ -84,7 +84,7 @@ function _createMdxContent(props) {
         children: ["Download this ", createVNode(_components.a, {
           href: "https://github.com/arcaneenergy/godot-multimesh-scatter",
           children: "repository"
-        }), " or download the addon from the\nAsseLib in Godot."]
+        }), " or download the addon from the AssetLib in Godot."]
       }), "\n", createVNode(_components.li, {
         children: "Import the addons folder into your project."
       }), "\n", createVNode(_components.li, {
