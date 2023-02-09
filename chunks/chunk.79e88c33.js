@@ -1,8 +1,18 @@
-import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
+import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
 import { $ as $$GithubButton } from './chunk.ecdb180a.js';
-import 'html-escaper';
+/* empty css                */import 'html-escaper';
 /* empty css                *//* empty css                */
+const $$Astro = createAstro("https://arcaneenergy.github.io");
+const $$Video = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Video;
+  const { url } = Astro2.props;
+  return renderTemplate`${maybeRenderHead($$result)}<video controls class="astro-7QZXKU2K">
+    <source${addAttribute(url, "src")} type="video/mp4" class="astro-7QZXKU2K">
+</video>`;
+}, "/home/runner/work/website/website/src/components/Video.astro");
+
 const frontmatter = {
   "slug": "multimesh-scatter",
   "title": "MultiMesh Scatter",
@@ -82,30 +92,14 @@ function _createMdxContent(props) {
       }), "\n", createVNode(_components.li, {
         children: "Add a MultiMeshScatter node to the scene."
       }), "\n"]
-    }), "\n", createVNode("video", {
-      width: "320",
-      height: "240",
-      controls: true,
-      children: createVNode("source", {
-        src: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4",
-        type: "video/mp4"
-      })
-    }), "\n", createVNode("video", {
-      width: "320",
-      height: "240",
-      controls: true,
-      children: createVNode("source", {
-        src: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4",
-        type: "video/mp4"
-      })
-    }), "\n", createVNode("video", {
-      width: "320",
-      height: "240",
-      controls: true,
-      children: createVNode("source", {
-        src: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4",
-        type: "video/mp4"
-      })
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4"
+      }), ",\n", createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4"
+      }), ",\n", createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4"
+      }), ","]
     }), "\n", createVNode(_components.h2, {
       id: "features",
       children: "Features"
