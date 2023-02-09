@@ -850,7 +850,9 @@ const $$Astro$1 = createAstro("https://arcaneenergy.github.io");
 async function getStaticPaths() {
   const postsCollection = await getCollection("posts");
   const tags = [
-    ...new Set(postsCollection.map((post) => post.data.tags).flat())
+    ...new Set(
+      getSortedPosts(postsCollection).map((post) => post.data.tags).flat()
+    )
   ];
   return tags.map((tag) => ({
     params: { tag },
