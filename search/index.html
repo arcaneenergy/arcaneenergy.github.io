@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
 <link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
 <link rel="stylesheet" href="/assets/asset.e25ba297.css" />
-<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const c=[],l=d.target.value.trim().toLowerCase();if(l.length>=1){const a=l.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()),o=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&o.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),o.sort((t,e)=>{let h=t.title.count+t.description.count;return e.title.count+e.description.count-h}),o.forEach(t=>{let e=document.createElement("li");e.classList.add("mt-8"),e.innerHTML=`
+<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const o=[],c=d.target.value.trim().toLowerCase();if(c.length>=1){const a=c.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()).filter(t=>t.length>1),l=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&l.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),l.sort((t,e)=>{let h=t.title.count+t.description.count;return e.title.count+e.description.count-h}),l.forEach(t=>{let e=document.createElement("li");e.classList.add("mt-8"),e.innerHTML=`
                             <div class="group">
                                 <hr />
                                 <a href="/posts/${t.post}">
@@ -42,7 +42,7 @@
                                 <p class="text-gray">
                                     ${t.description.text}
                                 </p>
-                            </div>`,c.push(e)})}n.replaceChildren(...c)})}}function u(i,r){let s=new RegExp(r.join("|"),"gi"),n=i.match(s);return{text:i.replace(s,'<span class="text-orange">$&</span>'),count:n?n.length:0}}customElements.define("search-component",m);
+                            </div>`,o.push(e)})}n.replaceChildren(...o)})}}function u(i,r){let s=new RegExp(r.join("|"),"gi"),n=i.match(s);return{text:i.replace(s,'<span class="text-orange">$&</span>'),count:n?n.length:0}}customElements.define("search-component",m);
 </script></head>
 
     <body>
