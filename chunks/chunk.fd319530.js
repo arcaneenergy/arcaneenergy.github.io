@@ -92,14 +92,12 @@ function _createMdxContent(props) {
       }), "\n", createVNode(_components.li, {
         children: "Add a MultiMeshScatter node to the scene."
       }), "\n"]
-    }), "\n", createVNode(_components.p, {
-      children: [createVNode($$Video, {
-        url: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4"
-      }), ",\n", createVNode($$Video, {
-        url: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4"
-      }), ",\n", createVNode($$Video, {
-        url: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4"
-      }), ","]
+    }), "\n", createVNode($$Video, {
+      url: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4"
+    }), "\n", createVNode($$Video, {
+      url: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4"
+    }), "\n", createVNode($$Video, {
+      url: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4"
     }), "\n", createVNode(_components.h2, {
       id: "features",
       children: "Features"
