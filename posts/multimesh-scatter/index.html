@@ -157,15 +157,6 @@
 </a>
 <p><img src="/posts/multimesh-scatter/random-rotation.webp" alt="Image 1"/></p>
 <hr/>
-<h2 id="download">Download</h2>
-<p><a href="https://github.com/arcaneenergy/godot-multimesh-scatter">MultiMesh Scatter</a></p>
-<h2 id="how-to-use">How to use</h2>
-<ol>
-<li>Download this <a href="https://github.com/arcaneenergy/godot-multimesh-scatter">repository</a> or download the addon from the AssetLib in Godot.</li>
-<li>Import the addons folder into your project.</li>
-<li>Activate MultiMesh Scatter under Project &gt; Project Settings &gt; Plugins.</li>
-<li>Add a MultiMeshScatter node to the scene.</li>
-</ol>
 <video controls class="astro-7QZXKU2K">
     <source src="https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4" type="video/mp4" class="astro-7QZXKU2K">
 </video>
@@ -175,39 +166,37 @@
 <video controls class="astro-7QZXKU2K">
     <source src="https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4" type="video/mp4" class="astro-7QZXKU2K">
 </video>
-<h2 id="features">Features</h2>
+<p>A simple tool to randomly place meshes.</p>
+<h2 id="-features">🧩 Features</h2>
 <ul>
-<li>Scatter objects in the scene using a MultiMeshInstance node.</li>
-<li>Adjust the instance count, size, and collision layer.</li>
-<li>Randomize size and rotation of each instance.</li>
-<li>Automatically rotates each instance to the normal of the terrain.</li>
-</ul>
-<h2 id="parameters">Parameters</h2>
+<li>Scatter objects in the scene. Instances automatically rotate to the normal of the terrain.</li>
+<li>Adjust the scatter type, size and collision layer and randomize the size and rotation.</li>
+<li>Clustering: Place instances in tight groups together.</li>
+<li>Apply advanced constraint options to scatter according to:
 <ul>
-<li><code>count</code>: The number of instances to generate.</li>
-<li><code>placement_type</code>: Defines the placement type.</li>
-<li><code>placement_size</code>: The placement size of the bounding box. Enable <code>show_debug_area</code> to view the size of the bounding
-box. Note: If the <code>placement_type</code> is set to Sphere, only the x value will be used to specify the radius of the
-sphere.</li>
-<li><code>collision_mask</code>: The physics collision mask that the instances should collide with.</li>
-<li><code>offset_position</code>: Add an offset to the placed instances.</li>
-<li><code>offset_rotation</code>: Add a rotation offset to the placed instances.</li>
-<li><code>base_scale</code>: Change the base scale of the instanced meshes.</li>
-<li><code>min_random_size</code>: The minimum random size for each instance.</li>
-<li><code>max_random_size</code>: The maximum random size for each instance.</li>
-<li><code>random_rotation</code>: Rotate each instance by a random amount between. <code>-random_rotation</code> and <code>+random_rotation</code>.</li>
-<li><code>seed</code>: A seed to feed for the random number generator.</li>
-<li><code>show_debug_area</code>: Toggle the visibility of the bounding box area.</li>
+<li>Terrain angle</li>
+<li>Vertex color</li>
 </ul>
-<h2 id="notes">Notes</h2>
+</li>
+<li>Chunks: Split the MultiMeshScatter node into chunks.</li>
+</ul>
+<h2 id="-install--use">🚀 Install &amp; Use</h2>
+<ol>
+<li>Download this <a href="https://github.com/arcaneenergy/godot-multimesh-scatter">repository</a> or download the addon from the asset library inside Godot.
+<ul>
+<li>Import the addons folder into your project (if it already isn’t present).</li>
+</ul>
+</li>
+<li>Activate the MultiMesh Scatter addon under Project &gt; Project Settings &gt; Plugins. If an error dialog appears, restart the engine and try activating it again.</li>
+<li>Add a MultiMeshScatter node to the scene.</li>
+</ol>
+<h2 id="️-notes">⚠️ Notes</h2>
 <ul>
 <li>The sphere placement type takes <code>placement_size.x</code> for the radius. The y and z values are not used.</li>
-<li>The sphere placement type behaves more like a capsule shape. This means that only the horizontal radius is taken
-into account when scattering meshes.</li>
-<li>Scattering occurs automatically in the editor whenever you change a parameter or move the MultiMeshScatter node.
-In game mode, the scatter occurs once at the beginning of the game.</li>
+<li>The sphere placement type behaves more like a capsule shape. This means that only the horizontal radius is taken into account when scattering meshes.</li>
+<li>Scattering occurs automatically in the editor whenever you change a parameter or move the MultiMeshScatter node. In game mode, the scatter occurs once at the beginning of the game.</li>
 </ul>
-<h2 id="license">License</h2>
+<h2 id="️-license">🗒️ License</h2>
 <p><a href="/LICENSE.md">MIT License</a></p>
 <div class="iframe-container astro-SY3JR4F6">
     <iframe src="https://www.youtube.com/embed/2fa4guxq6iU" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
