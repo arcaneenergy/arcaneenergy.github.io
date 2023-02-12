@@ -517,6 +517,15 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Breadcrumbs;
   const currentUrlPath = Astro2.url.pathname.replace(/\/+$/, "");
   const pathSplit = currentUrlPath.split("/").slice(1);
+  if (pathSplit[0] === "posts") {
+    if (!isNaN(+pathSplit[pathSplit.length - 1])) {
+      const page = pathSplit[pathSplit.length - 1];
+      pathSplit.pop();
+      pathSplit[0] = "posts/" + page;
+    } else {
+      pathSplit[0] = "posts/1";
+    }
+  }
   let currentPath = "";
   const breadcrumbList = [
     {
@@ -533,40 +542,53 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
     )
   ];
   for (const b of breadcrumbList) {
-    switch (b.title.toLowerCase()) {
+    switch (b.title.split(/[,;:-]/)[0].toLowerCase()) {
       case "home":
         b.icon = `
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
                 <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
                 <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
             </svg>`;
         break;
-      case "posts":
+      case "about":
         b.icon = `
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                    d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"
-                ></path>
-                <path d="M8 8l4 0"></path>
-                <path d="M8 12l4 0"></path>
-                <path d="M8 16l4 0"></path>
+                <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 7.66h-1l-.117 .007a1 1 0 0 0 .117 1.993v3l.007 .117a1 1 0 0 0 .993 .883h1l.117 -.007a1 1 0 0 0 .883 -.993l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007v-3l-.007 -.117a1 1 0 0 0 -.993 -.883zm.01 -4l-.127 .007a1 1 0 0 0 .117 1.993l.127 -.007a1 1 0 0 0 -.117 -1.993z" fill="currentColor" stroke-width="0"></path>
             </svg>`;
+        break;
+      case "tags":
+        b.icon = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path>
+                    <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path>
+                    <path d="M6 9h-.01"></path>
+                </svg>`;
+        break;
+      case "privacy":
+        b.icon = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9.172 19a3 3 0 1 0 2.828 -4"></path>
+                <path d="M14.83 5a3 3 0 1 0 -2.83 4"></path>
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            </svg>`;
+        break;
+      case "search":
+        b.icon = `
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg>`;
+        break;
     }
   }
-  if (breadcrumbList.some((b) => b.title.toLowerCase() == "posts")) {
+  if (breadcrumbList[1].title.split("/")[0].toLowerCase() === "posts") {
+    breadcrumbList[1].title = "Posts";
     breadcrumbList[breadcrumbList.length - 1].icon = `
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -575,6 +597,14 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
             <path d="M7 12h10"></path>
             <path d="M7 16h10"></path>
         </svg>`;
+    breadcrumbList[1].icon = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"></path>
+        <path d="M8 8l4 0"></path>
+        <path d="M8 12l4 0"></path>
+        <path d="M8 16l4 0"></path>
+    </svg>`;
   }
   const { title } = Astro2.props;
   if (title) {
@@ -888,7 +918,7 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$tag;
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-TGE3Q7AE" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-TGE3Q7AE">
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": `Tag:${tag}`, "description": `Tags for ${tag}`, "class": "astro-TGE3Q7AE" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-TGE3Q7AE">
         <span class="astro-TGE3Q7AE">
             <p class="astro-TGE3Q7AE">Posts tagged with&nbsp;</p>
             ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false, "gray": false, "class": "astro-TGE3Q7AE" })}
