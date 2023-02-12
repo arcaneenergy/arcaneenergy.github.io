@@ -12,7 +12,7 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 				<path d="M7.99 0h24.007v6.4c-5.54-.008-11.081 0-16.622.019a812.245 812.245 0 0 1 1.595 6.38h10.335v6.399h-8.723a965.173 965.173 0 0 0 1.595 6.389c3.94.01 7.88.013 11.82.01v6.4c-5.443.006-10.886 0-16.328-.02a22346.47 22346.47 0 0 0-4.783-19.098c-1.208 4.807-1.985 7.899-3.19 12.708 1.32.003 2.64.013 3.96.03a483.296 483.296 0 0 1 1.575 6.379c-4.41.006-8.82 0-13.231-.02C5.044 11.791 2.95 20.187 7.99 0z" class="astro-3EF6KSR2"></path>
 			</svg>
 		</a>
-		<a href="/posts" class="astro-3EF6KSR2">Posts</a>
+		<a href="/posts/1" class="astro-3EF6KSR2">Posts</a>
 		<a href="/search" class="astro-3EF6KSR2">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-3EF6KSR2">
 				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-3EF6KSR2"></path>
@@ -61,7 +61,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 	</div>
 
 	<div class="links astro-SZ7XMLTE">
-		<a href="/posts" class="astro-SZ7XMLTE">Posts</a>
+		<a href="/posts/1" class="astro-SZ7XMLTE">Posts</a>
 		<a href="/tags" class="astro-SZ7XMLTE">Tags</a>
 		<a href="/about" class="astro-SZ7XMLTE">About</a>
 		<a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
@@ -216,9 +216,9 @@ const getSortedPosts = (posts) => posts.sort(
 const capitalize = (str) => str.replace(/\b[a-z]/g, (char) => char.toUpperCase());
 
 const $$Astro$a = createAstro("https://arcaneenergy.github.io");
-const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
+const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
-  Astro2.self = $$Index$2;
+  Astro2.self = $$Index$1;
   const postsCollection = await getCollection("posts");
   const allPosts = getSortedPosts(postsCollection);
   const recentPosts = allPosts.filter((p) => !FEATURED_POSTS.includes(p.slug)).slice(0, 6);
@@ -286,7 +286,7 @@ const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 
 			<div class="text-center astro-J7PV25F6">
-				<a href="/posts" class="astro-J7PV25F6">All Posts</a>
+				<a href="/posts/1" class="link astro-J7PV25F6">All Posts</a>
 			</div>
 		</section>
 
@@ -299,7 +299,7 @@ const $$url$7 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	default: $$Index$2,
+	default: $$Index$1,
 	file: $$file$7,
 	url: $$url$7
 }, Symbol.toStringTag, { value: 'Module' }));
@@ -729,25 +729,44 @@ const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
-const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
-  Astro2.self = $$Index$1;
+async function getStaticPaths$2({ paginate }) {
   const postsCollection = await getCollection("posts");
   const posts = getSortedPosts(postsCollection);
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-FJQFNJXI" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-FJQFNJXI">
-		<div class="astro-FJQFNJXI">
-			${posts.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-FJQFNJXI" })}`)}
+  return paginate(posts, { pageSize: 15 });
+}
+const $$page = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  Astro2.self = $$page;
+  const { page } = Astro2.props;
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-6PAWVVAF" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-6PAWVVAF">
+		<div class="astro-6PAWVVAF">
+			${page.data.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-6PAWVVAF" })}`)}
 		</div>
-	</section>` })}`;
-}, "/home/runner/work/website/website/src/pages/posts/index.astro");
+	</section><nav class="astro-6PAWVVAF">
+		<a${addAttribute(page.url.prev, "href")} class="astro-6PAWVVAF">
+			${page.url.prev && renderTemplate`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-6PAWVVAF">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-6PAWVVAF"></path>
+						<path d="M15 6l-6 6l6 6" class="astro-6PAWVVAF"></path>
+					</svg>`}
+		</a>
+		<a${addAttribute(page.url.current, "href")} class="astro-6PAWVVAF">${page.currentPage} / ${page.lastPage}</a>
+		<a${addAttribute(page.url.next, "href")} class="astro-6PAWVVAF">
+			${page.url.next && renderTemplate`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-6PAWVVAF">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-6PAWVVAF"></path>
+						<path d="M9 6l6 6l-6 6" class="astro-6PAWVVAF"></path>
+					</svg>`}
+		</a>
+	</nav>` })}`;
+}, "/home/runner/work/website/website/src/pages/posts/[page].astro");
 
-const $$file$5 = "/home/runner/work/website/website/src/pages/posts/index.astro";
-const $$url$5 = "/posts";
+const $$file$5 = "/home/runner/work/website/website/src/pages/posts/[page].astro";
+const $$url$5 = "/posts/[page]";
 
 const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	default: $$Index$1,
+	default: $$page,
 	file: $$file$5,
+	getStaticPaths: getStaticPaths$2,
 	url: $$url$5
 }, Symbol.toStringTag, { value: 'Module' }));
 
