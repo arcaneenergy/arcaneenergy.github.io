@@ -517,15 +517,6 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Breadcrumbs;
   const currentUrlPath = Astro2.url.pathname.replace(/\/+$/, "");
   const pathSplit = currentUrlPath.split("/").slice(1);
-  if (pathSplit[0] === "posts") {
-    if (!isNaN(+pathSplit[pathSplit.length - 1])) {
-      const page = pathSplit[pathSplit.length - 1];
-      pathSplit.pop();
-      pathSplit[0] = "posts/" + page;
-    } else {
-      pathSplit[0] = "posts/1";
-    }
-  }
   let currentPath = "";
   const breadcrumbList = [
     {
@@ -541,6 +532,12 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
       })
     )
   ];
+  if (breadcrumbList[1].path === "/posts") {
+    breadcrumbList[1].path = "/posts/1";
+    if (!isNaN(+pathSplit[pathSplit.length - 1])) {
+      breadcrumbList.pop();
+    }
+  }
   for (const b of breadcrumbList) {
     switch (b.title.split(/[,;:-]/)[0].toLowerCase()) {
       case "home":
