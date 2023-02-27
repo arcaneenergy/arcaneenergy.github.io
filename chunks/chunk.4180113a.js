@@ -75,7 +75,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 }, "/home/runner/work/website/website/src/components/Footer.astro");
 
 const SITE_TITLE = "Arcane Energy";
-const SITE_DESCRIPTION = "Welcome to my website!";
+const SITE_DESCRIPTION = "Games, tutorials & more!";
 
 const $$Astro$d = createAstro("https://arcaneenergy.github.io");
 const $$Base = createComponent(async ($$result, $$props, $$slots) => {
@@ -651,7 +651,7 @@ const $$Search = createComponent(async ($$result, $$props, $$slots) => {
     data: post.data
   }));
   const { message = JSON.stringify(searchList) } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Search", "description": "Search", "class": "astro-IPSXRSRH" }, { "default": () => renderTemplate`${renderComponent($$result, "search-component", "search-component", { "data-message": message, "class": "astro-IPSXRSRH" }, { "default": () => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Search", "description": "Search for posts.", "class": "astro-IPSXRSRH" }, { "default": () => renderTemplate`${renderComponent($$result, "search-component", "search-component", { "data-message": message, "class": "astro-IPSXRSRH" }, { "default": () => renderTemplate`
         ${maybeRenderHead($$result)}<input placeholder="Search posts..." type="text" autocomplete="off" autofocus class="astro-IPSXRSRH">
 
         <ul class="astro-IPSXRSRH"></ul>
@@ -765,7 +765,7 @@ const $$page = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$page;
   const { page } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "Description", "class": "astro-6PAWVVAF" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-6PAWVVAF">
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "All posts.", "class": "astro-6PAWVVAF" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-6PAWVVAF">
 		<div class="astro-6PAWVVAF">
 			${page.data.map((post) => renderTemplate`${renderComponent($$result, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": true, "class": "astro-6PAWVVAF" })}`)}
 		</div>
@@ -874,7 +874,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const postsCollection = await getCollection("posts");
   const tags = [...new Set(postsCollection.map((post) => post.data.tags).flat())];
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "Description" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section>
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "All tags in posts." }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section>
         <ul>
             ${tags.map((tag) => renderTemplate`<li>
                         ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false })}
@@ -915,7 +915,7 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$tag;
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": `Tag:${tag}`, "description": `Tags for ${tag}`, "class": "astro-TGE3Q7AE" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-TGE3Q7AE">
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": `Tag:${tag}`, "description": `Pages for Tag:${tag}`, "class": "astro-TGE3Q7AE" }, { "default": () => renderTemplate`${maybeRenderHead($$result)}<section class="astro-TGE3Q7AE">
         <span class="astro-TGE3Q7AE">
             <p class="astro-TGE3Q7AE">Posts tagged with&nbsp;</p>
             ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "sm": false, "gray": false, "class": "astro-TGE3Q7AE" })}
@@ -942,7 +942,7 @@ const $$Astro = createAstro("https://arcaneenergy.github.io");
 const $$404 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$404;
-  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "404", "description": "404", "class": "astro-ZETDM5MD" }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, { "class": "astro-ZETDM5MD" })}${maybeRenderHead($$result)}<main class="astro-ZETDM5MD">
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "404", "description": "404 - Page not found.", "class": "astro-ZETDM5MD" }, { "default": () => renderTemplate`${renderComponent($$result, "Header", $$Header, { "class": "astro-ZETDM5MD" })}${maybeRenderHead($$result)}<main class="astro-ZETDM5MD">
         <h1 class="astro-ZETDM5MD">404</h1>
         <p class="astro-ZETDM5MD">Page not found.</p>
         <p class="text-3xl mt-8 mb-8 opacity-30 astro-ZETDM5MD">(●◡●)</p>
