@@ -82,7 +82,7 @@ const $$Base = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Base;
   const canonicalURL = new URL(Astro2.url.pathname, Astro2.site);
-  const { title, description, image = "/placeholder-social.jpg" } = Astro2.props;
+  const { title, description, image = "/og-image.jpg" } = Astro2.props;
   return renderTemplate`<html lang="en">
     <head>
         <!-- Global Metadata -->
