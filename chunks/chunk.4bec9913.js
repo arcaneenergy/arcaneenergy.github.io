@@ -192,10 +192,7 @@ const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
             ${datetime.toLocaleString("de-DE", {
     day: "2-digit",
     month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false
+    year: "numeric"
   })}
         </time>
     </span>
