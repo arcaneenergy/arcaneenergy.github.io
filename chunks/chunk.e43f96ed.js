@@ -1,16 +1,16 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GooglePlayButton } from './chunk.96a1c872.js';
+import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "sm-text-editor",
-  "title": "SM Text Editor",
-  "description": "A simple and quick Text file editor.",
-  "datetime": "2022-03-10T00:00:00.000Z",
-  "heroImage": "/posts/sm-text-editor/banner.webp",
-  "tags": ["flutter", "google-play", "software"]
+  "slug": "control-cube",
+  "title": "Control Cube",
+  "description": "Navigate through levels and solve puzzles.",
+  "datetime": "2021-03-12T00:00:00.000Z",
+  "heroImage": "/posts/control-cube/banner.webp",
+  "tags": ["godot", "google-play", "game", "software"]
 };
 function getHeadings() {
   return [{
@@ -30,43 +30,30 @@ function getHeadings() {
 function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
-    p: "p",
-    strong: "strong",
-    ul: "ul",
-    li: "li"
+    p: "p"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.arcaneenergy.sm_text_editor"
+      embedId: "com.arcaneenergy.controlcube"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "ysHCItURWYY"
+      videoId: "2IcDCf354ZA"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/sm-text-editor/image-01.webp", "/posts/sm-text-editor/image-02.webp", "/posts/sm-text-editor/image-03.webp"]
+      images: ["/posts/control-cube/image-01.webp", "/posts/control-cube/image-02.webp", "/posts/control-cube/image-03.webp", "/posts/control-cube/image-04.webp", "/posts/control-cube/image-05.webp", "/posts/control-cube/image-06.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Simply open your text files and start editing."
+      children: "Move a cube, solve puzzles and unlock new levels."
     }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Features"
-      })
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: "Toggle text wrapping"
-      }), "\n", createVNode(_components.li, {
-        children: "Document history"
-      }), "\n", createVNode(_components.li, {
-        children: "Change theme (light and dark theme)"
-      }), "\n", createVNode(_components.li, {
-        children: "Change editor font family and font size"
-      }), "\n"]
+      children: "Your goal is to reach the end of the level. Collect coins to unlock new levels."
+    }), "\n", createVNode(_components.p, {
+      children: "Each level has a different style."
     })]
   });
 }
@@ -84,8 +71,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/sm-text-editor.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/sm-text-editor.mdx";
+const url = "src/content/posts/control-cube.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/control-cube.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },

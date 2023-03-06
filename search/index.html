@@ -28,11 +28,11 @@
         <meta property="twitter:title" content="Search">
         <meta property="twitter:description" content="Search for posts.">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/og-image.jpg">
-    <link rel="stylesheet" href="/assets/asset.34ff7397.css" />
+    <link rel="stylesheet" href="/assets/asset.c64072be.css" />
 <link rel="stylesheet" href="/assets/asset.cf3ada47.css" />
 <link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
 <link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
-<link rel="stylesheet" href="/assets/asset.8dadeae6.css" />
+<link rel="stylesheet" href="/assets/asset.fe819ad2.css" />
 <link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const o=[],c=d.target.value.trim().toLowerCase();if(c.length>=1){const a=c.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()).filter(t=>t.length>1),l=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&l.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),l.sort((t,e)=>{let h=t.title.count*2+t.description.count*.5;return e.title.count*2+e.description.count*.5-h}),l.forEach(t=>{let e=document.createElement("li");e.classList.add("mt-8"),e.innerHTML=`
                             <div class="group">
                                 <hr />

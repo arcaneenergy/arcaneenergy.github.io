@@ -1,16 +1,16 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GooglePlayButton } from './chunk.96a1c872.js';
+import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "sm-pdf-viewer",
-  "title": "SM Pdf Viewer",
-  "description": "A simple and quick PDF file viewer.",
-  "datetime": "2022-03-10T00:00:00.000Z",
-  "heroImage": "/posts/sm-pdf-viewer/banner.webp",
-  "tags": ["flutter", "google-play", "software"]
+  "slug": "rocket-bounce",
+  "title": "Rocket Bounce",
+  "description": "Fly and bounce around to overcome obstacles and levels.",
+  "datetime": "2020-02-16T00:00:00.000Z",
+  "heroImage": "/posts/rocket-bounce/banner.webp",
+  "tags": ["unity", "google-play", "game", "software"]
 };
 function getHeadings() {
   return [{
@@ -30,41 +30,28 @@ function getHeadings() {
 function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
-    p: "p",
-    strong: "strong",
-    ul: "ul",
-    li: "li"
+    p: "p"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.arcaneenergy.sm_pdf_viewer"
+      embedId: "com.ArcaneEnergy.RocketBounce"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "2JOKs6jHbgk"
+      videoId: "kPyI6jscET0"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/sm-pdf-viewer/image-01.webp", "/posts/sm-pdf-viewer/image-02.webp", "/posts/sm-pdf-viewer/image-03.webp"]
+      images: ["/posts/rocket-bounce/image-01.webp", "/posts/rocket-bounce/image-02.webp", "/posts/rocket-bounce/image-03.webp", "/posts/rocket-bounce/image-04.webp", "/posts/rocket-bounce/image-05.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Simply open your PDF files and start reading."
+      children: "Fly around and avoid obstacles to win levels."
     }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Features"
-      })
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: "Remember last opened page number"
-      }), "\n", createVNode(_components.li, {
-        children: "Document history"
-      }), "\n", createVNode(_components.li, {
-        children: "Change theme (light and dark theme)"
-      }), "\n"]
+      children: "Drag around the rocket and release when you are ready to fly. Tap either side of the screen to move in that direction."
     })]
   });
 }
@@ -82,8 +69,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/sm-pdf-viewer.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/sm-pdf-viewer.mdx";
+const url = "src/content/posts/rocket-bounce.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/rocket-bounce.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },
