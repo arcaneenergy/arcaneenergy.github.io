@@ -1,7 +1,7 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
 import { $ as $$ItchioWidget } from './chunk.9dabe0e4.js';
-import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
+import { $ as $$GooglePlayButton } from './chunk.26c64ba1.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                *//* empty css                */

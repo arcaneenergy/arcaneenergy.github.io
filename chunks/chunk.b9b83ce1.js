@@ -1,16 +1,16 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
+import { $ as $$GooglePlayButton } from './chunk.26c64ba1.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "control-cube",
-  "title": "Control Cube",
-  "description": "Navigate through levels and solve puzzles.",
-  "datetime": "2021-03-12T00:00:00.000Z",
-  "heroImage": "/posts/control-cube/banner.webp",
-  "tags": ["godot", "google-play", "game", "software"]
+  "slug": "metal-ball-adventures",
+  "title": "Metal Ball Adventures",
+  "description": "Move with the joysticks. Avoid enemies, solve puzzles and reach the flag to win.",
+  "datetime": "2020-06-28T00:00:00.000Z",
+  "heroImage": "/posts/metal-ball-adventures/banner.webp",
+  "tags": ["unity", "google-play", "game", "software"]
 };
 function getHeadings() {
   return [{
@@ -25,6 +25,10 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
+  }, {
+    "depth": 2,
+    "slug": "youtube-playlist",
+    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -34,26 +38,31 @@ function _createMdxContent(props) {
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.arcaneenergy.controlcube"
+      embedId: "com.arcaneenergy.metalballadventures"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "2IcDCf354ZA"
+      videoId: "t1ZQNTXYNs8"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/control-cube/image-01.webp", "/posts/control-cube/image-02.webp", "/posts/control-cube/image-03.webp", "/posts/control-cube/image-04.webp", "/posts/control-cube/image-05.webp", "/posts/control-cube/image-06.webp"]
+      images: ["/posts/metal-ball-adventures/image-01.webp", "/posts/metal-ball-adventures/image-02.webp", "/posts/metal-ball-adventures/image-03.webp", "/posts/metal-ball-adventures/image-04.webp", "/posts/metal-ball-adventures/image-05.webp", "/posts/metal-ball-adventures/image-06.webp", "/posts/metal-ball-adventures/image-07.webp", "/posts/metal-ball-adventures/image-08.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Move a cube, solve puzzles and unlock new levels."
+      children: "Use the left control stick to move left and right. Use the right control stick to move forward and backward. The camera\nwill adjust itself when moving and turning."
     }), "\n", createVNode(_components.p, {
-      children: "Your goal is to reach the end of the level. Collect coins to unlock new levels."
+      children: "The goal is to complete the level, by reaching the red flag at the end of each level. Collect points throughout the game\nto buy new skins at the shop in the main menu."
     }), "\n", createVNode(_components.p, {
-      children: "Each level has a different style."
+      children: "Purchase a skin by clicking on one of the items in the shop menu. Once you have enough points for a skin, the item will\nbe displayed with a green lock. Purchasing a skin will automatically equip it. To change a skin, click on one of your\npreviously purchased skins to equip it."
+    }), "\n", createVNode(_components.h2, {
+      id: "youtube-playlist",
+      children: "YouTube Playlist"
+    }), "\n", createVNode($$Youtube, {
+      videoId: "videoseries?list=PLKnVIoBRwyaMxBoIWwB9ylzLMi7B_HNNO"
     })]
   });
 }
@@ -71,8 +80,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/control-cube.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/control-cube.mdx";
+const url = "src/content/posts/metal-ball-adventures.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/metal-ball-adventures.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },

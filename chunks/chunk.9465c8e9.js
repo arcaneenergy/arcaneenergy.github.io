@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GithubButton } from './chunk.c6d94013.js';
+import { $ as $$GithubButton } from './chunk.d9592aed.js';
 /* empty css                */import 'html-escaper';
 /* empty css                *//* empty css                */
 const $$Astro = createAstro("https://arcaneenergy.github.io");

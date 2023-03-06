@@ -1,16 +1,16 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
+import { $ as $$GooglePlayButton } from './chunk.26c64ba1.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "rocket-bounce",
-  "title": "Rocket Bounce",
-  "description": "Fly and bounce around to overcome obstacles and levels.",
-  "datetime": "2020-02-16T00:00:00.000Z",
-  "heroImage": "/posts/rocket-bounce/banner.webp",
-  "tags": ["unity", "google-play", "game", "software"]
+  "slug": "sm-text-editor",
+  "title": "SM Text Editor",
+  "description": "A simple and quick Text file editor.",
+  "datetime": "2022-03-10T00:00:00.000Z",
+  "heroImage": "/posts/sm-text-editor/banner.webp",
+  "tags": ["flutter", "google-play", "software"]
 };
 function getHeadings() {
   return [{
@@ -30,28 +30,43 @@ function getHeadings() {
 function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
-    p: "p"
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    li: "li"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.ArcaneEnergy.RocketBounce"
+      embedId: "com.arcaneenergy.sm_text_editor"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "kPyI6jscET0"
+      videoId: "ysHCItURWYY"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/rocket-bounce/image-01.webp", "/posts/rocket-bounce/image-02.webp", "/posts/rocket-bounce/image-03.webp", "/posts/rocket-bounce/image-04.webp", "/posts/rocket-bounce/image-05.webp"]
+      images: ["/posts/sm-text-editor/image-01.webp", "/posts/sm-text-editor/image-02.webp", "/posts/sm-text-editor/image-03.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Fly around and avoid obstacles to win levels."
+      children: "Simply open your text files and start editing."
     }), "\n", createVNode(_components.p, {
-      children: "Drag around the rocket and release when you are ready to fly. Tap either side of the screen to move in that direction."
+      children: createVNode(_components.strong, {
+        children: "Features"
+      })
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: "Toggle text wrapping"
+      }), "\n", createVNode(_components.li, {
+        children: "Document history"
+      }), "\n", createVNode(_components.li, {
+        children: "Change theme (light and dark theme)"
+      }), "\n", createVNode(_components.li, {
+        children: "Change editor font family and font size"
+      }), "\n"]
     })]
   });
 }
@@ -69,8 +84,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/rocket-bounce.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/rocket-bounce.mdx";
+const url = "src/content/posts/sm-text-editor.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/sm-text-editor.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },

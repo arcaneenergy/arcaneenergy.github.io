@@ -1,15 +1,15 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
 import { $ as $$Youtube } from './chunk.8ce4b926.js';
-import { $ as $$GooglePlayButton } from './chunk.835cc31c.js';
+import { $ as $$GooglePlayButton } from './chunk.26c64ba1.js';
 import { $ as $$ImageGallery } from './chunk.70984335.js';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "icosahedron",
-  "title": "icosahedron",
-  "description": "Move an icosahedron with the power of thrusters around.",
-  "datetime": "2022-01-03T00:00:00.000Z",
-  "heroImage": "/posts/icosahedron/banner.webp",
+  "slug": "2d-physics-sandbox",
+  "title": "2D Physics Sandbox",
+  "description": "Create and control your own 2D Sandbox.",
+  "datetime": "2020-10-28T00:00:00.000Z",
+  "heroImage": "/posts/2d-physics-sandbox/banner.webp",
   "tags": ["godot", "google-play", "game", "software"]
 };
 function getHeadings() {
@@ -39,53 +39,43 @@ function _createMdxContent(props) {
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.arcaneenergy.icosahedron"
+      embedId: "com.arcaneenergy.physicssandboxgame"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "ux_mbYmUB-o"
+      videoId: "bMAygTCpA84"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/icosahedron/image-01.webp", "/posts/icosahedron/image-02.webp", "/posts/icosahedron/image-03.webp", "/posts/icosahedron/image-04.webp", "/posts/icosahedron/image-05.webp", "/posts/icosahedron/image-06.webp"]
+      images: ["/posts/2d-physics-sandbox/image-01.webp", "/posts/2d-physics-sandbox/image-02.webp", "/posts/2d-physics-sandbox/image-03.webp", "/posts/2d-physics-sandbox/image-04.webp", "/posts/2d-physics-sandbox/image-05.webp", "/posts/2d-physics-sandbox/image-06.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Play in unique environments, overcome traps and falls and reach the end of the level to advance."
-    }), "\n", createVNode(_components.p, {
       children: createVNode(_components.strong, {
-        children: "Introduction"
+        children: "\u{1F539} About the game"
       })
     }), "\n", createVNode(_components.p, {
-      children: "Use the left and right buttons to move in the given direction. Use the up arrow button to fly up in the air. Moving and\nflying burns a given amount of fuel. Flying uses more fuel than left and right movement. To fill up the tank, release\nall buttons and wait a few seconds for the fuel to recharge. Any movement will interrupt the charging process and you\nwill have to wait again."
-    }), "\n", createVNode(_components.p, {
-      children: "You can find the menu button in the top left corner. Use it to return to the main menu or restart from the last\ncheckpoint or restart the level."
+      children: "Open your backpack and select from various elements. Tap anywhere to spawn elements in the world. Select different tools\nfrom your toolbox and tinker in your own sandbox. Burn and destroy elements to collect coins and purchase new elements."
     }), "\n", createVNode(_components.p, {
       children: createVNode(_components.strong, {
-        children: "Main Menu"
+        children: "\u{1F53A} How to play"
       })
     }), "\n", createVNode(_components.p, {
-      children: "Here you can toggle the sound, change the rendering quality, and enable or disable infinite fuel. You can also find\ninformation about the game and other contact information here."
+      children: "Open your backpack to view your elements. The backpack is located in the top left corner. You can select different\nelements from there. Press anywhere on the screen or drag to spawn the elements in the world."
     }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Infinite fuel"
-      })
+      children: "The toolbox contains the way to select different tools to interact with elements. The move tool can drag elements. The\nedit tool can change their properties, like size, rotation or color."
     }), "\n", createVNode(_components.p, {
-      children: "This option allows you to move freely in all levels without the need for charging. To activate this option, you must\nfirst finish the game."
+      children: "The pause button is located at the center of the navigation menu. Pressing this button will freeze all elements. You can\nstill move elements by hand with the move tool and change properties."
     }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Performance issues"
-      })
-    }), "\n", createVNode(_components.p, {
-      children: "Cycle through the quality options in the main menu. This changes the rendering quality of the game and has a huge impact\non the performance."
+      children: "The globe button is the world settings. This menu allows you to change the world\u2019s appearance, day and night time and\nother settings, like friction and bounce."
     }), "\n", createVNode(_components.h2, {
       id: "youtube-playlist",
       children: "YouTube Playlist"
     }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaP3cxJnfaEJMsi8_MFeCNaa"
+      videoId: "videoseries?list=PLKnVIoBRwyaOveK9Smt4RWZoVYarER4ua"
     })]
   });
 }
@@ -103,8 +93,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/icosahedron.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/icosahedron.mdx";
+const url = "src/content/posts/2d-physics-sandbox.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/2d-physics-sandbox.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },
