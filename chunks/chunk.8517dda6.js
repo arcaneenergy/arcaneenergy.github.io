@@ -19,10 +19,6 @@ function getHeadings() {
     "text": "Trailer"
   }, {
     "depth": 2,
-    "slug": "description",
-    "text": "Description"
-  }, {
-    "depth": 2,
     "slug": "use-case",
     "text": "Use case"
   }, {
@@ -65,9 +61,6 @@ function _createMdxContent(props) {
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
       videoId: "01ktb-9E6J0"
-    }), "\n", createVNode(_components.h2, {
-      id: "description",
-      children: "Description"
     }), "\n", createVNode(_components.h2, {
       id: "use-case",
       children: "Use case"

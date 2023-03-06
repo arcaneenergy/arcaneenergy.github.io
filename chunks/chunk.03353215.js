@@ -35,8 +35,7 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
     p: "p",
-    strong: "strong",
-    hr: "hr"
+    strong: "strong"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
@@ -55,16 +54,10 @@ function _createMdxContent(props) {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Play in unique environments, overcome traps and falls and reach the end of the level to advance."
-      })
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
-        children: "Introduction"
-      })
+      children: "Play in unique environments, overcome traps and falls and reach the end of the level to advance."
     }), "\n", createVNode(_components.p, {
       children: createVNode(_components.strong, {
-        children: "How to play"
+        children: "Introduction"
       })
     }), "\n", createVNode(_components.p, {
       children: "Use the left and right buttons to move in the given direction. Use the up arrow button to fly up in the air. Moving and\nflying burns a given amount of fuel. Flying uses more fuel than left and right movement. To fill up the tank, release\nall buttons and wait a few seconds for the fuel to recharge. Any movement will interrupt the charging process and you\nwill have to wait again."

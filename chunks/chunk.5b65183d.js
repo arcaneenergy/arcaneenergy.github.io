@@ -1,6 +1,7 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.37b49969.js';
+import { $ as $$Youtube } from './chunk.8ce4b926.js';
 import 'html-escaper';
-
+/* empty css                */
 const frontmatter = {
   "slug": "squash-stretch-shader",
   "title": "Squash and Stretch Shader",
@@ -16,19 +17,21 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     p: "p",
     strong: "strong",
+    a: "a",
     pre: "pre",
     code: "code",
-    span: "span",
-    hr: "hr",
-    a: "a"
+    span: "span"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode(_components.p, {
-      children: "An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11."
-    }), "\n", createVNode(_components.p, {
-      children: createVNode(_components.strong, {
+      children: ["A simple squash and stretch shader. Tested in Godot 4.0 Alpha 11. ", createVNode(_components.strong, {
         children: "Note: You may need a high-poly model."
-      })
+      })]
+    }), "\n", createVNode(_components.p, {
+      children: ["Find the shader on ", createVNode(_components.a, {
+        href: "https://godotshaders.com/shader/squash-and-stretch/",
+        children: "Godot Shaders"
+      }), "."]
     }), "\n", createVNode(_components.pre, {
       className: "astro-code",
       style: {
@@ -381,11 +384,8 @@ function _createMdxContent(props) {
           })
         })]
       })
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
-      children: ["Find the shader on ", createVNode(_components.a, {
-        href: "https://godotshaders.com/shader/squash-and-stretch/",
-        children: "Godot Shaders"
-      }), "."]
+    }), "\n", createVNode($$Youtube, {
+      videoId: "O0og6WrAWk0"
     })]
   });
 }

@@ -35,8 +35,7 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
     p: "p",
-    strong: "strong",
-    hr: "hr"
+    strong: "strong"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
@@ -60,7 +59,7 @@ function _createMdxContent(props) {
       })
     }), "\n", createVNode(_components.p, {
       children: "Open your backpack and select from various elements. Tap anywhere to spawn elements in the world. Select different tools\nfrom your toolbox and tinker in your own sandbox. Burn and destroy elements to collect coins and purchase new elements."
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
+    }), "\n", createVNode(_components.p, {
       children: createVNode(_components.strong, {
         children: "\u{1F53A} How to play"
       })

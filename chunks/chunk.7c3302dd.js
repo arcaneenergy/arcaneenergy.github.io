@@ -4,7 +4,7 @@ import 'html-escaper';
 const id = "squash-stretch-shader.mdx";
 const collection = "posts";
 const slug = "squash-stretch-shader";
-const body = "\nAn extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.\n\n**Note: You may need a high-poly model.**\n\n```glsl\nshader_type spatial;\n\nuniform vec2 direction = vec2(1.0);\nuniform float squash: hint_range(0.0, 2.0) = 1.0;\nuniform float offset: hint_range(-0.5, 0.5) = 0.0;\n\nvoid vertex() {\n	float v = abs(VERTEX.y + offset) * squash + direction.x;\n	VERTEX *= vec3(v, direction.y, v);\n}\n```\n\n---\n\nFind the shader on [Godot Shaders](https://godotshaders.com/shader/squash-and-stretch/).\n";
+const body = '\nimport Youtube from "@components/Youtube.astro";\n\nA simple squash and stretch shader. Tested in Godot 4.0 Alpha 11. **Note: You may need a high-poly model.**\n\nFind the shader on [Godot Shaders](https://godotshaders.com/shader/squash-and-stretch/).\n\n```glsl\nshader_type spatial;\n\nuniform vec2 direction = vec2(1.0);\nuniform float squash: hint_range(0.0, 2.0) = 1.0;\nuniform float offset: hint_range(-0.5, 0.5) = 0.0;\n\nvoid vertex() {\n	float v = abs(VERTEX.y + offset) * squash + direction.x;\n	VERTEX *= vec3(v, direction.y, v);\n}\n```\n\n<Youtube videoId="O0og6WrAWk0" />\n';
 const data = {
   title: "Squash and Stretch Shader",
   description: "A simple squash and stretch shader in Godot.",

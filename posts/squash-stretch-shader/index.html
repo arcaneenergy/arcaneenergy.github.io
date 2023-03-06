@@ -28,13 +28,7 @@
         <meta property="twitter:title" content="Squash and Stretch Shader">
         <meta property="twitter:description" content="A simple squash and stretch shader in Godot.">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/posts/squash-stretch-shader/banner.webp">
-    <link rel="stylesheet" href="/assets/asset.c64072be.css" />
-<link rel="stylesheet" href="/assets/asset.c76f2742.css" />
-<link rel="stylesheet" href="/assets/asset.fb1bbe00.css" />
-<link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
-<link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
-<link rel="stylesheet" href="/assets/asset.fe819ad2.css" />
-<link rel="stylesheet" href="/assets/asset.33069f5b.css" /></head>
+    </head>
 
     <body>
         <header class="astro-3EF6KSR2">
@@ -135,8 +129,8 @@
         </div>
 
         <article class="astro-UWV4MMHS">
-            <p>An extremely simple implementation of a squash and stretch shader in Godot. Tested in Godot 4.0 Alpha 11.</p>
-<p><strong>Note: You may need a high-poly model.</strong></p>
+            <p>A simple squash and stretch shader. Tested in Godot 4.0 Alpha 11. <strong>Note: You may need a high-poly model.</strong></p>
+<p>Find the shader on <a href="https://godotshaders.com/shader/squash-and-stretch/">Godot Shaders</a>.</p>
 <pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">shader_type spatial;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FF7B72">uniform</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">vec2</span><span style="color:#C9D1D9"> direction </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">vec2</span><span style="color:#C9D1D9">(</span><span style="color:#79C0FF">1.0</span><span style="color:#C9D1D9">);</span></span>
@@ -147,8 +141,15 @@
 <span class="line"><span style="color:#C9D1D9">	</span><span style="color:#FF7B72">float</span><span style="color:#C9D1D9"> v </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> </span><span style="color:#D2A8FF">abs</span><span style="color:#C9D1D9">(VERTEX.y </span><span style="color:#FF7B72">+</span><span style="color:#C9D1D9"> offset) </span><span style="color:#FF7B72">*</span><span style="color:#C9D1D9"> squash </span><span style="color:#FF7B72">+</span><span style="color:#C9D1D9"> direction.x;</span></span>
 <span class="line"><span style="color:#C9D1D9">	VERTEX </span><span style="color:#FF7B72">*=</span><span style="color:#C9D1D9"> </span><span style="color:#D2A8FF">vec3</span><span style="color:#C9D1D9">(v, direction.y, v);</span></span>
 <span class="line"><span style="color:#C9D1D9">}</span></span></code></pre>
-<hr/>
-<p>Find the shader on <a href="https://godotshaders.com/shader/squash-and-stretch/">Godot Shaders</a>.</p>
+<link rel="stylesheet" href="/assets/asset.c64072be.css" />
+<link rel="stylesheet" href="/assets/asset.c76f2742.css" />
+<link rel="stylesheet" href="/assets/asset.fb1bbe00.css" />
+<link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
+<link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
+<link rel="stylesheet" href="/assets/asset.fe819ad2.css" />
+<link rel="stylesheet" href="/assets/asset.33069f5b.css" /><link rel="stylesheet" href="/assets/asset.733765c9.css" /><div class="iframe-container astro-SY3JR4F6">
+    <iframe src="https://www.youtube.com/embed/O0og6WrAWk0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
+</div>
         </article>
     </main><ul class="tags astro-GYSQO7GH">
 		<li class="astro-GYSQO7GH">

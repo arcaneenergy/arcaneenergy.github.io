@@ -42,9 +42,10 @@ function getHeadings() {
 }
 function _createMdxContent(props) {
   const _components = Object.assign({
-    p: "p",
-    img: "img",
     hr: "hr",
+    p: "p",
+    strong: "strong",
+    img: "img",
     h2: "h2",
     ul: "ul",
     li: "li",
@@ -55,19 +56,24 @@ function _createMdxContent(props) {
   return createVNode(Fragment, {
     children: [createVNode($$GithubButton, {
       embedId: "godot-multimesh-scatter"
+    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
+      children: createVNode(_components.strong, {
+        children: "A simple tool to randomly place meshes."
+      })
     }), "\n", createVNode(_components.p, {
       children: createVNode(_components.img, {
         src: "/posts/multimesh-scatter/random-rotation.webp",
         alt: "Image 1"
       })
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode($$Video, {
-      url: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4"
-    }), "\n", createVNode($$Video, {
-      url: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4"
-    }), "\n", createVNode($$Video, {
-      url: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4"
-    }), "\n", createVNode(_components.p, {
-      children: "A simple tool to randomly place meshes."
+    }), "\n", createVNode("div", {
+      class: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+      children: [createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530097-8c653666-5b24-41b0-91d2-4bb9b68750b7.mp4"
+      }), createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530108-fa75e5d3-0d4c-49f6-a449-f4df0d07f92c.mp4"
+      }), createVNode($$Video, {
+        url: "https://user-images.githubusercontent.com/52855634/213530112-e70b88b1-933b-407d-b491-c99db91d9ee1.mp4"
+      })]
     }), "\n", createVNode(_components.h2, {
       id: "-features",
       children: "\u{1F9E9} Features"

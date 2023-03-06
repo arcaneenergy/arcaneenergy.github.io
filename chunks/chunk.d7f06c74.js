@@ -49,7 +49,7 @@ function _createMdxContent(props) {
         href: "https://itch.io/jam/go-godot-jam",
         children: "GoGodotJam"
       }), ", which ran from May 24th 2021 at 12:00 AM to June\n2nd 2021 at 5:00 PM, later made into a full game and released on\nthe ", createVNode(_components.a, {
-        href: "https://play.google.com/store/apps/details?id=com.arcaneenergy.mergifie",
+        href: "https://play.google.com/store/apps/details?id=com.arcaneenergy.mergifier",
         children: "Google Play Store"
       }), ". The theme of the game\njam: ", createVNode(_components.strong, {
         children: "Growth"

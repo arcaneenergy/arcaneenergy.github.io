@@ -35,8 +35,6 @@ import ImageGallery from "@components/ImageGallery.astro";
 Open your backpack and select from various elements. Tap anywhere to spawn elements in the world. Select different tools
 from your toolbox and tinker in your own sandbox. Burn and destroy elements to collect coins and purchase new elements.
 
----
-
 **\u{1F53A} How to play**
 
 Open your backpack to view your elements. The backpack is located in the top left corner. You can select different

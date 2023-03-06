@@ -46,6 +46,9 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
     p: "p",
+    strong: "strong",
+    ul: "ul",
+    li: "li",
     hr: "hr"
   }, props.components);
   return createVNode(Fragment, {
@@ -69,28 +72,32 @@ function _createMdxContent(props) {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Whiteboard made with Godot."
-    }), "\n", createVNode(_components.p, {
-      children: "Features:"
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Write text. Select different fonts and font styles."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Insert pictures. Change the scaling mode."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Insert shapes."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Draw with different variants of brushes."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Change the background theme."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Edit the grid size, background color and more."
-    }), "\n", createVNode(_components.p, {
-      children: "\u{1F539} Presentation system."
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
       children: "A simple whiteboard for writing text, inserting pictures and drawing. Each tool has different settings and properties.\nAn integrated presentation system is available. Place focus points on your whiteboard and play them back like a slide\nshow."
     }), "\n", createVNode(_components.p, {
       children: "Your whiteboards are private. There is no server."
-    }), "\n", createVNode(_components.h2, {
+    }), "\n", createVNode(_components.p, {
+      children: createVNode(_components.strong, {
+        children: "Features"
+      })
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: "Write text. Select different fonts and font styles."
+      }), "\n", createVNode(_components.li, {
+        children: "Insert pictures. Change the scaling mode."
+      }), "\n", createVNode(_components.li, {
+        children: "Insert shapes."
+      }), "\n", createVNode(_components.li, {
+        children: "Draw with different variants of brushes."
+      }), "\n", createVNode(_components.li, {
+        children: "Change the background theme."
+      }), "\n", createVNode(_components.li, {
+        children: "Edit the grid size, background color and more."
+      }), "\n", createVNode(_components.li, {
+        children: "Presentation system."
+      }), "\n"]
+    }), "\n", createVNode(_components.p, {
+      children: "Whiteboard made with Godot."
+    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.h2, {
       id: "youtube-playlist",
       children: "YouTube Playlist"
     }), "\n", createVNode($$Youtube, {
