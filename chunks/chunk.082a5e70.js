@@ -60,7 +60,7 @@ function _createMdxContent(props) {
       children: [createVNode(_components.strong, {
         children: "Note"
       }), ": You can use the camera to capture screenshots in game. Pick up the camera and press ", createVNode("kbd", {
-        children: "TAB"
+        children: "Tab"
       }), " to\nactivate or deactivate it. Left-clicking captures a screenshot. Your screenshots are saved under:\n", createVNode(_components.code, {
         children: "%AppData%\\Godot\\app_userdata\\Limspace"
       })]
