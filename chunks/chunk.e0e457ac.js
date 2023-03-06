@@ -37,10 +37,7 @@ function _createMdxContent(props) {
     a: "a",
     strong: "strong",
     h2: "h2",
-    h3: "h3",
-    pre: "pre",
-    code: "code",
-    span: "span"
+    h3: "h3"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$ItchioWidget, {
@@ -77,55 +74,32 @@ function _createMdxContent(props) {
     }), "\n", createVNode(_components.h3, {
       id: "controls",
       children: "Controls"
-    }), "\n", createVNode(_components.pre, {
-      className: "astro-code",
-      style: {
-        backgroundColor: "#0d1117",
-        overflowX: "auto"
-      },
-      children: createVNode(_components.code, {
-        children: [createVNode(_components.span, {
-          className: "line",
-          children: createVNode(_components.span, {
-            style: {
-              color: "#c9d1d9"
-            },
-            children: "[A] / [\u2190]: Move Left"
-          })
-        }), "\n", createVNode(_components.span, {
-          className: "line",
-          children: createVNode(_components.span, {
-            style: {
-              color: "#c9d1d9"
-            },
-            children: "[D] / [\u2192]: Move Right"
-          })
-        }), "\n", createVNode(_components.span, {
-          className: "line",
-          children: createVNode(_components.span, {
-            style: {
-              color: "#c9d1d9"
-            },
-            children: "[Space] / [\u2191]: Jump"
-          })
-        }), "\n", createVNode(_components.span, {
-          className: "line",
-          children: createVNode(_components.span, {
-            style: {
-              color: "#c9d1d9"
-            },
-            children: "[P]: Restart level"
-          })
-        }), "\n", createVNode(_components.span, {
-          className: "line",
-          children: createVNode(_components.span, {
-            style: {
-              color: "#c9d1d9"
-            },
-            children: "[Escape]: Exit game"
-          })
-        })]
-      })
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "A"
+      }), " or ", createVNode("kbd", {
+        children: "\u2190"
+      }), ": Move left"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "D"
+      }), " or ", createVNode("kbd", {
+        children: "\u2192"
+      }), ": Move Right"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "Space"
+      }), " or ", createVNode("kbd", {
+        children: "\u2191"
+      }), ": Jump"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "P"
+      }), ": Restart level"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "Esc"
+      }), ": Exit game"]
     })]
   });
 }

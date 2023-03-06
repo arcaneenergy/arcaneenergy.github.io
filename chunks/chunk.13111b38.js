@@ -47,12 +47,12 @@ function _createMdxContent(props) {
   const _components = Object.assign({
     h2: "h2",
     p: "p",
-    ul: "ul",
-    li: "li",
     code: "code",
     img: "img",
     pre: "pre",
     span: "span",
+    ul: "ul",
+    li: "li",
     input: "input"
   }, props.components);
   return createVNode(Fragment, {
@@ -79,41 +79,55 @@ function _createMdxContent(props) {
       id: "controls",
       children: "Controls"
     }), "\n", createVNode(_components.p, {
-      children: "Placement:"
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: "Left click: Place tile (if selected)"
-      }), "\n", createVNode(_components.li, {
-        children: "Right click: Delete tile"
-      }), "\n"]
+      children: [createVNode("kbd", {
+        children: "Left click"
+      }), ": Place tile (if a tile is selected)"]
     }), "\n", createVNode(_components.p, {
-      children: "Other:"
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: "TAB: Toggle GUI"
-      }), "\n", createVNode(_components.li, {
-        children: "SHIFT + Scroll up: Increase brush size"
-      }), "\n", createVNode(_components.li, {
-        children: "SHIFT + Scroll down: Decrease brush size"
-      }), "\n"]
+      children: [createVNode("kbd", {
+        children: "Right click"
+      }), ": Delete tile"]
     }), "\n", createVNode(_components.p, {
-      children: "Camera:"
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: "Middle mouse drag: Drag camera around"
-      }), "\n", createVNode(_components.li, {
-        children: "W / \u2191: Move camera up"
-      }), "\n", createVNode(_components.li, {
-        children: "S / \u2193: Move camera down"
-      }), "\n", createVNode(_components.li, {
-        children: "A / \u2190: Move camera left"
-      }), "\n", createVNode(_components.li, {
-        children: "D / \u2192: Move camera right"
-      }), "\n", createVNode(_components.li, {
-        children: "Mouse scroll up: Zoom in"
-      }), "\n", createVNode(_components.li, {
-        children: "Mouse scroll down: Zoom out"
-      }), "\n"]
+      children: [createVNode("kbd", {
+        children: "Tab"
+      }), ": Toggle GUI"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "Shift"
+      }), " + ", createVNode("kbd", {
+        children: "Scroll up"
+      }), ": Increase brush size"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "Shift"
+      }), " + ", createVNode("kbd", {
+        children: "Scroll down"
+      }), ": Decrease brush size"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "Middle mouse drag"
+      }), ": Drag camera"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "W"
+      }), "/", createVNode("kbd", {
+        children: "A"
+      }), "/", createVNode("kbd", {
+        children: "S"
+      }), "/", createVNode("kbd", {
+        children: "D"
+      }), ": Move camera"]
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode("kbd", {
+        children: "\u2191"
+      }), "/", createVNode("kbd", {
+        children: "\u2190"
+      }), "/", createVNode("kbd", {
+        children: "\u2193"
+      }), "/", createVNode("kbd", {
+        children: "\u2192"
+      }), ": Move camera"]
+    }), "\n", createVNode(_components.p, {
+      children: "Mouse scroll up/down: Zoom in/out"
     }), "\n", createVNode(_components.h2, {
       id: "ui-overview",
       children: "UI Overview"
