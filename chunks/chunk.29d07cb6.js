@@ -79,7 +79,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 		<a href="mailto:arcane.energy.help@gmail.com" class="astro-SZ7XMLTE">Contact</a>
 	</div>
 
-	<p class="astro-SZ7XMLTE">
+	<p class="copyright astro-SZ7XMLTE">
 		Copyright &copy; ${today.getFullYear()} Arcane Energy. All rights reserved.
 	</p>
 </footer>`;
