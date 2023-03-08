@@ -2,7 +2,7 @@ import { c as createAstro, a as createComponent, r as renderTemplate, m as maybe
 import { $ as $$Youtube } from './chunk.d62b00db.js';
 import { $ as $$ItchioWidget } from './chunk.fee98436.js';
 /* empty css                */import { $ as $$GooglePlayButton } from './chunk.b08b4bf9.js';
-import { $ as $$ImageGallery } from './chunk.cf9062d1.js';
+import { $ as $$ImageGallery } from './chunk.bf006d82.js';
 import 'module';
 import 'node:fs/promises';
 import 'node:url';
