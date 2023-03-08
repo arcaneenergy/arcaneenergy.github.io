@@ -1,6 +1,6 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment, u as unescapeHTML } from './chunk.95b855ea.js';
 /* empty css                */import rss from '@astrojs/rss';
-/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
+/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
 const $$Astro$f = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
@@ -922,12 +922,10 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const postsCollection = await getCollection("posts");
   const tags = [...new Set(postsCollection.map((post) => post.data.tags).flat())];
-  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "All tags in posts." }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section>
-        <ul>
-            ${tags.map((tag) => renderTemplate`<li>
-                        ${renderComponent($$result2, "Tag", $$Tag, { "tag": tag, "sm": false })}
-                    </li>`)}
-        </ul>
+  return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Tags", "description": "All tags in posts.", "class": "astro-OS4I7OWY" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section class="astro-OS4I7OWY">
+        <div class="astro-OS4I7OWY">
+            ${tags.map((tag) => renderTemplate`${renderComponent($$result2, "Tag", $$Tag, { "tag": tag, "sm": false, "class": "astro-OS4I7OWY" })}`)}
+        </div>
     </section>` })}`;
 }, "/home/runner/work/website/website/src/pages/tags/index.astro");
 
