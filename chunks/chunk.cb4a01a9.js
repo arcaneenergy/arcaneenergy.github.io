@@ -751,7 +751,6 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$tag;
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
-  console.log(posts);
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": `Tag:${tag}`, "description": `Pages for Tag:${tag}`, "class": "astro-TGE3Q7AE" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section class="astro-TGE3Q7AE">
         <ul class="astro-TGE3Q7AE">
             ${posts.map((post) => renderTemplate`<li class="astro-TGE3Q7AE">
