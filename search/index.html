@@ -28,18 +28,17 @@
         <meta property="twitter:title" content="Search">
         <meta property="twitter:description" content="Search for posts.">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/og-image.jpg">
-    <link rel="stylesheet" href="/assets/asset.c227e341.css" />
+    <link rel="stylesheet" href="/assets/asset.2547aea1.css" />
 <link rel="stylesheet" href="/assets/asset.cf3ada47.css" />
 <link rel="stylesheet" href="/assets/asset.8916f2b2.css" />
 <link rel="stylesheet" href="/assets/asset.7b278e1a.css" />
-<link rel="stylesheet" href="/assets/asset.9baeca6b.css" />
-<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const o=[],c=d.target.value.trim().toLowerCase();if(c.length>=1){const a=c.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()).filter(t=>t.length>1),l=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&l.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),l.sort((t,e)=>{let h=t.title.count*2+t.description.count*.5;return e.title.count*2+e.description.count*.5-h}),l.forEach(t=>{let e=document.createElement("li");e.classList.add("mt-8"),e.innerHTML=`
+<link rel="stylesheet" href="/assets/asset.a4a12743.css" />
+<link rel="stylesheet" href="/assets/asset.908e1465.css" /><script type="module">class m extends HTMLElement{constructor(){super();const r=this.dataset.message;this.dataset.message="";var s=JSON.parse(r);const n=this.querySelector("ul");this.querySelector("input").addEventListener("input",d=>{const o=[],c=d.target.value.trim().toLowerCase();if(c.length>=1){const a=c.split(/[,; ]+/).filter(t=>t).map(t=>t.trim().toLowerCase()).filter(t=>t.length>1),l=[];s.forEach(t=>{a.some(e=>t.data.title.toLowerCase().includes(e)||t.data.description.toLowerCase().includes(e))&&l.push({post:t.slug,title:u(t.data.title,a),description:u(t.data.description,a)})}),l.sort((t,e)=>{let h=t.title.count*2+t.description.count*.5;return e.title.count*2+e.description.count*.5-h}),l.forEach(t=>{let e=document.createElement("li");e.classList.add("my-8"),e.innerHTML=`
                             <div class="group">
-                                <hr />
                                 <a href="/posts/${t.post}">
                                     <h3>${t.title.text}</h3>
                                 </a>
-                                <p class="text-gray">
+                                <p class="mt-1 text-gray">
                                     ${t.description.text}
                                 </p>
                             </div>`,o.push(e)})}n.replaceChildren(...o)})}}function u(i,r){let s=new RegExp(r.join("|"),"gi"),n=i.match(s);return{text:i.replace(s,'<span class="text-orange">$&</span>'),count:n?n.length:0}}customElements.define("search-component",m);
@@ -54,6 +53,7 @@
 			</svg>
 		</a>
 		<a href="/posts/1" class="astro-3EF6KSR2">Posts</a>
+		<a href="/tags" class="astro-3EF6KSR2">Tags</a>
 		<a href="/search" class="astro-3EF6KSR2">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-3EF6KSR2">
 				<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-3EF6KSR2"></path>
@@ -65,35 +65,11 @@
 </header><nav class="astro-ILHXCYM7">
     <ul class="astro-ILHXCYM7">
         <li class="astro-ILHXCYM7">
-                    <a href="/" class="astro-ILHXCYM7">
-                        <span class="pr-2 astro-ILHXCYM7">
-                                
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
-            </svg>
-                            </span>
-                        Home
-                    </a>
+                    <a href="/" class="astro-ILHXCYM7">/</a>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right astro-ILHXCYM7" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-ILHXCYM7"></path>
-                            <path d="M9 6l6 6l-6 6" class="astro-ILHXCYM7"></path>
-                        </svg>
+                    <p class="astro-ILHXCYM7">&nbsp;/&nbsp;</p>
                 </li><li class="astro-ILHXCYM7">
-                    <a href="/search" class="astro-ILHXCYM7">
-                        <span class="pr-2 astro-ILHXCYM7">
-                                
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
-                    <path d="M21 21l-6 -6"></path>
-                </svg>
-                            </span>
-                        Search
-                    </a>
+                    <a href="/search" class="astro-ILHXCYM7">Search</a>
 
                     
                 </li>
@@ -161,9 +137,6 @@
 	</div>
 
 	<div class="links astro-SZ7XMLTE">
-		<a href="/posts/1" class="astro-SZ7XMLTE">Posts</a>
-		<a href="/tags" class="astro-SZ7XMLTE">Tags</a>
-		<a href="/about" class="astro-SZ7XMLTE">About</a>
 		<a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
 		<a href="mailto:arcane.energy.help@gmail.com" class="astro-SZ7XMLTE">Contact</a>
 	</div>
