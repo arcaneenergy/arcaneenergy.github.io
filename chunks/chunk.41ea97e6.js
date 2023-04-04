@@ -602,7 +602,7 @@ const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Tag;
   const { tag, sm = true, gray = true } = Astro2.props;
   return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")}${addAttribute(`${sm ? "text-sm" : ""} ${gray ? "text-gray" : ""} astro-BLWJYJPT`, "class")}>
-    ${tag}
+    #${tag}
 </a>`;
 }, "/home/runner/work/website/website/src/components/Tag.astro");
 
