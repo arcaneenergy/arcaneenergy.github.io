@@ -78,12 +78,6 @@ Tutorial 5/5
 A simple, but functional GUI will be created in this tutorial.
 
 <Youtube videoId="v-N_auLEQ2w" />
-
----
-
-## YouTube Playlist
-
-<Youtube videoId="videoseries?list=PLKnVIoBRwyaPJ-U6jPAePrwvOHhWZ6vxo" />
 `;
 const data = {
   title: "Top Down Shooter Tutorial Series",

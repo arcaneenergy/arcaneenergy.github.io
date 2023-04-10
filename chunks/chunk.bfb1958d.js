@@ -38,10 +38,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "tutorial-5-gui-and-theming",
     "text": "Tutorial #5: GUI and Theming"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -125,11 +121,6 @@ function _createMdxContent(props) {
       children: "A simple, but functional GUI will be created in this tutorial."
     }), "\n", createVNode($$Youtube, {
       videoId: "v-N_auLEQ2w"
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaPJ-U6jPAePrwvOHhWZ6vxo"
     })]
   });
 }

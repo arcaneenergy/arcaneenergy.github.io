@@ -28,10 +28,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -61,11 +57,6 @@ function _createMdxContent(props) {
       children: "The goal is to complete the level, by reaching the red flag at the end of each level. Collect points throughout the game\nto buy new skins at the shop in the main menu."
     }), "\n", createVNode(_components.p, {
       children: "Purchase a skin by clicking on one of the items in the shop menu. Once you have enough points for a skin, the item will\nbe displayed with a green lock. Purchasing a skin will automatically equip it. To change a skin, click on one of your\npreviously purchased skins to equip it."
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaMxBoIWwB9ylzLMi7B_HNNO"
     })]
   });
 }

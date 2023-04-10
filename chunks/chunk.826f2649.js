@@ -28,10 +28,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -84,11 +80,6 @@ function _createMdxContent(props) {
       })
     }), "\n", createVNode(_components.p, {
       children: "Cycle through the quality options in the main menu. This changes the rendering quality of the game and has a huge impact\non the performance."
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaP3cxJnfaEJMsi8_MFeCNaa"
     })]
   });
 }

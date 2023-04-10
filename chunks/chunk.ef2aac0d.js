@@ -29,10 +29,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -81,11 +77,6 @@ function _createMdxContent(props) {
       children: "Play in 7 unique levels + 2 bonus levels. Each level has a unique atmosphere with vivid backgrounds and elements."
     }), "\n", createVNode(_components.p, {
       children: "This game is playable both with touchscreen and keyboard."
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaOEqi3pQcFzyK57XoJvx8VJ"
     })]
   });
 }

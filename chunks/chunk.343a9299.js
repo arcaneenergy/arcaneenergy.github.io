@@ -5,9 +5,9 @@ import 'node:url';
 import 'html-escaper';
 
 async function getMod() {
-  return import('./chunk.e45306b8.js');
+  return import('./chunk.33c0d7c3.js');
 }
-const collectedLinks = ["/assets/asset.b907ba96.css","/assets/asset.3f53dee4.css","/assets/asset.733765c9.css"];
+const collectedLinks = ["/assets/asset.b907ba96.css","/assets/asset.733765c9.css"];
 const collectedStyles = "@@ASTRO-STYLES@@";
 const collectedScripts = "@@ASTRO-SCRIPTS@@";
 __astro_tag_component__(getMod, "astro:jsx");

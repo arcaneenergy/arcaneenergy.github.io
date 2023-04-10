@@ -28,10 +28,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -81,11 +77,6 @@ function _createMdxContent(props) {
       }), createVNode(_components.p, {
         children: "Find the key in the library. Find the library by following the arrows on the walls.\nAfter acquiring the key, go back to the central and open the door to open a dimensional\nportal back to your home."
       })]
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaMCb1ty3PxBghkAyQF0g6nR"
     })]
   });
 }

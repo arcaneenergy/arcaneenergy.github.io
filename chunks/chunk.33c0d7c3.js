@@ -15,16 +15,9 @@ const frontmatter = {
   "tags": ["godot", "screenshot-collection", "post"]
 };
 function getHeadings() {
-  return [{
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
-  }];
+  return [];
 }
 function _createMdxContent(props) {
-  const _components = Object.assign({
-    h2: "h2"
-  }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$ImageGallery, {
       images: ["/posts/walking-simulator/image-01.webp", "/posts/walking-simulator/image-02.webp", "/posts/walking-simulator/image-03.webp", "/posts/walking-simulator/image-04.webp", "/posts/walking-simulator/image-05.webp", "/posts/walking-simulator/image-06.webp"]
@@ -51,11 +44,6 @@ function _createMdxContent(props) {
           videoId: "zXZNGsL-n2w"
         })
       })]
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaPWKeVhr9lFhboPVqALaxJk"
     })]
   });
 }
@@ -68,7 +56,7 @@ function MDXContent(props = {}) {
     children: createVNode(_createMdxContent, {
       ...props
     })
-  }) : _createMdxContent(props);
+  }) : _createMdxContent();
 }
 
 __astro_tag_component__(getHeadings, "astro:jsx");

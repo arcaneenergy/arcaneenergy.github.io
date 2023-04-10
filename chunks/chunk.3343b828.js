@@ -39,10 +39,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -51,8 +47,7 @@ function _createMdxContent(props) {
     p: "p",
     strong: "strong",
     ul: "ul",
-    li: "li",
-    hr: "hr"
+    li: "li"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$ItchioEmbed, {
@@ -100,11 +95,6 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", createVNode(_components.p, {
       children: "Whiteboard made with Godot."
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaO3n4L06BIfuS26e3ultvxf"
     })]
   });
 }

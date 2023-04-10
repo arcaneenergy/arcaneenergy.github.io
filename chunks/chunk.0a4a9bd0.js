@@ -51,10 +51,6 @@ still move elements by hand with the move tool and change properties.
 
 The globe button is the world settings. This menu allows you to change the world's appearance, day and night time and
 other settings, like friction and bounce.
-
-## YouTube Playlist
-
-<Youtube videoId="videoseries?list=PLKnVIoBRwyaOveK9Smt4RWZoVYarER4ua" />
 `;
 const data = {
   title: "2D Physics Sandbox",

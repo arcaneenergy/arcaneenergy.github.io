@@ -28,10 +28,6 @@ function getHeadings() {
     "depth": 2,
     "slug": "description",
     "text": "Description"
-  }, {
-    "depth": 2,
-    "slug": "youtube-playlist",
-    "text": "YouTube Playlist"
   }];
 }
 function _createMdxContent(props) {
@@ -74,11 +70,6 @@ function _createMdxContent(props) {
       children: "The pause button is located at the center of the navigation menu. Pressing this button will freeze all elements. You can\nstill move elements by hand with the move tool and change properties."
     }), "\n", createVNode(_components.p, {
       children: "The globe button is the world settings. This menu allows you to change the world\u2019s appearance, day and night time and\nother settings, like friction and bounce."
-    }), "\n", createVNode(_components.h2, {
-      id: "youtube-playlist",
-      children: "YouTube Playlist"
-    }), "\n", createVNode($$Youtube, {
-      videoId: "videoseries?list=PLKnVIoBRwyaOveK9Smt4RWZoVYarER4ua"
     })]
   });
 }
