@@ -66,11 +66,11 @@ function _createMdxContent(props) {
     }), "\n", createVNode(_components.p, {
       children: "You cannot bring objects to the backrooms."
     }), "\n", createVNode("details", {
-      children: createVNode(_components.p, {
-        children: [createVNode("summary", {
-          children: "How to get to the backrooms"
-        }), "\nWait (approx. 2 minutes) or jump off the balcony."]
-      })
+      children: [createVNode("summary", {
+        children: "How to get to the backrooms"
+      }), createVNode(_components.p, {
+        children: "Wait (approx. 2 minutes) or jump off the balcony."
+      })]
     }), "\n", createVNode("details", {
       children: [createVNode("summary", {
         children: "How to leave the backrooms"
