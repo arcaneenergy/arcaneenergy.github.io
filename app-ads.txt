@@ -80,7 +80,7 @@ pubmatic.com, 161344, RESELLER, 5d62403b186f2ace
 pubmatic.com, 161372, RESELLER, 5d62403b186f2ace
 pubmatic.com, 161853, RESELLER, 5d62403b186f2ace
 pubmatic.com, 162223, RESELLER, 5d62403b186f2ace
-Pubmatic.com, 162882, RESELLER
+Pubmatic.com, 162882, RESELLER, 5d62403b186f2ace
 pubnative.net, 1003601, RESELLER, d641df8625486a7b
 pubnative.net, 1006955, RESELLER, d641df8625486a7b
 pubnative.net, 1007040, RESELLER, d641df8625486a7b
