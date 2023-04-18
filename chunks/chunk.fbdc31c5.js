@@ -5,7 +5,7 @@ import 'node:url';
 import 'html-escaper';
 
 async function getMod() {
-  return import('./chunk.784a74d2.js');
+  return import('./chunk.a2f819a2.js');
 }
 const collectedLinks = ["/assets/asset.430bc648.css","/assets/asset.b907ba96.css","/assets/asset.733765c9.css"];
 const collectedStyles = "@@ASTRO-STYLES@@";

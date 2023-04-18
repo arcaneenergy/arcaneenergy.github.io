@@ -7,7 +7,7 @@ import 'html-escaper';
 const id = "sm-text-editor.mdx";
 const collection = "posts";
 const slug = "sm-text-editor";
-const body = '\nimport Youtube from "@components/Youtube.astro";\nimport GooglePlayButton from "@components/GooglePlayButton.astro";\nimport ImageGallery from "@components/ImageGallery.astro";\n\n<GooglePlayButton embedId="com.arcaneenergy.sm_text_editor" />\n\n## Trailer\n\n<Youtube videoId="ysHCItURWYY" />\n\n## Screenshots\n\n<ImageGallery images={\n  [\n    "/posts/sm-text-editor/image-01.webp",\n    "/posts/sm-text-editor/image-02.webp",\n    "/posts/sm-text-editor/image-03.webp",\n  ]\n} />\n\n## Description\n\nSimply open your text files and start editing.\n\n**Features**\n\n- Toggle text wrapping\n- Document history\n- Change theme (light and dark theme)\n- Change editor font family and font size\n';
+const body = '\nimport Youtube from "@components/Youtube.astro";\nimport GooglePlayButton from "@components/GooglePlayButton.astro";\nimport ImageGallery from "@components/ImageGallery.astro";\n\n<GooglePlayButton embedId="com.arcaneenergy.sm_text_editor" />\n\n## Screenshots\n\n<ImageGallery images={\n  [\n    "/posts/sm-text-editor/image-01.webp",\n    "/posts/sm-text-editor/image-02.webp",\n    "/posts/sm-text-editor/image-03.webp",\n  ]\n} />\n\n## Description\n\nSimply open your text files and start editing.\n\n**Features**\n\n- Toggle text wrapping\n- Document history\n- Change theme (light and dark theme)\n- Change editor font family and font size\n';
 const data = {
   title: "SM Text Editor",
   description: "A simple and quick Text file editor.",
