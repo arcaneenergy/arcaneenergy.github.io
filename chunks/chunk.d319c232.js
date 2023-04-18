@@ -60,7 +60,7 @@ function _createMdxContent(props) {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "ay3ymU5kMr8"
+      videoId: "YIwPzPbcuqk"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
