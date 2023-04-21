@@ -26,11 +26,6 @@ function _createMdxContent(props) {
       children: [createVNode("div", {
         class: "col-xs-6",
         children: createVNode($$Youtube, {
-          videoId: "FXGbLSfMP8c"
-        })
-      }), createVNode("div", {
-        class: "col-xs-6",
-        children: createVNode($$Youtube, {
           videoId: "6EP0E4-m7DU"
         })
       }), createVNode("div", {
