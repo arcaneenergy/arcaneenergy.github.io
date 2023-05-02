@@ -457,7 +457,7 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
   let currentPath = "";
   const breadcrumbList = [
     {
-      title: "/",
+      title: "Home",
       path: "/"
     },
     ...pathSplit.map(
@@ -564,7 +564,7 @@ const $$Article = createComponent(async ($$result, $$props, $$slots) => {
   const { title, description, datetime, cover } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": cover, "class": "astro-UWV4MMHS" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "Header", $$Header, { "class": "astro-UWV4MMHS" })}${renderComponent($$result2, "Breadcrumbs", $$Breadcrumbs, { "title": title, "class": "astro-UWV4MMHS" })}${renderSlot($$result2, $$slots["before-content"])}${maybeRenderHead($$result2)}<main class="astro-UWV4MMHS">
         <div class="info astro-UWV4MMHS">
-            ${cover && renderTemplate`<img${addAttribute(cover, "src")} alt="Image" class="astro-UWV4MMHS">`}
+            <!-- {cover && <img src={cover} alt="Image" />} -->
 
             <h1 class="astro-UWV4MMHS">${title}</h1>
 
