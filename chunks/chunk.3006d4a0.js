@@ -1,6 +1,6 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.88f5223f.js';
 import { $ as $$Youtube } from './chunk.3ad9c7a2.js';
-import { $ as $$GooglePlayButton } from './chunk.a8343a04.js';
+import { $ as $$GooglePlayButton } from './chunk.a2dcb8ef.js';
 import { $ as $$ImageGallery } from './chunk.d7fcfa95.js';
 import 'module';
 import 'node:fs/promises';

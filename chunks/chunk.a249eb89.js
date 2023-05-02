@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.88f5223f.js';
 import { $ as $$Youtube } from './chunk.3ad9c7a2.js';
-import { $ as $$GithubButton } from './chunk.f6fe427d.js';
+import { $ as $$GithubButton } from './chunk.3c5e02b1.js';
 /* empty css                */import 'module';
 import 'node:fs/promises';
 import 'node:url';
@@ -45,7 +45,6 @@ function getHeadings() {
 }
 function _createMdxContent(props) {
   const _components = Object.assign({
-    hr: "hr",
     p: "p",
     strong: "strong",
     img: "img",
@@ -59,7 +58,7 @@ function _createMdxContent(props) {
   return createVNode(Fragment, {
     children: [createVNode($$GithubButton, {
       embedId: "godot-multimesh-scatter"
-    }), "\n", createVNode(_components.hr, {}), "\n", createVNode(_components.p, {
+    }), "\n", createVNode("br", {}), "\n", createVNode(_components.p, {
       children: createVNode(_components.strong, {
         children: "A simple tool to randomly place meshes."
       })

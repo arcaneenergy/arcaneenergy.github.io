@@ -1,6 +1,6 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.88f5223f.js';
 import { $ as $$Youtube } from './chunk.3ad9c7a2.js';
-import { $ as $$GooglePlayButton } from './chunk.a8343a04.js';
+import { $ as $$GooglePlayButton } from './chunk.a2dcb8ef.js';
 import { $ as $$ImageGallery } from './chunk.d7fcfa95.js';
 import 'module';
 import 'node:fs/promises';
@@ -8,11 +8,11 @@ import 'node:url';
 import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
-  "slug": "metal-ball-adventures",
-  "title": "Metal Ball Adventures",
-  "description": "Move with the joysticks. Avoid enemies, solve puzzles and reach the flag to win.",
-  "datetime": "2020-06-28T00:00:00.000Z",
-  "cover": "/posts/metal-ball-adventures/banner.webp",
+  "slug": "rocket-bounce",
+  "title": "Rocket Bounce",
+  "description": "Fly and bounce around to overcome obstacles and levels.",
+  "datetime": "2020-02-16T00:00:00.000Z",
+  "cover": "/posts/rocket-bounce/banner.webp",
   "tags": ["unity", "google-play", "game", "software"]
 };
 function getHeadings() {
@@ -37,26 +37,24 @@ function _createMdxContent(props) {
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$GooglePlayButton, {
-      embedId: "com.arcaneenergy.metalballadventures"
+      embedId: "com.ArcaneEnergy.RocketBounce"
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
     }), "\n", createVNode($$Youtube, {
-      videoId: "t1ZQNTXYNs8"
+      videoId: "kPyI6jscET0"
     }), "\n", createVNode(_components.h2, {
       id: "screenshots",
       children: "Screenshots"
     }), "\n", createVNode($$ImageGallery, {
-      images: ["/posts/metal-ball-adventures/image-01.webp", "/posts/metal-ball-adventures/image-02.webp", "/posts/metal-ball-adventures/image-03.webp", "/posts/metal-ball-adventures/image-04.webp", "/posts/metal-ball-adventures/image-05.webp", "/posts/metal-ball-adventures/image-06.webp", "/posts/metal-ball-adventures/image-07.webp", "/posts/metal-ball-adventures/image-08.webp"]
+      images: ["/posts/rocket-bounce/image-01.webp", "/posts/rocket-bounce/image-02.webp", "/posts/rocket-bounce/image-03.webp", "/posts/rocket-bounce/image-04.webp", "/posts/rocket-bounce/image-05.webp"]
     }), "\n", createVNode(_components.h2, {
       id: "description",
       children: "Description"
     }), "\n", createVNode(_components.p, {
-      children: "Use the left control stick to move left and right. Use the right control stick to move forward and backward. The camera\nwill adjust itself when moving and turning."
+      children: "Fly around and avoid obstacles to win levels."
     }), "\n", createVNode(_components.p, {
-      children: "The goal is to complete the level, by reaching the red flag at the end of each level. Collect points throughout the game\nto buy new skins at the shop in the main menu."
-    }), "\n", createVNode(_components.p, {
-      children: "Purchase a skin by clicking on one of the items in the shop menu. Once you have enough points for a skin, the item will\nbe displayed with a green lock. Purchasing a skin will automatically equip it. To change a skin, click on one of your\npreviously purchased skins to equip it."
+      children: "Drag around the rocket and release when you are ready to fly. Tap either side of the screen to move in that direction."
     })]
   });
 }
@@ -74,8 +72,8 @@ function MDXContent(props = {}) {
 
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "src/content/posts/metal-ball-adventures.mdx";
-const file = "/home/runner/work/website/website/src/content/posts/metal-ball-adventures.mdx";
+const url = "src/content/posts/rocket-bounce.mdx";
+const file = "/home/runner/work/website/website/src/content/posts/rocket-bounce.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components },

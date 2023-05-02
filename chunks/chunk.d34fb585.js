@@ -1,7 +1,7 @@
 import { _ as __astro_tag_component__, F as Fragment, j as createVNode } from './chunk.88f5223f.js';
 import { $ as $$Youtube } from './chunk.3ad9c7a2.js';
 import { $ as $$ItchioWidget } from './chunk.1b93c4e6.js';
-import { $ as $$GithubButton } from './chunk.f6fe427d.js';
+import { $ as $$GithubButton } from './chunk.3c5e02b1.js';
 import 'module';
 import 'node:fs/promises';
 import 'node:url';
