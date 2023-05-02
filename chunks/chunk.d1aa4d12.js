@@ -9,7 +9,7 @@ import 'html-escaper';
 /* empty css                *//* empty css                *//* empty css                */
 const frontmatter = {
   "slug": "tilemap-level-editor",
-  "title": "Tilemap Level Editor",
+  "title": "Tilemap Level Editor (Archived)",
   "description": "Simple level editor for Godot with JSON export functionality. Made with Godot.",
   "datetime": "2022-05-27T00:00:00.000Z",
   "cover": "/posts/tilemap-level-editor/banner.webp",
