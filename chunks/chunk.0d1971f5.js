@@ -666,23 +666,9 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
   const { tag } = Astro2.params;
   const { posts } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": `Tag:${tag}`, "description": `Pages for Tag:${tag}`, "class": "astro-TGE3Q7AE" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section class="astro-TGE3Q7AE">
-        <ul class="astro-TGE3Q7AE">
-            ${posts.map((post) => renderTemplate`<li class="astro-TGE3Q7AE">
-                        <div class="post group astro-TGE3Q7AE">
-                            <a${addAttribute(`/posts/${post.slug}/`, "href")} class="astro-TGE3Q7AE">
-                                <h3 class="astro-TGE3Q7AE">${post.data.title}</h3>
-                            </a>
-
-                            <p class="description astro-TGE3Q7AE">${post.data.description}</p>
-
-                            <ul class="tags astro-TGE3Q7AE">
-                                ${post.data.tags.map((tag2) => renderTemplate`<li class="chip astro-TGE3Q7AE">
-                                        <a${addAttribute(`/tags/${tag2}`, "href")} class="astro-TGE3Q7AE">${tag2}</a>
-                                    </li>`)}
-                            </ul>
-                        </div>
-                    </li>`)}
-        </ul>
+        <div class="astro-TGE3Q7AE">
+            ${posts.map((post) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": post.slug, "showDatetime": false, "class": "astro-TGE3Q7AE" })}`)}
+        </div>
     </section>` })}`;
 }, "/home/runner/work/website/website/src/pages/tags/[tag].astro");
 
