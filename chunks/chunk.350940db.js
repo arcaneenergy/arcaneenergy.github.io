@@ -32,6 +32,22 @@ function getHeadings() {
     "depth": 3,
     "slug": "controls",
     "text": "Controls"
+  }, {
+    "depth": 1,
+    "slug": "halo",
+    "text": "halo"
+  }, {
+    "depth": 2,
+    "slug": "hallo",
+    "text": "hallo"
+  }, {
+    "depth": 3,
+    "slug": "hallo-1",
+    "text": "hallo"
+  }, {
+    "depth": 4,
+    "slug": "hallo-2",
+    "text": "hallo"
   }];
 }
 function _createMdxContent(props) {
@@ -40,7 +56,9 @@ function _createMdxContent(props) {
     a: "a",
     strong: "strong",
     h2: "h2",
-    h3: "h3"
+    h3: "h3",
+    h1: "h1",
+    h4: "h4"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$ItchioWidget, {
@@ -103,6 +121,18 @@ function _createMdxContent(props) {
       children: [createVNode("kbd", {
         children: "Esc"
       }), ": Exit game"]
+    }), "\n", createVNode(_components.h1, {
+      id: "halo",
+      children: "halo"
+    }), "\n", createVNode(_components.h2, {
+      id: "hallo",
+      children: "hallo"
+    }), "\n", createVNode(_components.h3, {
+      id: "hallo-1",
+      children: "hallo"
+    }), "\n", createVNode(_components.h4, {
+      id: "hallo-2",
+      children: "hallo"
     })]
   });
 }

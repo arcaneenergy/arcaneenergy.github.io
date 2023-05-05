@@ -1,9 +1,9 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment } from './chunk.88f5223f.js';
 /* empty css                */import rss from '@astrojs/rss';
 /* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
-const $$Astro$e = createAstro("https://arcaneenergy.github.io");
+const $$Astro$f = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$Header;
   return renderTemplate`${maybeRenderHead($$result)}<header class="astro-3EF6KSR2">
 	<nav class="astro-3EF6KSR2">
@@ -18,9 +18,9 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 </header>`;
 }, "/home/runner/work/website/website/src/components/Header.astro");
 
-const $$Astro$d = createAstro("https://arcaneenergy.github.io");
+const $$Astro$e = createAstro("https://arcaneenergy.github.io");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$Footer;
   const today = new Date();
   return renderTemplate`${maybeRenderHead($$result)}<footer class="astro-SZ7XMLTE">
@@ -80,9 +80,9 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 const SITE_TITLE = "Arcane Energy";
 const SITE_DESCRIPTION = "Games, tutorials & more!";
 
-const $$Astro$c = createAstro("https://arcaneenergy.github.io");
+const $$Astro$d = createAstro("https://arcaneenergy.github.io");
 const $$Base = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Base;
   const canonicalURL = new URL(Astro2.url.pathname, Astro2.site);
   const { title, description, image = "/og-image.jpg" } = Astro2.props;
@@ -138,7 +138,7 @@ const FEATURED_POSTS = ["limspace-v1", "multimesh-scatter"];
 
 const contentDir = '/src/content/';
 
-const entryGlob = /* #__PURE__ */ Object.assign({"/src/content/posts/2d-physics-sandbox.mdx": () => import('./chunk.0a4a9bd0.js'),"/src/content/posts/animated-explosions-pack-1.mdx": () => import('./chunk.8b44afad.js'),"/src/content/posts/control-cube.mdx": () => import('./chunk.7acca9c4.js'),"/src/content/posts/divided-chains-combined-brains.mdx": () => import('./chunk.6a4abb4f.js'),"/src/content/posts/icosahedron.mdx": () => import('./chunk.b546f631.js'),"/src/content/posts/limspace-v1.mdx": () => import('./chunk.29be03a0.js'),"/src/content/posts/mergifier.mdx": () => import('./chunk.3c074098.js'),"/src/content/posts/metal-ball-adventures.mdx": () => import('./chunk.93412ce2.js'),"/src/content/posts/multimesh-scatter.mdx": () => import('./chunk.0c1def83.js'),"/src/content/posts/rocket-bounce.mdx": () => import('./chunk.1fc1af47.js'),"/src/content/posts/sm-pdf-viewer.mdx": () => import('./chunk.596251cc.js'),"/src/content/posts/sm-text-editor.mdx": () => import('./chunk.2285565d.js'),"/src/content/posts/squash-stretch-shader.mdx": () => import('./chunk.6efb9a56.js'),"/src/content/posts/tilemap-level-editor.mdx": () => import('./chunk.00b4c6eb.js'),"/src/content/posts/top-down-shooter-tutorial-series.mdx": () => import('./chunk.cf7ffd30.js'),"/src/content/posts/vignette-shader.mdx": () => import('./chunk.9ac1ce73.js'),"/src/content/posts/voxelgi-scene.mdx": () => import('./chunk.fe42f100.js'),"/src/content/posts/walking-simulator.mdx": () => import('./chunk.c1b1f2d8.js'),"/src/content/posts/whiteboard.mdx": () => import('./chunk.9ecf9b27.js')
+const entryGlob = /* #__PURE__ */ Object.assign({"/src/content/posts/2d-physics-sandbox.mdx": () => import('./chunk.0a4a9bd0.js'),"/src/content/posts/animated-explosions-pack-1.mdx": () => import('./chunk.8b44afad.js'),"/src/content/posts/control-cube.mdx": () => import('./chunk.7acca9c4.js'),"/src/content/posts/divided-chains-combined-brains.mdx": () => import('./chunk.7ec726b3.js'),"/src/content/posts/icosahedron.mdx": () => import('./chunk.b546f631.js'),"/src/content/posts/limspace-v1.mdx": () => import('./chunk.0a0da4fc.js'),"/src/content/posts/mergifier.mdx": () => import('./chunk.3d53b8ba.js'),"/src/content/posts/metal-ball-adventures.mdx": () => import('./chunk.93412ce2.js'),"/src/content/posts/multimesh-scatter.mdx": () => import('./chunk.0c1def83.js'),"/src/content/posts/rocket-bounce.mdx": () => import('./chunk.1fc1af47.js'),"/src/content/posts/sm-pdf-viewer.mdx": () => import('./chunk.596251cc.js'),"/src/content/posts/sm-text-editor.mdx": () => import('./chunk.2285565d.js'),"/src/content/posts/squash-stretch-shader.mdx": () => import('./chunk.6efb9a56.js'),"/src/content/posts/tilemap-level-editor.mdx": () => import('./chunk.00b4c6eb.js'),"/src/content/posts/top-down-shooter-tutorial-series.mdx": () => import('./chunk.cf7ffd30.js'),"/src/content/posts/vignette-shader.mdx": () => import('./chunk.9ac1ce73.js'),"/src/content/posts/voxelgi-scene.mdx": () => import('./chunk.fe42f100.js'),"/src/content/posts/walking-simulator.mdx": () => import('./chunk.c1b1f2d8.js'),"/src/content/posts/whiteboard.mdx": () => import('./chunk.9ecf9b27.js')
 
 });
 const collectionToEntryMap = createCollectionToGlobResultMap({
@@ -146,7 +146,7 @@ const collectionToEntryMap = createCollectionToGlobResultMap({
 	contentDir,
 });
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/posts/2d-physics-sandbox.mdx": () => import('./chunk.aa31a494.js'),"/src/content/posts/animated-explosions-pack-1.mdx": () => import('./chunk.55b37fb3.js'),"/src/content/posts/control-cube.mdx": () => import('./chunk.b17e5fc3.js'),"/src/content/posts/divided-chains-combined-brains.mdx": () => import('./chunk.1b1cd9d5.js'),"/src/content/posts/icosahedron.mdx": () => import('./chunk.82c7d8c8.js'),"/src/content/posts/limspace-v1.mdx": () => import('./chunk.f964cc23.js'),"/src/content/posts/mergifier.mdx": () => import('./chunk.db5e8cf4.js'),"/src/content/posts/metal-ball-adventures.mdx": () => import('./chunk.3fe6dd40.js'),"/src/content/posts/multimesh-scatter.mdx": () => import('./chunk.f794cf71.js'),"/src/content/posts/rocket-bounce.mdx": () => import('./chunk.b27eaed7.js'),"/src/content/posts/sm-pdf-viewer.mdx": () => import('./chunk.86efcd9c.js'),"/src/content/posts/sm-text-editor.mdx": () => import('./chunk.eefd8fe5.js'),"/src/content/posts/squash-stretch-shader.mdx": () => import('./chunk.16a83054.js'),"/src/content/posts/tilemap-level-editor.mdx": () => import('./chunk.d5e73f4b.js'),"/src/content/posts/top-down-shooter-tutorial-series.mdx": () => import('./chunk.416f77df.js'),"/src/content/posts/vignette-shader.mdx": () => import('./chunk.15868437.js'),"/src/content/posts/voxelgi-scene.mdx": () => import('./chunk.68a44973.js'),"/src/content/posts/walking-simulator.mdx": () => import('./chunk.5da435f0.js'),"/src/content/posts/whiteboard.mdx": () => import('./chunk.9adedb88.js')
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/posts/2d-physics-sandbox.mdx": () => import('./chunk.aa31a494.js'),"/src/content/posts/animated-explosions-pack-1.mdx": () => import('./chunk.55b37fb3.js'),"/src/content/posts/control-cube.mdx": () => import('./chunk.b17e5fc3.js'),"/src/content/posts/divided-chains-combined-brains.mdx": () => import('./chunk.37848839.js'),"/src/content/posts/icosahedron.mdx": () => import('./chunk.82c7d8c8.js'),"/src/content/posts/limspace-v1.mdx": () => import('./chunk.1ec4ad6f.js'),"/src/content/posts/mergifier.mdx": () => import('./chunk.705703bd.js'),"/src/content/posts/metal-ball-adventures.mdx": () => import('./chunk.3fe6dd40.js'),"/src/content/posts/multimesh-scatter.mdx": () => import('./chunk.f794cf71.js'),"/src/content/posts/rocket-bounce.mdx": () => import('./chunk.b27eaed7.js'),"/src/content/posts/sm-pdf-viewer.mdx": () => import('./chunk.86efcd9c.js'),"/src/content/posts/sm-text-editor.mdx": () => import('./chunk.eefd8fe5.js'),"/src/content/posts/squash-stretch-shader.mdx": () => import('./chunk.16a83054.js'),"/src/content/posts/tilemap-level-editor.mdx": () => import('./chunk.d5e73f4b.js'),"/src/content/posts/top-down-shooter-tutorial-series.mdx": () => import('./chunk.416f77df.js'),"/src/content/posts/vignette-shader.mdx": () => import('./chunk.15868437.js'),"/src/content/posts/voxelgi-scene.mdx": () => import('./chunk.68a44973.js'),"/src/content/posts/walking-simulator.mdx": () => import('./chunk.5da435f0.js'),"/src/content/posts/whiteboard.mdx": () => import('./chunk.9adedb88.js')
 
 });
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
@@ -164,36 +164,23 @@ const getEntryBySlug = createGetEntryBySlug({
 	collectionToRenderEntryMap,
 });
 
-const $$Astro$b = createAstro("https://arcaneenergy.github.io");
+const $$Astro$c = createAstro("https://arcaneenergy.github.io");
 const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Datetime;
   const datetime = Astro2.props.datetime;
-  return renderTemplate`${maybeRenderHead($$result)}<div class="astro-KHMJ5RSK">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-KHMJ5RSK">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-KHMJ5RSK"></path>
-        <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" class="astro-KHMJ5RSK"></path>
-        <path d="M16 3l0 4" class="astro-KHMJ5RSK"></path>
-        <path d="M8 3l0 4" class="astro-KHMJ5RSK"></path>
-        <path d="M4 11l16 0" class="astro-KHMJ5RSK"></path>
-        <path d="M8 15h2v2h-2z" class="astro-KHMJ5RSK"></path>
-    </svg>
-
-    <span class="astro-KHMJ5RSK">
-        <time${addAttribute(datetime.toISOString(), "datetime")} class="astro-KHMJ5RSK">
-            ${datetime.toLocaleString("de-DE", {
+  return renderTemplate`${maybeRenderHead($$result)}<time${addAttribute(datetime.toISOString(), "datetime")} class="astro-KHMJ5RSK">
+    ${datetime.toLocaleString("de-DE", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric"
   })}
-        </time>
-    </span>
-</div>`;
+</time>`;
 }, "/home/runner/work/website/website/src/components/Datetime.astro");
 
-const $$Astro$a = createAstro("https://arcaneenergy.github.io");
+const $$Astro$b = createAstro("https://arcaneenergy.github.io");
 const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$PostCard;
   const { slug, showDatetime } = Astro2.props;
   const post = await getEntryBySlug("posts", slug);
@@ -215,20 +202,19 @@ const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
 const getSortedPosts = (posts) => posts.sort(
   (a, b) => b.data.datetime.valueOf() - a.data.datetime.valueOf()
 );
-const capitalize = (str) => str.replace(/\b[a-z]/g, (char) => char.toUpperCase());
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$Astro$9 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$a = createAstro("https://arcaneenergy.github.io");
 const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Index$1;
   const postsCollection = await getCollection("posts");
   const allPosts = getSortedPosts(postsCollection);
   const recentPosts = allPosts.filter((p) => !FEATURED_POSTS.includes(p.slug)).slice(0, 6);
-  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["", '<section id="hero" class="relative max-w-full m-0 p-0 astro-J7PV25F6">\n		<div class="hero-background astro-J7PV25F6">\n			', '\n			<div class="py-32 px-8 max-w-screen-lg mx-auto pr-auto astro-J7PV25F6">\n				<h1 class="hero-title astro-J7PV25F6">', '</h1>\n				<p class="my-4 text-lg drop-shadow-lg astro-J7PV25F6">\n					', '\n				</p>\n\n				<div class="flex astro-J7PV25F6">\n					<a', ' class="px-8 py-4 bg-orange rounded-l-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<span class="mr-4 astro-J7PV25F6">\n							', '\n						</span>\n\n						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.37069 220.73612" class="w-8 h-8 stroke-red-500 astro-J7PV25F6"><path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" fill="currentColor" class="astro-J7PV25F6"></path></svg>\n					</a>\n\n					<a href="https://youtu.be/ZDqve0fh6GE" class="px-4 py-1 bg-white rounded-r-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="52.12 84.48 215.77 151.03" class="w-8 h-8 astro-J7PV25F6">\n							<path d="M0 0h400v400H0z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.2 0 0 .2 115 115)" class="astro-J7PV25F6"></path>\n							<path d="M199.917 105.63s-84.292 0-105.448 5.498c-11.328 3.165-20.655 12.492-23.821 23.987-5.497 21.156-5.497 64.968-5.497 64.968s0 43.979 5.497 64.802c3.166 11.495 12.326 20.656 23.821 23.821 21.322 5.664 105.448 5.664 105.448 5.664s84.459 0 105.614-5.498c11.495-3.165 20.655-12.159 23.654-23.82 5.664-20.99 5.664-64.802 5.664-64.802s.166-43.979-5.664-65.135c-2.999-11.495-12.159-20.655-23.654-23.654-21.155-5.83-105.614-5.831-105.614-5.831Zm-26.821 53.974 70.133 40.479-70.133 40.313v-80.792Z" style="fill:red;fill-rule:nonzero" transform="scale(.8)" class="astro-J7PV25F6"></path></svg>\n					</a>\n				</div>\n			</div>\n		</div>\n	</section><main class="astro-J7PV25F6">\n		<section class="astro-J7PV25F6">\n			<div class="filter astro-J7PV25F6">\n				<a href="/tags/post" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" class="astro-J7PV25F6"></path>\n						<path d="M7 8h10" class="astro-J7PV25F6"></path>\n						<path d="M7 12h10" class="astro-J7PV25F6"></path>\n						<path d="M7 16h10" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Articles & Tutorials</span>\n				</a>\n				<a href="/tags/software" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z" class="astro-J7PV25F6"></path>\n						<path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" class="astro-J7PV25F6"></path>\n						<path d="M8 9v2" class="astro-J7PV25F6"></path>\n						<path d="M7 10h2" class="astro-J7PV25F6"></path>\n						<path d="M14 10h2" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Games & Software</span>\n				</a>\n				<a href="/tags/asset" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M6 17.6l-2 -1.1v-2.5" class="astro-J7PV25F6"></path>\n						<path d="M4 10v-2.5l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M10 4.1l2 -1.1l2 1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 6.4l2 1.1v2.5" class="astro-J7PV25F6"></path>\n						<path d="M20 14v2.5l-2 1.12" class="astro-J7PV25F6"></path>\n						<path d="M14 19.9l-2 1.1l-2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 8.6l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 18.5l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 12l-2 -1.12" class="astro-J7PV25F6"></path>\n						<path d="M6 8.6l-2 -1.1" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Assets & Tools</span>\n				</a>\n			</div>\n\n			<span class="flex items-baseline astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4" class="astro-J7PV25F6"></path>\n					<path d="M9 15l-4.5 4.5" class="astro-J7PV25F6"></path>\n					<path d="M14.5 4l5.5 5.5" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Featured</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 gap-8 py-8 astro-J7PV25F6">\n				', '\n			</div>\n		</section>\n\n		<section class="astro-J7PV25F6">\n			<span class="flex items-baseline astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" class="astro-J7PV25F6"></path>\n					<path d="M8 8l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 12l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 16l4 0" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Recent Posts</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 py-8 astro-J7PV25F6">\n				', '\n			</div>\n\n			<div class="text-center astro-J7PV25F6">\n				<a href="/posts/1" class="link astro-J7PV25F6">All Posts</a>\n			</div>\n		</section>\n\n		<div class="support astro-J7PV25F6">\n			<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"><\/script><script type="text/javascript">\n				kofiwidget2.init(\n					"Support Arcane Energy on Ko-fi!",\n					"#",\n					"E1E5CVWWE"\n				);\n				kofiwidget2.draw();\n			<\/script>\n		</div>\n	</main>', ""])), maybeRenderHead($$result2), renderComponent($$result2, "Header", $$Header, { "class": "astro-J7PV25F6" }), HOMEPAGE_HERO.title, HOMEPAGE_HERO.description, addAttribute(HOMEPAGE_HERO.button.link, "href"), HOMEPAGE_HERO.button.title, FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p, "showDatetime": false, "class": "astro-J7PV25F6" })}`), recentPosts.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p.slug, "showDatetime": false, "class": "astro-J7PV25F6" })}`), renderComponent($$result2, "Footer", $$Footer, { "class": "astro-J7PV25F6" })) })}`;
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["", '<section id="hero" class="relative max-w-full m-0 p-0 astro-J7PV25F6">\n		<div class="hero-background astro-J7PV25F6">\n			', '\n			<div class="py-32 px-8 max-w-def mx-auto pr-auto astro-J7PV25F6">\n				<h1 class="hero-title astro-J7PV25F6">', '</h1>\n				<p class="my-4 text-lg drop-shadow-lg astro-J7PV25F6">\n					', '\n				</p>\n\n				<div class="flex astro-J7PV25F6">\n					<a', ' class="px-8 py-4 bg-orange rounded-l-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<span class="mr-4 astro-J7PV25F6">\n							', '\n						</span>\n\n						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.37069 220.73612" class="w-8 h-8 stroke-red-500 astro-J7PV25F6"><path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" fill="currentColor" class="astro-J7PV25F6"></path></svg>\n					</a>\n\n					<a href="https://youtu.be/ZDqve0fh6GE" class="px-4 py-1 bg-white rounded-r-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="52.12 84.48 215.77 151.03" class="w-8 h-8 astro-J7PV25F6">\n							<path d="M0 0h400v400H0z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.2 0 0 .2 115 115)" class="astro-J7PV25F6"></path>\n							<path d="M199.917 105.63s-84.292 0-105.448 5.498c-11.328 3.165-20.655 12.492-23.821 23.987-5.497 21.156-5.497 64.968-5.497 64.968s0 43.979 5.497 64.802c3.166 11.495 12.326 20.656 23.821 23.821 21.322 5.664 105.448 5.664 105.448 5.664s84.459 0 105.614-5.498c11.495-3.165 20.655-12.159 23.654-23.82 5.664-20.99 5.664-64.802 5.664-64.802s.166-43.979-5.664-65.135c-2.999-11.495-12.159-20.655-23.654-23.654-21.155-5.83-105.614-5.831-105.614-5.831Zm-26.821 53.974 70.133 40.479-70.133 40.313v-80.792Z" style="fill:red;fill-rule:nonzero" transform="scale(.8)" class="astro-J7PV25F6"></path></svg>\n					</a>\n				</div>\n			</div>\n		</div>\n	</section><main class="astro-J7PV25F6">\n		<section class="astro-J7PV25F6">\n			<div class="filter astro-J7PV25F6">\n				<a href="/tags/post" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" class="astro-J7PV25F6"></path>\n						<path d="M7 8h10" class="astro-J7PV25F6"></path>\n						<path d="M7 12h10" class="astro-J7PV25F6"></path>\n						<path d="M7 16h10" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Articles & Tutorials</span>\n				</a>\n				<a href="/tags/software" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z" class="astro-J7PV25F6"></path>\n						<path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" class="astro-J7PV25F6"></path>\n						<path d="M8 9v2" class="astro-J7PV25F6"></path>\n						<path d="M7 10h2" class="astro-J7PV25F6"></path>\n						<path d="M14 10h2" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Games & Software</span>\n				</a>\n				<a href="/tags/asset" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M6 17.6l-2 -1.1v-2.5" class="astro-J7PV25F6"></path>\n						<path d="M4 10v-2.5l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M10 4.1l2 -1.1l2 1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 6.4l2 1.1v2.5" class="astro-J7PV25F6"></path>\n						<path d="M20 14v2.5l-2 1.12" class="astro-J7PV25F6"></path>\n						<path d="M14 19.9l-2 1.1l-2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 8.6l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 18.5l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 12l-2 -1.12" class="astro-J7PV25F6"></path>\n						<path d="M6 8.6l-2 -1.1" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Assets & Tools</span>\n				</a>\n			</div>\n\n			<span class="flex items-baseline astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4" class="astro-J7PV25F6"></path>\n					<path d="M9 15l-4.5 4.5" class="astro-J7PV25F6"></path>\n					<path d="M14.5 4l5.5 5.5" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Featured</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 gap-8 py-8 astro-J7PV25F6">\n				', '\n			</div>\n		</section>\n\n		<section class="astro-J7PV25F6">\n			<span class="flex items-baseline astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" class="astro-J7PV25F6"></path>\n					<path d="M8 8l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 12l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 16l4 0" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Recent Posts</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 py-8 astro-J7PV25F6">\n				', '\n			</div>\n\n			<div class="text-center astro-J7PV25F6">\n				<a href="/posts/1" class="link astro-J7PV25F6">All Posts</a>\n			</div>\n		</section>\n\n		<div class="support astro-J7PV25F6">\n			<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"><\/script><script type="text/javascript">\n				kofiwidget2.init(\n					"Support Arcane Energy on Ko-fi!",\n					"#",\n					"E1E5CVWWE"\n				);\n				kofiwidget2.draw();\n			<\/script>\n		</div>\n	</main>', ""])), maybeRenderHead($$result2), renderComponent($$result2, "Header", $$Header, { "class": "astro-J7PV25F6" }), HOMEPAGE_HERO.title, HOMEPAGE_HERO.description, addAttribute(HOMEPAGE_HERO.button.link, "href"), HOMEPAGE_HERO.button.title, FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p, "showDatetime": false, "class": "astro-J7PV25F6" })}`), recentPosts.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p.slug, "showDatetime": false, "class": "astro-J7PV25F6" })}`), renderComponent($$result2, "Footer", $$Footer, { "class": "astro-J7PV25F6" })) })}`;
 }, "/home/runner/work/website/website/src/pages/index.astro");
 
 const $$file$6 = "/home/runner/work/website/website/src/pages/index.astro";
@@ -448,21 +434,21 @@ const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	get
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$8 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$9 = createAstro("https://arcaneenergy.github.io");
 const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$Breadcrumbs;
   const currentUrlPath = Astro2.url.pathname.replace(/\/+$/, "");
   const pathSplit = currentUrlPath.split("/").slice(1);
   let currentPath = "";
   const breadcrumbList = [
     {
-      title: "Home",
+      title: "home",
       path: "/"
     },
     ...pathSplit.map(
       (breadcrumb, index) => (currentPath += `/${breadcrumb}`, {
-        title: capitalize(breadcrumb),
+        title: breadcrumb,
         path: currentPath
       })
     )
@@ -473,12 +459,9 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
       breadcrumbList.pop();
     }
   }
-  if (breadcrumbList[1].title.split("/")[0].toLowerCase() === "posts") {
-    breadcrumbList[1].title = "Posts";
-  }
   const { title } = Astro2.props;
   if (title) {
-    breadcrumbList[breadcrumbList.length - 1]["title"] = title;
+    breadcrumbList[breadcrumbList.length - 1]["title"] = title.toLocaleLowerCase();
   }
   return renderTemplate`${maybeRenderHead($$result)}<nav class="astro-ILHXCYM7">
     <ul class="astro-ILHXCYM7">
@@ -491,9 +474,9 @@ const $$Breadcrumbs = createComponent(async ($$result, $$props, $$slots) => {
 </nav>`;
 }, "/home/runner/work/website/website/src/components/Breadcrumbs.astro");
 
-const $$Astro$7 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$8 = createAstro("https://arcaneenergy.github.io");
 const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Generic;
   const { title, description, datetime, cover } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": cover, "class": "astro-FN52SEMU" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "Header", $$Header, { "class": "astro-FN52SEMU" })}${renderComponent($$result2, "Breadcrumbs", $$Breadcrumbs, { "title": title, "class": "astro-FN52SEMU" })}${maybeRenderHead($$result2)}<main class="astro-FN52SEMU">
@@ -505,14 +488,14 @@ const $$Generic = createComponent(async ($$result, $$props, $$slots) => {
     </main>${renderComponent($$result2, "Footer", $$Footer, { "class": "astro-FN52SEMU" })}` })}`;
 }, "/home/runner/work/website/website/src/layouts/Generic.astro");
 
-const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$7 = createAstro("https://arcaneenergy.github.io");
 async function getStaticPaths$2({ paginate }) {
   const postsCollection = await getCollection("posts");
   const posts = getSortedPosts(postsCollection);
   return paginate(posts, { pageSize: 15 });
 }
 const $$page = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$page;
   const { page } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Generic", $$Generic, { "title": "Posts", "description": "All posts.", "class": "astro-6PAWVVAF" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section class="astro-6PAWVVAF">
@@ -547,9 +530,9 @@ const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$5
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$5 = createAstro("https://arcaneenergy.github.io");
+const $$Astro$6 = createAstro("https://arcaneenergy.github.io");
 const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Tag;
   const { tag, sm = true, gray = true } = Astro2.props;
   return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")}${addAttribute(`${sm ? "text-sm" : ""} ${gray ? "text-gray" : ""} astro-BLWJYJPT`, "class")}>
@@ -557,25 +540,39 @@ const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
 </a>`;
 }, "/home/runner/work/website/website/src/components/Tag.astro");
 
+const $$Astro$5 = createAstro("https://arcaneenergy.github.io");
+const $$TagsList = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  Astro2.self = $$TagsList;
+  const tags = Astro2.props.tags;
+  return renderTemplate`${maybeRenderHead($$result)}<ul class="astro-DLMOSUXQ">
+    ${tags.map((tag) => renderTemplate`<li class="astro-DLMOSUXQ">
+                ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "class": "astro-DLMOSUXQ" })}
+            </li>`)}
+</ul>`;
+}, "/home/runner/work/website/website/src/components/TagsList.astro");
+
 const $$Astro$4 = createAstro("https://arcaneenergy.github.io");
 const $$Article = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Article;
-  const { title, description, datetime, cover } = Astro2.props;
+  const { title, description, datetime, cover, tags } = Astro2.props;
   return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": title, "description": description, "image": cover, "class": "astro-UWV4MMHS" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "Header", $$Header, { "class": "astro-UWV4MMHS" })}${renderComponent($$result2, "Breadcrumbs", $$Breadcrumbs, { "title": title, "class": "astro-UWV4MMHS" })}${renderSlot($$result2, $$slots["before-content"])}${maybeRenderHead($$result2)}<main class="astro-UWV4MMHS">
         <div class="info astro-UWV4MMHS">
             <!-- {cover && <img src={cover} alt="Image" />} -->
 
             <h1 class="astro-UWV4MMHS">${title}</h1>
-
-            <div class="datetime astro-UWV4MMHS">
-                ${datetime && renderTemplate`${renderComponent($$result2, "Datetime", $$Datetime, { "datetime": datetime, "class": "astro-UWV4MMHS" })}`}
-            </div>
         </div>
 
         <article class="astro-UWV4MMHS">
             ${renderSlot($$result2, $$slots["default"])}
         </article>
+
+        <div class="metadata astro-UWV4MMHS">
+            ${datetime && renderTemplate`${renderComponent($$result2, "Datetime", $$Datetime, { "datetime": datetime, "class": "astro-UWV4MMHS" })}`}
+            ${tags && renderTemplate`<p class="metadata-divider astro-UWV4MMHS">&verbar;</p>`}
+            ${tags && renderTemplate`${renderComponent($$result2, "TagsList", $$TagsList, { "tags": tags, "class": "astro-UWV4MMHS" })}`}
+        </div>
     </main>${renderSlot($$result2, $$slots["after-content"])}${renderComponent($$result2, "Footer", $$Footer, { "class": "astro-UWV4MMHS" })}` })}`;
 }, "/home/runner/work/website/website/src/layouts/Article.astro");
 
@@ -602,11 +599,7 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$slug;
   const post = Astro2.props;
   const { Content } = await post.render();
-  return renderTemplate`${renderComponent($$result, "Article", $$Article, { "title": post.data.title, "description": post.data.description, "datetime": post.data.datetime, "cover": post.data.cover, "class": "astro-GYSQO7GH" }, { "after-content": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<ul class="tags astro-GYSQO7GH">
-		${post.data.tags.map((tag) => renderTemplate`<li class="astro-GYSQO7GH">
-					${renderComponent($$result2, "Tag", $$Tag, { "tag": tag, "class": "astro-GYSQO7GH" })}
-				</li>`)}
-	</ul>`, "default": ($$result2) => renderTemplate`${renderComponent($$result2, "Content", Content, { "class": "astro-GYSQO7GH" })}` })}`;
+  return renderTemplate`${renderComponent($$result, "Article", $$Article, { "title": post.data.title, "description": post.data.description, "datetime": post.data.datetime, "cover": post.data.cover, "tags": post.data.tags, "class": "astro-GYSQO7GH" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "Content", Content, { "class": "astro-GYSQO7GH" })}` })}`;
 }, "/home/runner/work/website/website/src/pages/posts/[slug].astro");
 
 const $$file$3 = "/home/runner/work/website/website/src/pages/posts/[slug].astro";

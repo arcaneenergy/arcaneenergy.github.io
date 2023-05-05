@@ -35,7 +35,9 @@ function _createMdxContent(props) {
     h2: "h2",
     p: "p",
     strong: "strong",
-    code: "code"
+    code: "code",
+    ul: "ul",
+    li: "li"
   }, props.components);
   return createVNode(Fragment, {
     children: [createVNode($$ItchioWidget, {
@@ -65,18 +67,12 @@ function _createMdxContent(props) {
       })]
     }), "\n", createVNode(_components.p, {
       children: "You cannot bring objects to the backrooms."
-    }), "\n", createVNode("details", {
-      children: [createVNode("summary", {
-        children: "How to get to the backrooms"
-      }), createVNode(_components.p, {
-        children: "Wait (approx. 2 minutes) or jump off the balcony."
-      })]
-    }), "\n", createVNode("details", {
-      children: [createVNode("summary", {
-        children: "How to leave the backrooms"
-      }), createVNode(_components.p, {
-        children: "Find the key in the library. Find the library by following the arrows on the walls.\nAfter acquiring the key, go back to the central and open the door to open a dimensional\nportal back to your home."
-      })]
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: "To get to the backrooms, wait approx. 2 minutes or jump off the balcony."
+      }), "\n", createVNode(_components.li, {
+        children: "To leave the backrooms, find the key in the library. Find the library by following the arrows on the walls. After acquiring the key, find (or go back to) the central and open the door to open a dimensional portal back to your home."
+      }), "\n"]
     })]
   });
 }

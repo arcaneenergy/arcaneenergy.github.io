@@ -54,10 +54,10 @@ function _createMdxContent(props) {
         children: "Growth"
       }), "."]
     }), "\n", createVNode(_components.p, {
-      children: [createVNode(_components.a, {
+      children: createVNode(_components.a, {
         href: "https://itch.io/jam/go-godot-jam/rate/1065242",
         children: "View the submission"
-      }), "."]
+      })
     }), "\n", createVNode(_components.h2, {
       id: "trailer",
       children: "Trailer"
