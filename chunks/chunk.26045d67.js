@@ -535,9 +535,7 @@ const $$Tag = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Tag;
   const { tag, sm = true, gray = true } = Astro2.props;
-  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")}${addAttribute(`${sm ? "text-sm" : ""} ${gray ? "text-gray" : ""} astro-BLWJYJPT`, "class")}>
-    #${tag}
-</a>`;
+  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(`/tags/${tag}`, "href")}${addAttribute(`${sm ? "text-sm" : ""} ${gray ? "text-gray" : ""} astro-BLWJYJPT`, "class")}>#${tag}</a>`;
 }, "/home/runner/work/website/website/src/components/Tag.astro");
 
 const $$Astro$5 = createAstro("https://arcaneenergy.github.io");
@@ -545,11 +543,7 @@ const $$TagsList = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$TagsList;
   const tags = Astro2.props.tags;
-  return renderTemplate`${maybeRenderHead($$result)}<ul class="astro-DLMOSUXQ">
-    ${tags.map((tag) => renderTemplate`<li class="astro-DLMOSUXQ">
-                ${renderComponent($$result, "Tag", $$Tag, { "tag": tag, "class": "astro-DLMOSUXQ" })}
-            </li>`)}
-</ul>`;
+  return renderTemplate`${tags.map((tag) => renderTemplate`${renderComponent($$result, "Tag", $$Tag, { "tag": tag })}`)}`;
 }, "/home/runner/work/website/website/src/components/TagsList.astro");
 
 const $$Astro$4 = createAstro("https://arcaneenergy.github.io");
@@ -570,10 +564,13 @@ const $$Article = createComponent(async ($$result, $$props, $$slots) => {
 
         <div class="metadata astro-UWV4MMHS">
             ${datetime && renderTemplate`${renderComponent($$result2, "Datetime", $$Datetime, { "datetime": datetime, "class": "astro-UWV4MMHS" })}`}
-            ${tags && renderTemplate`<p class="metadata-divider astro-UWV4MMHS">&verbar;</p>`}
             ${tags && renderTemplate`${renderComponent($$result2, "TagsList", $$TagsList, { "tags": tags, "class": "astro-UWV4MMHS" })}`}
         </div>
-    </main>${renderSlot($$result2, $$slots["after-content"])}${renderComponent($$result2, "Footer", $$Footer, { "class": "astro-UWV4MMHS" })}` })}`;
+    </main>` })}
+
+${renderSlot($$result, $$slots["after-content"])}
+
+${renderComponent($$result, "Footer", $$Footer, { "class": "astro-UWV4MMHS" })}`;
 }, "/home/runner/work/website/website/src/layouts/Article.astro");
 
 const $$file$4 = "/home/runner/work/website/website/src/layouts/Article.astro";
