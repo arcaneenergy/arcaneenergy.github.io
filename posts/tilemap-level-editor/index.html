@@ -28,13 +28,13 @@
         <meta property="twitter:title" content="Tilemap Level Editor (Archived)">
         <meta property="twitter:description" content="Simple level editor for Godot with JSON export functionality. Made with Godot.">
         <meta property="twitter:image" content="https://arcaneenergy.github.io/posts/tilemap-level-editor/banner.webp">
-    <link rel="stylesheet" href="/assets/asset.9714ea6f.css" />
+    <link rel="stylesheet" href="/assets/asset.77d58c30.css" />
 <link rel="stylesheet" href="/assets/asset.b8450633.css" />
 <link rel="stylesheet" href="/assets/asset.0a003dce.css" />
 <link rel="stylesheet" href="/assets/asset.0fcedcfb.css" />
-<link rel="stylesheet" href="/assets/asset.618e4dcf.css" />
+<link rel="stylesheet" href="/assets/asset.cb125cf1.css" />
 <link rel="stylesheet" href="/assets/asset.2a19d4d6.css" />
-<link rel="stylesheet" href="/assets/asset.4e6b0369.css" /><link rel="stylesheet" href="/assets/asset.e83f3c6e.css" /><link rel="stylesheet" href="/assets/asset.3f53dee4.css" /><link rel="stylesheet" href="/assets/asset.733765c9.css" /></head>
+<link rel="stylesheet" href="/assets/asset.4e6b0369.css" /><link rel="stylesheet" href="/assets/asset.f4e70511.css" /><link rel="stylesheet" href="/assets/asset.3f53dee4.css" /><link rel="stylesheet" href="/assets/asset.733765c9.css" /></head>
 
     <body>
         <header class="astro-3EF6KSR2">
@@ -82,16 +82,13 @@
 <div class="astro-VPUCGVIJ">
     <iframe src="https://itch.io/embed/1547896?dark=true" width="552" height="167" frameborder="0" class="astro-VPUCGVIJ"></iframe>
 </div>
-<h2 id="trailer">Trailer</h2>
-<div class="iframe-container astro-SY3JR4F6">
-    <iframe src="https://www.youtube.com/embed/01ktb-9E6J0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
-</div>
-<h2 id="use-case">Use case</h2>
+<h2 id="description">Description</h2>
+<h3 id="use-case">Use case</h3>
 <p>This is currently used in a personal project. It’s used to load in JSON files into Godot to recreate the levels at
 runtime. The exported JSON file contains all levels and individual cells. This makes it easy to recreate the level in
 Godot.</p>
 <p>Alternatively, you can use this program to easily create levels in the editor.</p>
-<h2 id="controls">Controls</h2>
+<h3 id="controls">Controls</h3>
 <p><kbd>Left click</kbd>: Place tile (if a tile is selected)</p>
 <p><kbd>Right click</kbd>: Delete tile</p>
 <p><kbd>Tab</kbd>: Toggle GUI</p>
@@ -101,7 +98,7 @@ Godot.</p>
 <p><kbd>W</kbd>/<kbd>A</kbd>/<kbd>S</kbd>/<kbd>D</kbd>: Move camera</p>
 <p><kbd>↑</kbd>/<kbd>←</kbd>/<kbd>↓</kbd>/<kbd>→</kbd>: Move camera</p>
 <p>Mouse scroll up/down: Zoom in/out</p>
-<h2 id="ui-overview">UI Overview</h2>
+<h3 id="ui-overview">UI Overview</h3>
 <p>Create new layers with the <code>+ New Layer</code> button. This brings up a dialog box for selecting an image file. After
 selecting a file, the new layer appears in the list.</p>
 <p>Switch between layers by pressing the arrow to the left of the layer. This will open the tileset on the left. Use the up
@@ -111,7 +108,7 @@ and down arrow keys to move layers.</p>
 <p><img src="/posts/tilemap-level-editor/image-02.webp" alt="Image 2"/></p>
 <p>Change the size and shape of the cursor using the buttons in the lower right corner.</p>
 <p><img src="/posts/tilemap-level-editor/image-03.webp" alt="Image 3"/></p>
-<h2 id="exported-json-file">Exported JSON file</h2>
+<h3 id="exported-json-file">Exported JSON file</h3>
 <p>The exported JSON file might look like this:</p>
 <pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">{</span></span>
 <span class="line"><span style="color:#C9D1D9">  </span><span style="color:#7EE787">&quot;layers&quot;</span><span style="color:#C9D1D9">: [</span></span>
@@ -128,13 +125,16 @@ and down arrow keys to move layers.</p>
 <span class="line"><span style="color:#C9D1D9">  ]</span></span>
 <span class="line"><span style="color:#C9D1D9">}</span></span></code></pre>
 <p>Each cell contains an ID, an x and a y position. The ID is used to identify which cell in the tileset it refers to.</p>
-<h2 id="problems">Problems</h2>
+<h3 id="problems">Problems</h3>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" disabled/> Currently, the program only supports tiles of 16x16 size. The spritesheet needs to be divisible by 16 (16, 32, 48,
 64 etc.)</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Exported texture paths are absolute.</li>
 </ul>
-<p>Godot_v3.5-rc2</p>
+<h2 id="video">Video</h2>
+<div class="iframe-container astro-SY3JR4F6">
+    <iframe src="https://www.youtube.com/embed/01ktb-9E6J0" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-SY3JR4F6"></iframe>
+</div>
         </article>
 
         <div class="metadata astro-UWV4MMHS">
