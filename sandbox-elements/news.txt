@@ -1,4 +1,0 @@
-[font_size=42]Version 0.1[/font_size]
-[font_size=18]01.08.2023[/font_size]
-
-[font_size=26]New features[/font_size]
