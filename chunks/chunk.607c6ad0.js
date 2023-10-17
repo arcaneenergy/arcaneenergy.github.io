@@ -322,6 +322,11 @@ function _createMdxContent(props) {
           href: "https://gameanalytics.com/privacy/",
           children: "GameAnalytics"
         })
+      }), "\n", createVNode(_components.li, {
+        children: createVNode(_components.a, {
+          href: "https://www.is.com/privacy-policy/",
+          children: "ironSource"
+        })
       }), "\n"]
     }), "\n", createVNode(_components.h2, {
       id: "tracking-and-cookies",
