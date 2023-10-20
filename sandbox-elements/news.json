@@ -1,8 +1,8 @@
-[
-    {
+{
+    "1": {
         "type": "update",
         "date": "2023-06-08 19:45:00",
         "title": "Version 0.1",
         "content": "[font_size=26]New features[/font_size]"
     }
-]
+}
