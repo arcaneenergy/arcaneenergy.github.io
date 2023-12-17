@@ -1,9 +1,9 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment } from './chunk.88f5223f.js';
-/* empty css                */import rss from '@astrojs/rss';
+/* empty css                *//* empty css                */import rss from '@astrojs/rss';
 /* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
-const $$Astro$f = createAstro("https://arcaneenergy.github.io");
+const $$Astro$g = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
   Astro2.self = $$Header;
   return renderTemplate`${maybeRenderHead($$result)}<header class="astro-3EF6KSR2">
 	<nav class="astro-3EF6KSR2">
@@ -18,9 +18,9 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 </header>`;
 }, "/home/runner/work/website/website/src/components/Header.astro");
 
-const $$Astro$e = createAstro("https://arcaneenergy.github.io");
+const $$Astro$f = createAstro("https://arcaneenergy.github.io");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$Footer;
   const today = new Date();
   return renderTemplate`${maybeRenderHead($$result)}<footer class="astro-SZ7XMLTE">
@@ -80,9 +80,9 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 const SITE_TITLE = "Arcane Energy";
 const SITE_DESCRIPTION = "Games, tutorials & more!";
 
-const $$Astro$d = createAstro("https://arcaneenergy.github.io");
+const $$Astro$e = createAstro("https://arcaneenergy.github.io");
 const $$Base = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$Base;
   const canonicalURL = new URL(Astro2.url.pathname, Astro2.site);
   const { title, description, image = "/og-image.jpg" } = Astro2.props;
@@ -164,9 +164,9 @@ const getEntryBySlug = createGetEntryBySlug({
 	collectionToRenderEntryMap,
 });
 
-const $$Astro$c = createAstro("https://arcaneenergy.github.io");
+const $$Astro$d = createAstro("https://arcaneenergy.github.io");
 const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Datetime;
   const datetime = Astro2.props.datetime;
   return renderTemplate`${maybeRenderHead($$result)}<time${addAttribute(datetime.toISOString(), "datetime")} class="astro-KHMJ5RSK">
@@ -178,9 +178,9 @@ const $$Datetime = createComponent(async ($$result, $$props, $$slots) => {
 </time>`;
 }, "/home/runner/work/website/website/src/components/Datetime.astro");
 
-const $$Astro$b = createAstro("https://arcaneenergy.github.io");
+const $$Astro$c = createAstro("https://arcaneenergy.github.io");
 const $$PostCard = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$PostCard;
   const { slug, showDatetime } = Astro2.props;
   const post = await getEntryBySlug("posts", slug);
@@ -207,22 +207,227 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$Astro$a = createAstro("https://arcaneenergy.github.io");
+const $$Astro$b = createAstro("https://arcaneenergy.github.io");
 const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$Index$1;
   const postsCollection = await getCollection("posts");
   const allPosts = getSortedPosts(postsCollection);
   const recentPosts = allPosts.filter((p) => !FEATURED_POSTS.includes(p.slug)).slice(0, 6);
-  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["", '<section id="hero" class="relative max-w-full m-0 p-0 astro-J7PV25F6">\n		<div class="hero-background astro-J7PV25F6">\n			', '\n			<div class="py-32 px-8 max-w-def mx-auto pr-auto astro-J7PV25F6">\n				<h1 class="hero-title astro-J7PV25F6">', '</h1>\n\n				<p class="my-4 text-lg drop-shadow-lg astro-J7PV25F6">\n					', '\n				</p>\n\n				<div class="flex astro-J7PV25F6">\n					<a', ' class="px-8 py-4 bg-orange rounded-l-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<span class="mr-4 astro-J7PV25F6">\n							', '\n						</span>\n\n						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.37069 220.73612" class="w-8 h-8 stroke-red-500 astro-J7PV25F6"><path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" fill="currentColor" class="astro-J7PV25F6"></path></svg>\n					</a>\n\n					<a href="https://youtu.be/ZDqve0fh6GE" class="px-4 py-1 bg-white rounded-r-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="52.12 84.48 215.77 151.03" class="w-8 h-8 astro-J7PV25F6">\n							<path d="M0 0h400v400H0z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.2 0 0 .2 115 115)" class="astro-J7PV25F6"></path>\n							<path d="M199.917 105.63s-84.292 0-105.448 5.498c-11.328 3.165-20.655 12.492-23.821 23.987-5.497 21.156-5.497 64.968-5.497 64.968s0 43.979 5.497 64.802c3.166 11.495 12.326 20.656 23.821 23.821 21.322 5.664 105.448 5.664 105.448 5.664s84.459 0 105.614-5.498c11.495-3.165 20.655-12.159 23.654-23.82 5.664-20.99 5.664-64.802 5.664-64.802s.166-43.979-5.664-65.135c-2.999-11.495-12.159-20.655-23.654-23.654-21.155-5.83-105.614-5.831-105.614-5.831Zm-26.821 53.974 70.133 40.479-70.133 40.313v-80.792Z" style="fill:red;fill-rule:nonzero" transform="scale(.8)" class="astro-J7PV25F6"></path></svg>\n					</a>\n				</div>\n			</div>\n		</div>\n	</section><main class="astro-J7PV25F6">\n		<section class="astro-J7PV25F6">\n			<div class="filter astro-J7PV25F6">\n				<a href="/tags/post" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" class="astro-J7PV25F6"></path>\n						<path d="M7 8h10" class="astro-J7PV25F6"></path>\n						<path d="M7 12h10" class="astro-J7PV25F6"></path>\n						<path d="M7 16h10" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Articles & Tutorials</span>\n				</a>\n				<a href="/tags/software" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z" class="astro-J7PV25F6"></path>\n						<path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" class="astro-J7PV25F6"></path>\n						<path d="M8 9v2" class="astro-J7PV25F6"></path>\n						<path d="M7 10h2" class="astro-J7PV25F6"></path>\n						<path d="M14 10h2" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Games & Software</span>\n				</a>\n				<a href="/tags/asset" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M6 17.6l-2 -1.1v-2.5" class="astro-J7PV25F6"></path>\n						<path d="M4 10v-2.5l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M10 4.1l2 -1.1l2 1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 6.4l2 1.1v2.5" class="astro-J7PV25F6"></path>\n						<path d="M20 14v2.5l-2 1.12" class="astro-J7PV25F6"></path>\n						<path d="M14 19.9l-2 1.1l-2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 8.6l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 18.5l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 12l-2 -1.12" class="astro-J7PV25F6"></path>\n						<path d="M6 8.6l-2 -1.1" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Assets & Tools</span>\n				</a>\n			</div>\n\n			<span class="flex items-center astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4" class="astro-J7PV25F6"></path>\n					<path d="M9 15l-4.5 4.5" class="astro-J7PV25F6"></path>\n					<path d="M14.5 4l5.5 5.5" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Featured</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 gap-8 astro-J7PV25F6">\n				', '\n			</div>\n		</section>\n\n		<section class="astro-J7PV25F6">\n			<span class="flex items-center astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" class="astro-J7PV25F6"></path>\n					<path d="M8 8l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 12l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 16l4 0" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Recent Posts</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-8 astro-J7PV25F6">\n				', '\n			</div>\n\n			<div class="text-center mt-8 astro-J7PV25F6">\n				<a href="/posts/1" class="link astro-J7PV25F6">All Posts</a>\n			</div>\n		</section>\n\n		<div class="support astro-J7PV25F6">\n			<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"><\/script><script type="text/javascript">\n				kofiwidget2.init(\n					"Support Arcane Energy on Ko-fi!",\n					"#",\n					"E1E5CVWWE"\n				);\n				kofiwidget2.draw();\n			<\/script>\n		</div>\n	</main>', ""])), maybeRenderHead($$result2), renderComponent($$result2, "Header", $$Header, { "class": "astro-J7PV25F6" }), HOMEPAGE_HERO.title, HOMEPAGE_HERO.description, addAttribute(HOMEPAGE_HERO.button.link, "href"), HOMEPAGE_HERO.button.title, FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p, "showDatetime": false, "class": "astro-J7PV25F6" })}`), recentPosts.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p.slug, "showDatetime": false, "class": "astro-J7PV25F6" })}`), renderComponent($$result2, "Footer", $$Footer, { "class": "astro-J7PV25F6" })) })}`;
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["", '<section id="hero" class="relative max-w-full m-0 p-0 astro-J7PV25F6">\n		<div class="hero-background astro-J7PV25F6">\n			', '\n			<div class="py-32 px-8 max-w-def mx-auto pr-auto astro-J7PV25F6">\n				<h1 class="hero-title astro-J7PV25F6">', '</h1>\n\n				<p class="my-4 text-lg drop-shadow-lg astro-J7PV25F6">\n					', '\n				</p>\n\n				<div class="flex astro-J7PV25F6">\n					<a', ' class="px-8 py-4 bg-orange rounded-l-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<span class="mr-4 astro-J7PV25F6">\n							', '\n						</span>\n\n						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.37069 220.73612" class="w-8 h-8 stroke-red-500 astro-J7PV25F6"><path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" fill="currentColor" class="astro-J7PV25F6"></path></svg>\n					</a>\n\n					<a href="https://youtu.be/ZDqve0fh6GE" class="px-4 py-1 bg-white rounded-r-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-J7PV25F6">\n						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="52.12 84.48 215.77 151.03" class="w-8 h-8 astro-J7PV25F6">\n							<path d="M0 0h400v400H0z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.2 0 0 .2 115 115)" class="astro-J7PV25F6"></path>\n							<path d="M199.917 105.63s-84.292 0-105.448 5.498c-11.328 3.165-20.655 12.492-23.821 23.987-5.497 21.156-5.497 64.968-5.497 64.968s0 43.979 5.497 64.802c3.166 11.495 12.326 20.656 23.821 23.821 21.322 5.664 105.448 5.664 105.448 5.664s84.459 0 105.614-5.498c11.495-3.165 20.655-12.159 23.654-23.82 5.664-20.99 5.664-64.802 5.664-64.802s.166-43.979-5.664-65.135c-2.999-11.495-12.159-20.655-23.654-23.654-21.155-5.83-105.614-5.831-105.614-5.831Zm-26.821 53.974 70.133 40.479-70.133 40.313v-80.792Z" style="fill:red;fill-rule:nonzero" transform="scale(.8)" class="astro-J7PV25F6"></path></svg>\n					</a>\n				</div>\n			</div>\n		</div>\n	</section><main class="astro-J7PV25F6">\n		<a href="/sandbox-elements" class="flex justify-center astro-J7PV25F6">\n			<img src="/sandbox-elements/logo.webp" alt="Image" class="w-1/4 astro-J7PV25F6">\n		</a>\n\n		<hr class="astro-J7PV25F6">\n\n		<section class="astro-J7PV25F6">\n			<div class="filter astro-J7PV25F6">\n				<a href="/tags/post" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" class="astro-J7PV25F6"></path>\n						<path d="M7 8h10" class="astro-J7PV25F6"></path>\n						<path d="M7 12h10" class="astro-J7PV25F6"></path>\n						<path d="M7 16h10" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Articles & Tutorials</span>\n				</a>\n				<a href="/tags/software" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z" class="astro-J7PV25F6"></path>\n						<path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" class="astro-J7PV25F6"></path>\n						<path d="M8 9v2" class="astro-J7PV25F6"></path>\n						<path d="M7 10h2" class="astro-J7PV25F6"></path>\n						<path d="M14 10h2" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Games & Software</span>\n				</a>\n				<a href="/tags/asset" class="astro-J7PV25F6">\n					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n						<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n						<path d="M6 17.6l-2 -1.1v-2.5" class="astro-J7PV25F6"></path>\n						<path d="M4 10v-2.5l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M10 4.1l2 -1.1l2 1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 6.4l2 1.1v2.5" class="astro-J7PV25F6"></path>\n						<path d="M20 14v2.5l-2 1.12" class="astro-J7PV25F6"></path>\n						<path d="M14 19.9l-2 1.1l-2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M18 8.6l2 -1.1" class="astro-J7PV25F6"></path>\n						<path d="M12 12l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 18.5l0 2.5" class="astro-J7PV25F6"></path>\n						<path d="M12 12l-2 -1.12" class="astro-J7PV25F6"></path>\n						<path d="M6 8.6l-2 -1.1" class="astro-J7PV25F6"></path>\n					</svg>\n					<span class="astro-J7PV25F6">Assets & Tools</span>\n				</a>\n			</div>\n\n			<span class="flex items-center astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4" class="astro-J7PV25F6"></path>\n					<path d="M9 15l-4.5 4.5" class="astro-J7PV25F6"></path>\n					<path d="M14.5 4l5.5 5.5" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Featured</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 gap-8 astro-J7PV25F6">\n				', '\n			</div>\n		</section>\n\n		<section class="astro-J7PV25F6">\n			<span class="flex items-center astro-J7PV25F6">\n				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="astro-J7PV25F6">\n					<path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-J7PV25F6"></path>\n					<path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" class="astro-J7PV25F6"></path>\n					<path d="M8 8l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 12l4 0" class="astro-J7PV25F6"></path>\n					<path d="M8 16l4 0" class="astro-J7PV25F6"></path>\n				</svg>\n\n				<h1 class="ml-2 astro-J7PV25F6">Recent Posts</h1>\n			</span>\n\n			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-8 astro-J7PV25F6">\n				', '\n			</div>\n\n			<div class="text-center mt-8 astro-J7PV25F6">\n				<a href="/posts/1" class="link astro-J7PV25F6">All Posts</a>\n			</div>\n		</section>\n\n		<div class="support astro-J7PV25F6">\n			<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"><\/script><script type="text/javascript">\n				kofiwidget2.init(\n					"Support Arcane Energy on Ko-fi!",\n					"#",\n					"E1E5CVWWE"\n				);\n				kofiwidget2.draw();\n			<\/script>\n		</div>\n	</main>', ""])), maybeRenderHead($$result2), renderComponent($$result2, "Header", $$Header, { "class": "astro-J7PV25F6" }), HOMEPAGE_HERO.title, HOMEPAGE_HERO.description, addAttribute(HOMEPAGE_HERO.button.link, "href"), HOMEPAGE_HERO.button.title, FEATURED_POSTS.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p, "showDatetime": false, "class": "astro-J7PV25F6" })}`), recentPosts.map((p) => renderTemplate`${renderComponent($$result2, "PostCard", $$PostCard, { "slug": p.slug, "showDatetime": false, "class": "astro-J7PV25F6" })}`), renderComponent($$result2, "Footer", $$Footer, { "class": "astro-J7PV25F6" })) })}`;
 }, "/home/runner/work/website/website/src/pages/index.astro");
 
-const $$file$6 = "/home/runner/work/website/website/src/pages/index.astro";
-const $$url$6 = "";
+const $$file$7 = "/home/runner/work/website/website/src/pages/index.astro";
+const $$url$7 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index$1,
+	file: $$file$7,
+	url: $$url$7
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$Astro$a = createAstro("https://arcaneenergy.github.io");
+const $$SandboxElements = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  Astro2.self = $$SandboxElements;
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-2KVPTKBY" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead($$result2)}<section id="hero" class="relative max-w-full m-0 p-0 astro-2KVPTKBY">
+    <div class="hero-background astro-2KVPTKBY">
+      ${renderComponent($$result2, "Header", $$Header, { "class": "astro-2KVPTKBY" })}
+
+      <div class="py-32 px-8 max-w-def mx-auto pr-auto astro-2KVPTKBY">
+        <h1 class="hero-title flex justify-center astro-2KVPTKBY">
+          <img src="/sandbox-elements/logo.webp" alt="Image" class="w-1/2 astro-2KVPTKBY">
+        </h1>
+
+        <p class="my-4 text-lg drop-shadow-lg text-center astro-2KVPTKBY">
+          A 2D physics-based sandbox game.
+        </p>
+
+        <div class="flex justify-center astro-2KVPTKBY">
+          <a href="https://youtu.be/5P42Vc4zp0Y" class="px-4 py-1 bg-white rounded-lg shadow-lg text-black text-lg font-bold hover:no-underline hover:bg-black hover:text-white transition-all flex items-center astro-2KVPTKBY">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="52.12 84.48 215.77 151.03" class="w-8 h-8 astro-2KVPTKBY">
+              <path d="M0 0h400v400H0z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.2 0 0 .2 115 115)" class="astro-2KVPTKBY"></path>
+              <path d="M199.917 105.63s-84.292 0-105.448 5.498c-11.328 3.165-20.655 12.492-23.821 23.987-5.497 21.156-5.497 64.968-5.497 64.968s0 43.979 5.497 64.802c3.166 11.495 12.326 20.656 23.821 23.821 21.322 5.664 105.448 5.664 105.448 5.664s84.459 0 105.614-5.498c11.495-3.165 20.655-12.159 23.654-23.82 5.664-20.99 5.664-64.802 5.664-64.802s.166-43.979-5.664-65.135c-2.999-11.495-12.159-20.655-23.654-23.654-21.155-5.83-105.614-5.831-105.614-5.831Zm-26.821 53.974 70.133 40.479-70.133 40.313v-80.792Z" style="fill:red;fill-rule:nonzero" transform="scale(.8)" class="astro-2KVPTKBY"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section><main class="astro-2KVPTKBY">
+    <section class="custom-section astro-2KVPTKBY">
+      <div class="p-4 astro-2KVPTKBY">
+        <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" class="astro-2KVPTKBY"></path><path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" class="astro-2KVPTKBY"></path><path d="M19 11h2m-1 -1v2" class="astro-2KVPTKBY"></path></svg>
+          <span class="ml-2 astro-2KVPTKBY"></span>
+          <span class="ml-2 astro-2KVPTKBY">Day/Night-Cycle</span>
+        </h2>
+        <p class="astro-2KVPTKBY">
+          With a naturally occurring day/night cycle or a manually configured
+          one, you can easily turn day into night or night into day.
+        </p>
+
+        <img src="/sandbox-elements/day_night_cycle.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+      </div>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flame astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" class="astro-2KVPTKBY"></path></svg>
+              <span class="ml-2 astro-2KVPTKBY"> Fire and Explosion System</span>
+            </h2>
+            <p class="astro-2KVPTKBY">
+              Light up your sandbox with explosive energy! Start fires and put
+              them out, watching elements burn and explosions ripple through.
+              Elements burn through various factors, and explosions create
+              dynamic impacts, influencing the elements in their vicinity.
+            </p>
+          </div>
+
+          <div class="sm:w-1/2 astro-2KVPTKBY">
+            <img src="/sandbox-elements/fire_system.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 astro-2KVPTKBY">
+            <img src="/sandbox-elements/backpack.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z" class="astro-2KVPTKBY"></path><path d="M10 6v-1a2 2 0 1 1 4 0v1" class="astro-2KVPTKBY"></path><path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" class="astro-2KVPTKBY"></path><path d="M11 10h2" class="astro-2KVPTKBY"></path></svg>
+              <span class="ml-2 astro-2KVPTKBY">Backpack</span>
+            </h2>
+            <p class="astro-2KVPTKBY">
+              Your backpack is the key to your elements. Choose an element of
+              your choice from a variety of categories and start adding it to
+              your world.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-robot astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M6 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" class="astro-2KVPTKBY"></path><path d="M12 2v2" class="astro-2KVPTKBY"></path><path d="M9 12v9" class="astro-2KVPTKBY"></path><path d="M15 12v9" class="astro-2KVPTKBY"></path><path d="M5 16l4 -2" class="astro-2KVPTKBY"></path><path d="M15 14l4 2" class="astro-2KVPTKBY"></path><path d="M9 18h6" class="astro-2KVPTKBY"></path><path d="M10 8v.01" class="astro-2KVPTKBY"></path><path d="M14 8v.01" class="astro-2KVPTKBY"></path></svg>
+              <span class="ml-2 astro-2KVPTKBY">Entities</span>
+            </h2>
+            <p class="astro-2KVPTKBY">
+              Your farm wouldn't be a farm without chickens. Add some entities
+              to your game and watch them wander and bring a touch of life to
+              your game. <sup style="font-size: 9px;" class="astro-2KVPTKBY">yes, you can eat them.</sup>
+            </p>
+          </div>
+
+          <div class="sm:w-1/2 astro-2KVPTKBY">
+            <img src="/sandbox-elements/npcs.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 astro-2KVPTKBY">
+            <img src="/sandbox-elements/weather_system.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" class="astro-2KVPTKBY"></path></svg>
+              <span class="ml-2 astro-2KVPTKBY">Weather System</span>
+            </h2>
+            <p class="astro-2KVPTKBY">
+              Without weather, the world would feel dry. Add clouds and rain to
+              your sandbox to enhance the experience. Feel the atmosphere
+              change, turning your sandbox into a living, breathing masterpiece.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="p-4 astro-2KVPTKBY">
+          <div class="sm:flex astro-2KVPTKBY">
+            <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+              <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" class="astro-2KVPTKBY"></path><path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" class="astro-2KVPTKBY"></path><path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" class="astro-2KVPTKBY"></path></svg>
+                <span class="ml-2 astro-2KVPTKBY">Achievements</span>
+              </h2>
+              <p class="astro-2KVPTKBY">
+                Collect coins through various achievements throughout your
+                gameplay!
+              </p>
+            </div>
+
+            <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+              <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-abacus astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M5 3v18" class="astro-2KVPTKBY"></path><path d="M19 21v-18" class="astro-2KVPTKBY"></path><path d="M5 7h14" class="astro-2KVPTKBY"></path><path d="M5 15h14" class="astro-2KVPTKBY"></path><path d="M8 13v4" class="astro-2KVPTKBY"></path><path d="M11 13v4" class="astro-2KVPTKBY"></path><path d="M16 13v4" class="astro-2KVPTKBY"></path><path d="M14 5v4" class="astro-2KVPTKBY"></path><path d="M11 5v4" class="astro-2KVPTKBY"></path><path d="M8 5v4" class="astro-2KVPTKBY"></path><path d="M3 21h18" class="astro-2KVPTKBY"></path></svg>
+                <span class="ml-2 astro-2KVPTKBY">Rule System</span>
+              </h2>
+              <p class="astro-2KVPTKBY">
+                Play with different rules to shape how elements, the
+                environment, and the interface interact.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <img src="/sandbox-elements/achievements.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <img src="/sandbox-elements/rules.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-section astro-2KVPTKBY">
+        <div class="p-4 astro-2KVPTKBY">
+          <div class=" astro-2KVPTKBY">
+            <h2 class="my-0 mb-4 flex items-center astro-2KVPTKBY">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-area-filled astro-2KVPTKBY" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-2KVPTKBY"></path><path d="M20 18a1 1 0 0 1 .117 1.993l-.117 .007h-16a1 1 0 0 1 -.117 -1.993l.117 -.007h16z" stroke-width="0" fill="currentColor" class="astro-2KVPTKBY"></path><path d="M15.22 5.375a1 1 0 0 1 1.393 -.165l.094 .083l4 4a1 1 0 0 1 .284 .576l.009 .131v5a1 1 0 0 1 -.883 .993l-.117 .007h-16.022l-.11 -.009l-.11 -.02l-.107 -.034l-.105 -.046l-.1 -.059l-.094 -.07l-.06 -.055l-.072 -.082l-.064 -.089l-.054 -.096l-.016 -.035l-.04 -.103l-.027 -.106l-.015 -.108l-.004 -.11l.009 -.11l.019 -.105c.01 -.04 .022 -.077 .035 -.112l.046 -.105l.059 -.1l4 -6a1 1 0 0 1 1.165 -.39l.114 .05l3.277 1.638l3.495 -4.369z" stroke-width="0" fill="currentColor" class="astro-2KVPTKBY"></path>
+              </svg>
+              <span class="ml-2 astro-2KVPTKBY">World Themes</span>
+            </h2>
+            <p class="astro-2KVPTKBY">
+              Whether it's a dense forest, a bustling city, or a rocky mountain
+              desert, each environment is a canvas for your imagination. These
+              themes guide your sandbox adventures, providing a unique backdrop
+              to your creative endeavors, making every exploration a personal
+              journey.
+            </p>
+          </div>
+        </div>
+
+        <div class="sm:flex astro-2KVPTKBY">
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <img src="/sandbox-elements/world_themes_00.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+
+          <div class="sm:w-1/2 p-4 astro-2KVPTKBY">
+            <img src="/sandbox-elements/world_themes_01.webp" alt="Image" class="object-cover w-full h-full rounded-lg astro-2KVPTKBY">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    ${renderComponent($$result2, "Footer", $$Footer, { "class": "astro-2KVPTKBY" })}
+  </main>` })}`;
+}, "/home/runner/work/website/website/src/pages/sandbox-elements.astro");
+
+const $$file$6 = "/home/runner/work/website/website/src/pages/sandbox-elements.astro";
+const $$url$6 = "/sandbox-elements";
+
+const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$SandboxElements,
 	file: $$file$6,
 	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
@@ -411,7 +616,7 @@ const Content = (props = {}) => MDXContent({
 										});
 Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
 
-const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	Content,
 	default: Content,
@@ -434,7 +639,7 @@ async function get(context) {
 	});
 }
 
-const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	get
 }, Symbol.toStringTag, { value: 'Module' }));
@@ -527,7 +732,7 @@ const $$page = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$5 = "/home/runner/work/website/website/src/pages/posts/[page].astro";
 const $$url$5 = "/posts/[page]";
 
-const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$page,
 	file: $$file$5,
@@ -607,7 +812,7 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$3 = "/home/runner/work/website/website/src/pages/posts/[slug].astro";
 const $$url$3 = "/posts/[slug]";
 
-const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$slug,
 	file: $$file$3,
@@ -631,7 +836,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$2 = "/home/runner/work/website/website/src/pages/tags/index.astro";
 const $$url$2 = "/tags";
 
-const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index,
 	file: $$file$2,
@@ -670,7 +875,7 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$1 = "/home/runner/work/website/website/src/pages/tags/[tag].astro";
 const $$url$1 = "/tags/[tag]";
 
-const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$tag,
 	file: $$file$1,
@@ -693,11 +898,11 @@ const $$404 = createComponent(async ($$result, $$props, $$slots) => {
 const $$file = "/home/runner/work/website/website/src/pages/404.astro";
 const $$url = "/404";
 
-const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$404,
 	file: $$file,
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g };
+export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h };
