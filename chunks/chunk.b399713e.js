@@ -1,0 +1,15 @@
+import { _ as __astro_tag_component__ } from './chunk.b21d6461.js';
+import 'module';
+import 'node:fs/promises';
+import 'node:url';
+import 'html-escaper';
+
+async function getMod() {
+  return import('./chunk.8f207ea0.js');
+}
+const collectedLinks = ["/assets/asset.6aeb2496.css","/assets/asset.3f53dee4.css"];
+const collectedStyles = "@@ASTRO-STYLES@@";
+const collectedScripts = "@@ASTRO-SCRIPTS@@";
+__astro_tag_component__(getMod, "astro:jsx");
+
+export { collectedLinks, collectedScripts, collectedStyles, getMod };
