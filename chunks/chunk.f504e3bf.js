@@ -63,11 +63,14 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 				<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" class="astro-SZ7XMLTE"></path>
 			</svg>
 		</a>
+		<a href="https://ko-fi.com/arcaneenergy" class="astro-SZ7XMLTE">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coffee astro-SZ7XMLTE" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-SZ7XMLTE"></path><path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" class="astro-SZ7XMLTE"></path><path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" class="astro-SZ7XMLTE"></path><path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" class="astro-SZ7XMLTE"></path><path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" class="astro-SZ7XMLTE"></path><path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" class="astro-SZ7XMLTE"></path></svg>
+		</a>
 	</div>
 
 	<div class="links astro-SZ7XMLTE">
 		<a href="/privacy" class="astro-SZ7XMLTE">Privacy</a>
-		<a href="https://ko-fi.com/arcaneenergy" class="astro-SZ7XMLTE">Support on Ko-fi</a>
+		<a href="/info" class="astro-SZ7XMLTE">Arcane Energy</a>
 		<a href="mailto:arcane.energy.help@gmail.com" class="astro-SZ7XMLTE">Contact</a>
 	</div>
 
@@ -449,31 +452,31 @@ const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const MDXLayout = async function ({
+const MDXLayout$1 = async function ({
   children
 }) {
   const Layout = (await Promise.resolve().then(() => Article)).default;
   const {
     layout,
     ...content
-  } = frontmatter;
-  content.file = file;
-  content.url = url;
+  } = frontmatter$1;
+  content.file = file$1;
+  content.url = url$1;
   return createVNode(Layout, {
-    file,
-    url,
+    file: file$1,
+    url: url$1,
     content,
     frontmatter: content,
-    headings: getHeadings(),
+    headings: getHeadings$1(),
     "server:root": true,
     children
   });
 };
-const frontmatter = {
+const frontmatter$1 = {
   "layout": "../layouts/Article.astro",
   "title": "Privacy"
 };
-function getHeadings() {
+function getHeadings$1() {
   return [{
     "depth": 2,
     "slug": "overview",
@@ -512,7 +515,7 @@ function getHeadings() {
     "text": "Legal"
   }];
 }
-function _createMdxContent(props) {
+function _createMdxContent$1(props) {
   const _components = Object.assign({
     h2: "h2",
     p: "p",
@@ -614,33 +617,33 @@ function _createMdxContent(props) {
     })]
   });
 }
-function MDXContent(props = {}) {
-  return createVNode(MDXLayout, {
+function MDXContent$1(props = {}) {
+  return createVNode(MDXLayout$1, {
     ...props,
-    children: createVNode(_createMdxContent, {
+    children: createVNode(_createMdxContent$1, {
       ...props
     })
   });
 }
 
-__astro_tag_component__(getHeadings, "astro:jsx");
-__astro_tag_component__(MDXContent, "astro:jsx");
-const url = "/privacy";
-const file = "/home/runner/work/website/website/src/pages/privacy.mdx";
-const Content = (props = {}) => MDXContent({
+__astro_tag_component__(getHeadings$1, "astro:jsx");
+__astro_tag_component__(MDXContent$1, "astro:jsx");
+const url$1 = "/privacy";
+const file$1 = "/home/runner/work/website/website/src/pages/privacy.mdx";
+const Content$1 = (props = {}) => MDXContent$1({
 											...props,
 											components: { Fragment, ...props.components },
 										});
-Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
+Content$1[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter$1.layout);
 
 const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	Content,
-	default: Content,
-	file,
-	frontmatter,
-	getHeadings,
-	url
+	Content: Content$1,
+	default: Content$1,
+	file: file$1,
+	frontmatter: frontmatter$1,
+	getHeadings: getHeadings$1,
+	url: url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
 async function get(context) {
@@ -837,6 +840,81 @@ const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
+const MDXLayout = async function ({
+  children
+}) {
+  const Layout = (await Promise.resolve().then(() => Article)).default;
+  const {
+    layout,
+    ...content
+  } = frontmatter;
+  content.file = file;
+  content.url = url;
+  return createVNode(Layout, {
+    file,
+    url,
+    content,
+    frontmatter: content,
+    headings: getHeadings(),
+    "server:root": true,
+    children
+  });
+};
+const frontmatter = {
+  "layout": "../layouts/Article.astro",
+  "title": "Privacy"
+};
+function getHeadings() {
+  return [];
+}
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    blockquote: "blockquote",
+    p: "p"
+  }, props.components);
+  return createVNode(Fragment, {
+    children: [createVNode(_components.blockquote, {
+      children: ["\n", createVNode(_components.p, {
+        children: "Creating unique games and tutorials, everything about game development and beyond."
+      }), "\n"]
+    }), "\n", createVNode("div", {
+      class: "flex items-center justify-center",
+      children: createVNode("img", {
+        src: "/logo.png",
+        class: "sm:w-1/2 drop-shadow-2xl rounded-full border-dashed border-2 border-sky-500 hover:hue-rotate-180 hover:saturate-50 cursor-help"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  return createVNode(MDXLayout, {
+    ...props,
+    children: createVNode(_createMdxContent, {
+      ...props
+    })
+  });
+}
+
+__astro_tag_component__(getHeadings, "astro:jsx");
+__astro_tag_component__(MDXContent, "astro:jsx");
+const url = "/info";
+const file = "/home/runner/work/website/website/src/pages/info.mdx";
+const Content = (props = {}) => MDXContent({
+											...props,
+											components: { Fragment, ...props.components },
+										});
+Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
+
+const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	Content,
+	default: Content,
+	file,
+	frontmatter,
+	getHeadings,
+	url
+}, Symbol.toStringTag, { value: 'Module' }));
+
 const $$Astro$2 = createAstro("https://arcaneenergy.github.io");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
@@ -853,7 +931,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$2 = "/home/runner/work/website/website/src/pages/tags/index.astro";
 const $$url$2 = "/tags";
 
-const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$Index,
 	file: $$file$2,
@@ -892,7 +970,7 @@ const $$tag = createComponent(async ($$result, $$props, $$slots) => {
 const $$file$1 = "/home/runner/work/website/website/src/pages/tags/[tag].astro";
 const $$url$1 = "/tags/[tag]";
 
-const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$tag,
 	file: $$file$1,
@@ -915,11 +993,11 @@ const $$404 = createComponent(async ($$result, $$props, $$slots) => {
 const $$file = "/home/runner/work/website/website/src/pages/404.astro";
 const $$url = "/404";
 
-const _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
 	default: $$404,
 	file: $$file,
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h };
+export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h, _page9 as i };
