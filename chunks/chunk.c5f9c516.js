@@ -135,7 +135,7 @@ const HOMEPAGE_HERO = {
     title: "Download on itch.io"
   }
 };
-const FEATURED_POSTS = ["limspace-v1", "multimesh-scatter"];
+const FEATURED_POSTS = ["sandbox-elements", "multimesh-scatter"];
 
 // astro-head-inject
 
