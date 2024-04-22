@@ -1,7 +1,7 @@
 {
     "1": {
         "type": "update",
-        "date": "2023-06-08 19:45:00",
+        "date": "2024-04-22 18:30:00",
         "version": "0.8.0",
         "title": "Initial internal release",
         "content": "This is the first internal version of Sandbox Elements.\n\nSandbox Elements is the successor to 2D Physics Sandbox. It improves on every aspect of the previous game, adding more content and variety in all directions. This first version is important for testing - [b]and your feedback will improve it[/b]. If you encounter any bugs or have suggestions, you can always send feedback via the Info menu → Send Feedback.\n\nSandbox Elements introduces a complete overhaul of elements, a new dynamic day/night cycle, weather system, dynamic fire and explosions, world themes, achievements, entities, quests, world sharing, shop and library, rules, event system and much more."
