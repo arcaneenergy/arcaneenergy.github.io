@@ -12,5 +12,12 @@
         "version": "0.8.1",
         "title": "First set of changes",
         "content": "• Fixed a door element interaction\n• Fixed a username issue in Community Worlds\n• Fixed a recurring world deletion bug\n• Fixed a bug where the World Title and Description were not saving from downloaded levels\n• Added a new \"Username\" field to the world upload dialog\n• Improved physics performance"
+    },
+    "4": {
+        "type": "update",
+        "date": "2024-04-28 21:35:00",
+        "version": "0.8.2",
+        "title": "General bug fixes and changes",
+        "content": "• Added download count to community levels\n• Fixed finish element completing the level in sandbox or editor mode\n• Fixed downloading worlds without description or author\n• Fixed a bug where the rain was extinguishing elements in disabled mode\n• Display news reversed in news menu (newest first)\n• Display version numbers clearer\n• Reduced the chance of burning chickens turning into roasted chickens to 30%\n• Reduced the coin reward amount of the Global Explorer achievement and changed the unlock behavior\n• News button can now be clicked to reestablish a connection in case of connection failure\n• Elements can now burn in edit mode"
     }
 }
