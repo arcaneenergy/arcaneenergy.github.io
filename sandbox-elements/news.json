@@ -1,6 +1,6 @@
 {
     "1": {
-        "type": "update",
+        "type": "announcement",
         "date": "2024-04-22 18:30:00",
         "version": "0.8.0",
         "title": "Initial internal release",
@@ -19,5 +19,12 @@
         "version": "0.8.2",
         "title": "General bug fixes and changes",
         "content": "• Added download count to community levels\n• Fixed finish element completing the level in sandbox or editor mode\n• Fixed downloading worlds without description or author\n• Fixed a bug where the rain was extinguishing elements in disabled mode\n• Display news reversed in news menu (newest first)\n• Display version numbers clearer\n• Reduced the chance of burning chickens turning into roasted chickens to 30%\n• Reduced the coin reward amount of the Global Explorer achievement and changed the unlock behavior\n• News button can now be clicked to reestablish a connection in case of connection failure\n• Elements can now burn in edit mode"
+    },
+    "5": {
+        "type": "update",
+        "date": "2024-05-01 21:30:00",
+        "version": "0.8.3",
+        "title": "Many small fixes and changes towards a larger goal",
+        "content": "• Added a warning for events which have no triggers\n• Added a warning for uncompletable quest levels due to missing finish elements or level complete event actions\n• Fixed spawning throwable elements while grid is active\n• Fixed decoration elements colliding with other elements after dragging with the selector tool\n• Fixed lightning strikes appearing while game is paused\n• Fixed teleporter and finish element appearing in front of other elements\n• Fixed formatting issues with the level completion text\n• Fixed a crash when failing a level\n• Reduced ad frequency in the main menu and the reward for it to 10 coins\n• Reduced random coin clatter sounds which played in the background\n• Added short descriptions and new images to the game mode buttons in the world creation menu\n• The name field is now required in the world creation menu\n• The pre-release popup now appears after the splash screen"
     }
 }
