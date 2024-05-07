@@ -26,5 +26,12 @@
         "version": "0.8.3",
         "title": "Many small fixes and changes towards a larger goal",
         "content": "• Added a warning for events which have no triggers\n• Added a warning for uncompletable quest levels due to missing finish elements or level complete event actions\n• Fixed spawning throwable elements while grid is active\n• Fixed decoration elements colliding with other elements after dragging with the selector tool\n• Fixed lightning strikes appearing while game is paused\n• Fixed teleporter and finish element appearing in front of other elements\n• Fixed formatting issues with the level completion text\n• Fixed a crash when failing a level\n• Reduced ad frequency in the main menu and the reward for it to 10 coins\n• Reduced random coin clatter sounds which played in the background\n• Added short descriptions and new images to the game mode buttons in the world creation menu\n• The name field is now required in the world creation menu\n• The pre-release popup now appears after the splash screen"
+    },
+    "6": {
+        "type": "update",
+        "date": "2024-05-07 14:00:00",
+        "version": "0.8.4",
+        "title": "Improved performance of grass elements",
+        "content": "This update improves the loading of grass elements by ≈ 98%:\n[table=4][cell border=gray]Elements[/cell][cell border=gray]Before (v0.8.3)[/cell][cell border=gray]After (v0.8.4)[/cell][cell border=gray]Percentage difference[/cell][cell border=gray][right]10 Grass Elements[/right][/cell][cell border=gray][right]94.66ms[/right][/cell][cell border=gray][right]2.43ms[/right][/cell][cell border=gray][right]≈ 97.49%[/right][/cell][cell border=gray][right]400 Grass Elements[/right][/cell][cell border=gray][right]14282.73ms[/right][/cell][cell border=gray][right]171.49ms[/right][/cell][cell border=gray][right]≈ 98.72%[/right][/cell][/table]\n\nOther changes:\n• Fixed chicken elements not laying eggs\n• Clouds now appear slightly brighter\n• Updated localizations, popup animations, sounds and layouts\n• Elements are no longer deleted when exiting or reloading a level\n• Removed Games and Reddit tabs from the info menu\n• Removed a background layer from the Grasslands world theme"
     }
 }
