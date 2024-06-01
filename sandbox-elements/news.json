@@ -32,6 +32,13 @@
         "date": "2024-05-07 14:00:00",
         "version": "0.8.4",
         "title": "Improved performance of grass elements",
-        "content": "This update improves the loading of grass elements by ≈ 98%:\n[table=4][cell border=gray]Elements[/cell][cell border=gray]Before (v0.8.3)[/cell][cell border=gray]After (v0.8.4)[/cell][cell border=gray]Percentage difference[/cell][cell border=gray][right]10 Grass Elements[/right][/cell][cell border=gray][right]94.66ms[/right][/cell][cell border=gray][right]2.43ms[/right][/cell][cell border=gray][right]≈ 97.49%[/right][/cell][cell border=gray][right]400 Grass Elements[/right][/cell][cell border=gray][right]14282.73ms[/right][/cell][cell border=gray][right]171.49ms[/right][/cell][cell border=gray][right]≈ 98.72%[/right][/cell][/table]\n\nOther changes:\n• Fixed chicken elements not laying eggs\n• Clouds now appear slightly brighter\n• Updated localizations, popup animations, sounds and layouts\n• Elements are no longer deleted when exiting or reloading a level\n• Removed Games and Reddit tabs from the info menu\n• Removed a background layer from the Grasslands world theme"
+        "content": "This update improves the loading speed of grass elements by ≈ 98%:\n[table=4][cell border=gray]Elements[/cell][cell border=gray]Before (v0.8.3)[/cell][cell border=gray]After (v0.8.4)[/cell][cell border=gray]Percentage difference[/cell][cell border=gray][right]10 Grass Elements[/right][/cell][cell border=gray][right]94.66ms[/right][/cell][cell border=gray][right]2.43ms[/right][/cell][cell border=gray][right]≈ 97.49%[/right][/cell][cell border=gray][right]400 Grass Elements[/right][/cell][cell border=gray][right]14282.73ms[/right][/cell][cell border=gray][right]171.49ms[/right][/cell][cell border=gray][right]≈ 98.72%[/right][/cell][/table]\n\nOther changes:\n• Fixed chicken elements not laying eggs\n• Clouds now appear slightly brighter\n• Updated localizations, popup animations, sounds and layouts\n• Elements are no longer deleted when exiting or reloading a level\n• Removed Games and Reddit tabs from the info menu\n• Removed a background layer from the Grasslands world theme"
+    },
+    "7": {
+        "type": "update",
+        "date": "2024-05-31 19:30:00",
+        "version": "0.8.5",
+        "title": "New menu layout and element changes",
+        "content": "• New menu and world layout in the sandbox and world selection menu\n• Finish element is automatically unlocked and can now only be used in editor mode\n• Fixed wooden door element not having collision after being moved\n• Removed \"coin changed\" event trigger\n• Reduced achievement unlock sound volume\n• Settings menu categorized into groups\n• \"Not selectable\" elements are now selectable in edit mode\n• Sign, wooden door, boxing glove, domino and bouncy ball can now burn\n• Browse menu opens \"newest\" tab instead of \"downloaded\" in community worlds\n• Updated localizations"
     }
 }
