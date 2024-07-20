@@ -577,9 +577,7 @@ function _createMdxContent$1(props) {
       children: "Third-party companies and individuals may be used for one or more of the following reasons:"
     }), "\n", createVNode(_components.ul, {
       children: ["\n", createVNode(_components.li, {
-        children: "Facilitate the service."
-      }), "\n", createVNode(_components.li, {
-        children: "Provide the service."
+        children: "Provide and facilitate the service."
       }), "\n", createVNode(_components.li, {
         children: "Perform service-related services."
       }), "\n", createVNode(_components.li, {
@@ -588,8 +586,6 @@ function _createMdxContent$1(props) {
     }), "\n", createVNode(_components.h2, {
       id: "data-security",
       children: "Data Security"
-    }), "\n", createVNode(_components.p, {
-      children: "While we strive to provide security for the information that is processed and maintained, no security system can prevent\nall potential security breaches."
     }), "\n", createVNode(_components.p, {
       children: "For optimal security, all application updates should be installed regularly. It is also recommended to regularly check\nfor available updates and turn on automatic updates."
     }), "\n", createVNode(_components.h2, {
