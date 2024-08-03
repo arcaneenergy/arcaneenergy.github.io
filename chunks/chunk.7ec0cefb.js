@@ -1,6 +1,8 @@
 /* empty css                */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderHead, e as renderSlot, f as createCollectionToGlobResultMap, g as createGetCollection, h as createGetEntryBySlug, i as renderComponent, _ as __astro_tag_component__, j as createVNode, F as Fragment } from './chunk.88f5223f.js';
 /* empty css                *//* empty css                */import rss from '@astrojs/rss';
-/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */
+/* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                *//* empty css                */import { readFileSync } from 'fs';
+import { join } from 'path';
+
 const $$Astro$g = createAstro("https://arcaneenergy.github.io");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
@@ -996,4 +998,35 @@ const _page9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h, _page9 as i };
+async function post({ request }) {
+  const body = await request.json();
+  const { page, limit } = body;
+  const dataObject = readJson("src/data/sandbox_elements/news.json");
+  const paginatedData = paginate(dataObject, page, limit);
+  return new Response(JSON.stringify(paginatedData), {
+    headers: { "Content-Type": "application/json" }
+  });
+}
+function paginate(dataObject, page, limit) {
+  const entries = Object.entries(dataObject).sort(([keyA], [keyB]) => Number(keyB) - Number(keyA));
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedEntries = entries.slice(start, end).reverse();
+  const paginatedData = Object.fromEntries(paginatedEntries);
+  return {
+    current_page: page,
+    total_pages: Math.ceil(entries.length / limit),
+    data: paginatedData
+  };
+}
+function readJson(filename) {
+  const data = readFileSync(join(process.cwd(), filename), "utf-8");
+  return JSON.parse(data);
+}
+
+const _page10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	post
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { _page0 as _, _page1 as a, _page2 as b, _page3 as c, _page4 as d, _page5 as e, _page6 as f, _page7 as g, _page8 as h, _page9 as i, _page10 as j };
