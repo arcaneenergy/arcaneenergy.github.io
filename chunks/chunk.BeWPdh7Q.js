@@ -2,7 +2,7 @@ import { d as createAstro, c as createComponent, r as renderTemplate, a as rende
 import 'kleur/colors';
 import { $ as $$Breadcrumbs } from './chunk.DA-nV72e.js';
 import { $ as $$Datetime } from './chunk.CQvNBpys.js';
-import { $ as $$Base, b as $$Footer, a as $$Header } from './chunk.Dl4EHCU_.js';
+import { $ as $$Base, b as $$Footer, a as $$Header } from './chunk.CJgi_0tX.js';
 import { $ as $$Tag } from './chunk.Wlkcmo4T.js';
 /* empty css               */
 

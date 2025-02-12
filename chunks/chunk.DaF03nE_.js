@@ -2,7 +2,7 @@ import { d as createAstro, c as createComponent, r as renderTemplate, a as rende
 import 'kleur/colors';
 import { $ as $$Breadcrumbs } from './chunk.DA-nV72e.js';
 import { $ as $$Datetime } from './chunk.CQvNBpys.js';
-import { $ as $$Base, a as $$Header, b as $$Footer } from './chunk.Dl4EHCU_.js';
+import { $ as $$Base, a as $$Header, b as $$Footer } from './chunk.CJgi_0tX.js';
 /* empty css               */
 
 const $$Astro = createAstro("https://arcaneenergy.github.io");
