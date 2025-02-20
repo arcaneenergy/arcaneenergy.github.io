@@ -1,6 +1,6 @@
 import { isRemotePath, joinPaths } from '@astrojs/internal-helpers/path';
 import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, p as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, q as UnsupportedImageConversion, s as NoImageMetadata, t as FailedToFetchRemoteImageDimensions, v as ExpectedImageOptions, w as ExpectedNotESMImage, x as InvalidImageService, y as toStyleString, d as createAstro, c as createComponent, z as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, e as addAttribute, B as spreadAttributes } from './chunk.D4nPtnRa.js';
-import { D as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS, b as DEFAULT_HASH_PROPS } from './chunk.UH06LHtT.js';
+import { D as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS, b as DEFAULT_HASH_PROPS } from './chunk.BtIgMdG9.js';
 import * as mime from 'mrmime';
 import 'clsx';
 
@@ -1223,7 +1223,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './chunk.CM0Rcy5k.js'
+      './chunk.BVtSWm2q.js'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
