@@ -1,6 +1,6 @@
 import { b as createAstro, c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent } from './chunk.CDHILubp.js';
 import 'kleur/colors';
-import { a as getEntryBySlug } from './chunk.CenBgiGU.js';
+import { a as getEntryBySlug } from './chunk.DjS7-pvD.js';
 import { $ as $$Datetime } from './chunk.BsmpS8jM.js';
 /* empty css               */
 

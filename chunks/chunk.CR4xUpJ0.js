@@ -1,5 +1,5 @@
 import { A as AstroError, C as MissingSharp } from './chunk.CDHILubp.js';
-import { b as baseService, p as parseQuality } from './chunk.BfoeTho3.js';
+import { b as baseService, p as parseQuality } from './chunk.DP96Yw-1.js';
 
 let sharp;
 const qualityTable = {
